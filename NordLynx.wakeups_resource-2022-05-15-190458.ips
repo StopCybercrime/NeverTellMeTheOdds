@@ -1,0 +1,85 @@
+{"app_name":"NordLynx","timestamp":"2022-05-15 19:04:58.00 -0400","app_version":"7.12.0","slice_uuid":"A37FF5DE-FEF3-36B5-A1B9-64C1C40E7C27","adam_id":905953485,"build_version":"294","bundleID":"com.nordvpn.NordVPN.NordLynx","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 15.4.1 (19E258)","incident_id":"C4726160-A796-4C63-9EF0-5B0A50746D7B","name":"NordLynx"}
+Date/Time:        2022-05-15 19:01:24.725 -0400
+End time:         2022-05-15 19:04:58.576 -0400
+OS Version:       iPhone OS 15.4.1 (Build 19E258)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: C4726160-A796-4C63-9EF0-5B0A50746D7B
+
+Data Source:      Microstackshots
+Shared Cache:     46820F72-53B2-3566-AB58-5D78032CCF34 slid base address 0x1af408000, slide 0x2f408000
+
+Command:          NordLynx
+Path:             /private/var/containers/Bundle/Application/1E33CBEB-EB27-4079-A264-CA33BC31D8A1/NordVPN.app/PlugIns/NordLynx.appex/NordLynx
+Identifier:       com.nordvpn.NordVPN.NordLynx
+Version:          7.12.0 (294)
+Adam ID:          905953485
+Is First Party:   No
+Beta Identifier:  828ADD73-C235-4DB0-AC0C-186D826E3A9F
+Architecture:     arm64
+PID:              2166
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45002 wakeups over the last 214 seconds (210 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45002
+Wakeups duration: 214s
+Duration:         213.85s
+Duration Sampled: 49.45s
+Steps:            6
+
+Hardware model:   iPhone14,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  107.94 GB/119.09 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 451976) [0x102676588]
+  4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 293464) [0x10264fa58]
+  4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 292188) [0x10264f55c]
+  1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 317056) [0x102655680]
+
+
+Powerstats for:   NordLynx [2166]
+UUID:             A37FF5DE-FEF3-36B5-A1B9-64C1C40E7C27
+Path:             /private/var/containers/Bundle/Application/1E33CBEB-EB27-4079-A264-CA33BC31D8A1/NordVPN.app/PlugIns/NordLynx.appex/NordLynx
+Identifier:       com.nordvpn.NordVPN.NordLynx
+Version:          7.12.0 (294)
+Adam ID:          905953485
+Is First Party:   No
+Beta Identifier:  828ADD73-C235-4DB0-AC0C-186D826E3A9F
+Architecture:     arm64
+Footprint:        7344 KB
+Start time:       2022-05-15 19:03:54.535 -0400
+End time:         2022-05-15 19:04:43.985 -0400
+Num samples:      6 (100%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 6 samples Active
+Power Source:     0 samples on Battery, 6 samples on AC
+  4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 451976) [0x102676588]
+    4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 293464) [0x10264fa58]
+      4  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 292188) [0x10264f55c]
+        1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 317056) [0x102655680]
+        1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 289436) [0x10264ea9c]
+          1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 239720) [0x102642868]
+        1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 288488) [0x10264e6e8]
+        1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 287116) [0x10264e18c]
+          1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 281604) [0x10264cc04]
+            1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 308136) [0x1026533a8]
+              1  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 142956) [0x10262ae6c]
+  2  ??? (<6BAD2F50-F18D-3FCE-9D04-EDC89CA9F157> + 1803576360) [0x16e0fa428]
+    2  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 382244) [0x102665524]
+      2  ??? (<BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2> + 461256) [0x1026789c8]
+        2  ??? (libsystem_kernel.dylib + 11864) [0x1e72b8e58]
+          2  <Kernel mode>
+
+  Binary Images:
+           0x102390000 -                ???  com.nordvpn.NordVPN.NordLynx 7.12.0 (294) <A37FF5DE-FEF3-36B5-A1B9-64C1C40E7C27>  /private/var/containers/Bundle/Application/1E33CBEB-EB27-4079-A264-CA33BC31D8A1/NordVPN.app/PlugIns/NordLynx.appex/NordLynx
+           0x102608000 -                ???  ???                                       <BD4C89FF-4FE7-3371-ADA9-035AA8B7DBC2>
+           0x1028f4000 -                ???  ???                                       <6BAD2F50-F18D-3FCE-9D04-EDC89CA9F157>
+           0x1e72b6000 -        0x1e72ebfff  libsystem_kernel.dylib                    <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
