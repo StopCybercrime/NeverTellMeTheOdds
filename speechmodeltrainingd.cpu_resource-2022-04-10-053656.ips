@@ -1,0 +1,909 @@
+{"share_with_app_devs":0,"app_version":"","bug_type":"202","timestamp":"2022-04-10 05:36:56.00 -0400","os_version":"iPhone OS 15.4 (19E241)","slice_uuid":"A12A3DDA-7536-3717-9575-F98D15F420C2","is_first_party":1,"build_version":"","incident_id":"0BC4C887-8A8A-46D1-B9F9-1591069AC905","app_name":"speechmodeltrainingd","name":"speechmodeltrainingd"}
+Date/Time:        2022-04-10 05:35:05.850 -0400
+End time:         2022-04-10 05:36:55.607 -0400
+OS Version:       iPhone OS 15.4 (Build 19E241)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: 0BC4C887-8A8A-46D1-B9F9-1591069AC905
+
+Data Source:      Microstackshots
+Shared Cache:     3056B876-FD8B-3268-A09F-FC2EB0320C03 slid base address 0x180f38000, slide 0xf38000
+
+Command:          speechmodeltrainingd
+Path:             /System/Library/PrivateFrameworks/CoreSpeech.framework/speechmodeltrainingd
+Architecture:     arm64
+PID:              3481
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 110 seconds (82% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     110s
+Duration:         109.76s
+Duration Sampled: 108.75s
+Steps:            150
+
+Hardware model:   iPad13,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  107.09 GB/238.39 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  63  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+  63  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+  63  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+  63  ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+  63  ??? (libdispatch.dylib + 45348) [0x180f91124]
+  63  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+  63  ??? (libdispatch.dylib + 7784) [0x180f87e68]
+  31  ??? (speechmodeltrainingd + 95332) [0x102da3464]
+  31  ??? (EmbeddedAcousticRecognition + 222080) [0x1a87ec380]
+  28  ??? (EmbeddedAcousticRecognition + 5993132) [0x1a8d6d2ac]
+  26  ??? (EmbeddedAcousticRecognition + 2619820) [0x1a8a359ac]
+  21  ??? (EmbeddedAcousticRecognition + 7129824) [0x1a8e82ae0]
+  20  ??? (EmbeddedAcousticRecognition + 7131756) [0x1a8e8326c]
+  20  ??? (EmbeddedAcousticRecognition + 352296) [0x1a880c028]
+  20  ??? (EmbeddedAcousticRecognition + 350332) [0x1a880b87c]
+  19  ??? (EmbeddedAcousticRecognition + 406900) [0x1a8819574]
+  19  ??? (EmbeddedAcousticRecognition + 408660) [0x1a8819c54]
+  9   ??? (EmbeddedAcousticRecognition + 388364) [0x1a8814d0c]
+  3   ??? (EmbeddedAcousticRecognition + 361980) [0x1a880e5fc]
+  3   ??? (EmbeddedAcousticRecognition + 364912) [0x1a880f170]
+  1   ??? (libsystem_malloc.dylib + 7860) [0x193526eb4]
+
+
+Powerstats for:   speechmodeltrainingd [3481]
+UUID:             A12A3DDA-7536-3717-9575-F98D15F420C2
+Path:             /System/Library/PrivateFrameworks/CoreSpeech.framework/speechmodeltrainingd
+Architecture:     arm64
+Footprint:        3760 KB -> 70.19 MB (+66.52 MB)
+Pageins:          6990 pages
+Start time:       2022-04-10 05:35:07.548 -0400
+End time:         2022-04-10 05:36:50.766 -0400
+Num samples:      63 (42%)
+Primary state:    58 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    63 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 63 samples on AC
+  63  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    63  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      63  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        63  ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+          63  ??? (libdispatch.dylib + 45348) [0x180f91124]
+            63  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              63  ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                31  ??? (speechmodeltrainingd + 95332) [0x102da3464]
+                  31  ??? (EmbeddedAcousticRecognition + 222080) [0x1a87ec380]
+                    28  ??? (EmbeddedAcousticRecognition + 5993132) [0x1a8d6d2ac]
+                      26  ??? (EmbeddedAcousticRecognition + 2619820) [0x1a8a359ac]
+                        21  ??? (EmbeddedAcousticRecognition + 7129824) [0x1a8e82ae0]
+                          20  ??? (EmbeddedAcousticRecognition + 7131756) [0x1a8e8326c]
+                            20  ??? (EmbeddedAcousticRecognition + 352296) [0x1a880c028]
+                              20  ??? (EmbeddedAcousticRecognition + 350332) [0x1a880b87c]
+                                19  ??? (EmbeddedAcousticRecognition + 406900) [0x1a8819574]
+                                  19  ??? (EmbeddedAcousticRecognition + 408660) [0x1a8819c54]
+                                    9   ??? (EmbeddedAcousticRecognition + 388364) [0x1a8814d0c]
+                                      3   ??? (EmbeddedAcousticRecognition + 361980) [0x1a880e5fc]
+                                        3   ??? (EmbeddedAcousticRecognition + 364912) [0x1a880f170]
+                                          1   ??? (libsystem_malloc.dylib + 20680) [0x19352a0c8]
+                                            1   ??? (libsystem_malloc.dylib + 17620) [0x1935294d4]
+                                          1   ??? (libsystem_malloc.dylib + 7860) [0x193526eb4]
+                                          1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                                      1   ??? (EmbeddedAcousticRecognition + 361980) [0x1a880e5fc]
+                                      1   ??? (EmbeddedAcousticRecognition + 361412) [0x1a880e3c4]
+                                      1   ??? (EmbeddedAcousticRecognition + 361124) [0x1a880e2a4]
+                                        1   ??? (EmbeddedAcousticRecognition + 363484) [0x1a880ebdc]
+                                      1   ??? (EmbeddedAcousticRecognition + 361124) [0x1a880e2a4]
+                                      1   ??? (EmbeddedAcousticRecognition + 361064) [0x1a880e268]
+                                        1   ??? (EmbeddedAcousticRecognition + 363296) [0x1a880eb20]
+                                          1   ??? (libc++abi.dylib + 80032) [0x19a0948a0]
+                                            1   ??? (libsystem_malloc.dylib + 24608) [0x19352b020]
+                                              1   ??? (libsystem_malloc.dylib + 28192) [0x19352be20]
+                                                1   ??? (libsystem_malloc.dylib + 16256) [0x193528f80]
+                                                  1   <Kernel mode>
+                                      1   ??? (EmbeddedAcousticRecognition + 355600) [0x1a880cd10]
+                                    3   ??? (EmbeddedAcousticRecognition + 388336) [0x1a8814cf0]
+                                      3   ??? (EmbeddedAcousticRecognition + 362556) [0x1a880e83c]
+                                    3   ??? (EmbeddedAcousticRecognition + 388396) [0x1a8814d2c]
+                                      2   ??? (EmbeddedAcousticRecognition + 362556) [0x1a880e83c]
+                                      1   ??? (EmbeddedAcousticRecognition + 362384) [0x1a880e790]
+                                    1   ??? (EmbeddedAcousticRecognition + 388396) [0x1a8814d2c]
+                                    1   ??? (EmbeddedAcousticRecognition + 388192) [0x1a8814c60]
+                                      1   ??? (EmbeddedAcousticRecognition + 355600) [0x1a880cd10]
+                                    1   ??? (EmbeddedAcousticRecognition + 362700) [0x1a880e8cc]
+                                    1   ??? (EmbeddedAcousticRecognition + 362348) [0x1a880e76c]
+                                1   ??? (EmbeddedAcousticRecognition + 407120) [0x1a8819650]
+                                  1   ??? (EmbeddedAcousticRecognition + 408204) [0x1a8819a8c]
+                                    1   ??? (EmbeddedAcousticRecognition + 388192) [0x1a8814c60]
+                                      1   ??? (EmbeddedAcousticRecognition + 361064) [0x1a880e268]
+                                        1   ??? (EmbeddedAcousticRecognition + 363296) [0x1a880eb20]
+                                          1   ??? (libc++abi.dylib + 80032) [0x19a0948a0]
+                                            1   ??? (libsystem_malloc.dylib + 24608) [0x19352b020]
+                                              1   ??? (libsystem_malloc.dylib + 28192) [0x19352be20]
+                                                1   ??? (libsystem_malloc.dylib + 15464) [0x193528c68]
+                          1   ??? (EmbeddedAcousticRecognition + 7131072) [0x1a8e82fc0]
+                            1   ??? (EmbeddedAcousticRecognition + 3366892) [0x1a8aebfec]
+                              1   ??? (SDAPI + 491044) [0x1e4b70e24]
+                                1   ??? (SDAPI + 1231476) [0x1e4c25a74]
+                                  1   ??? (SDAPI + 1280716) [0x1e4c31acc]
+                                    1   ??? (SDAPI + 1796696) [0x1e4cafa58]
+                                      1   ??? (SDAPI + 1551292) [0x1e4c73bbc]
+                                        1   ??? (SDAPI + 1546756) [0x1e4c72a04]
+                                          1   ??? (SDAPI + 305088) [0x1e4b437c0]
+                                            1   ??? (SDAPI + 307760) [0x1e4b44230]
+                                              1   ??? (libsystem_malloc.dylib + 6616) [0x1935269d8]
+                        5   ??? (EmbeddedAcousticRecognition + 7130016) [0x1a8e82ba0]
+                          5   ??? (EmbeddedAcousticRecognition + 7131756) [0x1a8e8326c]
+                            5   ??? (EmbeddedAcousticRecognition + 352296) [0x1a880c028]
+                              5   ??? (EmbeddedAcousticRecognition + 350332) [0x1a880b87c]
+                                4   ??? (EmbeddedAcousticRecognition + 406900) [0x1a8819574]
+                                  4   ??? (EmbeddedAcousticRecognition + 408660) [0x1a8819c54]
+                                    3   ??? (EmbeddedAcousticRecognition + 388364) [0x1a8814d0c]
+                                      1   ??? (EmbeddedAcousticRecognition + 361304) [0x1a880e358]
+                                      1   ??? (EmbeddedAcousticRecognition + 361184) [0x1a880e2e0]
+                                        1   ??? (EmbeddedAcousticRecognition + 364176) [0x1a880ee90]
+                                      1   ??? (EmbeddedAcousticRecognition + 361124) [0x1a880e2a4]
+                                        1   ??? (EmbeddedAcousticRecognition + 363484) [0x1a880ebdc]
+                                    1   ??? (EmbeddedAcousticRecognition + 388396) [0x1a8814d2c]
+                                1   ??? (EmbeddedAcousticRecognition + 406988) [0x1a88195cc]
+                      2   ??? (EmbeddedAcousticRecognition + 2620152) [0x1a8a35af8]
+                        1   ??? (EmbeddedAcousticRecognition + 2617972) [0x1a8a35274]
+                          1   ??? (EmbeddedAcousticRecognition + 2617028) [0x1a8a34ec4]
+                            1   ??? (EmbeddedAcousticRecognition + 2617604) [0x1a8a35104]
+                              1   ??? (EmbeddedAcousticRecognition + 2615132) [0x1a8a3475c]
+                                1   ??? (EmbeddedAcousticRecognition + 353068) [0x1a880c32c]
+                                  1   ??? (EmbeddedAcousticRecognition + 353424) [0x1a880c490]
+                                    1   ??? (EmbeddedAcousticRecognition + 353688) [0x1a880c598]
+                                      1   ??? (EmbeddedAcousticRecognition + 356160) [0x1a880cf40]
+                                        1   ??? (EmbeddedAcousticRecognition + 365780) [0x1a880f4d4]
+                                          1   ??? (EmbeddedAcousticRecognition + 367316) [0x1a880fad4]
+                                            1   ??? (libc++abi.dylib + 80032) [0x19a0948a0]
+                                              1   ??? (libsystem_malloc.dylib + 24608) [0x19352b020]
+                                                1   ??? (libsystem_malloc.dylib + 28192) [0x19352be20]
+                                                  1   ??? (libsystem_malloc.dylib + 15396) [0x193528c24]
+                        1   ??? (EmbeddedAcousticRecognition + 2617604) [0x1a8a35104]
+                          1   ??? (EmbeddedAcousticRecognition + 2615132) [0x1a8a3475c]
+                            1   ??? (EmbeddedAcousticRecognition + 353068) [0x1a880c32c]
+                              1   ??? (EmbeddedAcousticRecognition + 353424) [0x1a880c490]
+                                1   ??? (EmbeddedAcousticRecognition + 353688) [0x1a880c598]
+                                  1   ??? (EmbeddedAcousticRecognition + 356160) [0x1a880cf40]
+                                    1   ??? (EmbeddedAcousticRecognition + 365780) [0x1a880f4d4]
+                                      1   ??? (EmbeddedAcousticRecognition + 367316) [0x1a880fad4]
+                                        1   ??? (libc++abi.dylib + 80032) [0x19a0948a0]
+                                          1   ??? (libsystem_malloc.dylib + 24588) [0x19352b00c]
+                    3   ??? (EmbeddedAcousticRecognition + 5992436) [0x1a8d6cff4]
+                      3   ??? (EmbeddedAcousticRecognition + 6004700) [0x1a8d6ffdc]
+                        3   ??? (EmbeddedAcousticRecognition + 8187096) [0x1a8f84cd8]
+                          3   ??? (EmbeddedAcousticRecognition + 4819652) [0x1a8c4eac4]
+                            3   ??? (EmbeddedAcousticRecognition + 4818876) [0x1a8c4e7bc]
+                              3   ??? (EmbeddedAcousticRecognition + 4820236) [0x1a8c4ed0c]
+                                3   ??? (EmbeddedAcousticRecognition + 4820172) [0x1a8c4eccc]
+                                  3   ??? (EmbeddedAcousticRecognition + 4823584) [0x1a8c4fa20]
+                                    3   ??? (EmbeddedAcousticRecognition + 4828836) [0x1a8c50ea4]
+                                      3   ??? (EmbeddedAcousticRecognition + 4828940) [0x1a8c50f0c]
+                                        2   ??? (EmbeddedAcousticRecognition + 8258136) [0x1a8f96258]
+                                          1   ??? (EmbeddedAcousticRecognition + 2168412) [0x1a89c765c]
+                                            1   ??? (EmbeddedAcousticRecognition + 2168024) [0x1a89c74d8]
+                                              1   ??? (EmbeddedAcousticRecognition + 2175008) [0x1a89c9020]
+                                                1   ??? (EmbeddedAcousticRecognition + 2177376) [0x1a89c9960]
+                                                  1   ??? (EmbeddedAcousticRecognition + 419536) [0x1a881c6d0]
+                                                    1   ??? (EmbeddedAcousticRecognition + 419724) [0x1a881c78c]
+                                                      1   ??? (EmbeddedAcousticRecognition + 419928) [0x1a881c858]
+                                                        1   ??? (libc++.1.dylib + 68820) [0x19a02acd4]
+                                          1   ??? (EmbeddedAcousticRecognition + 2168388) [0x1a89c7644]
+                                            1   ??? (EmbeddedAcousticRecognition + 2169072) [0x1a89c78f0]
+                                              1   ??? (EmbeddedAcousticRecognition + 2177888) [0x1a89c9b60]
+                                                1   ??? (EmbeddedAcousticRecognition + 2178156) [0x1a89c9c6c]
+                                                  1   ??? (EmbeddedAcousticRecognition + 2178268) [0x1a89c9cdc]
+                                                    1   ??? (EmbeddedAcousticRecognition + 2180100) [0x1a89ca404]
+                                                      1   ??? (EmbeddedAcousticRecognition + 2178256) [0x1a89c9cd0]
+                                                        1   ??? (EmbeddedAcousticRecognition + 2179732) [0x1a89ca294]
+                                                          1   ??? (EmbeddedAcousticRecognition + 2181796) [0x1a89caaa4]
+                                        1   ??? (EmbeddedAcousticRecognition + 8258212) [0x1a8f962a4]
+                                          1   ??? (EmbeddedAcousticRecognition + 2172128) [0x1a89c84e0]
+                                            1   ??? (EmbeddedAcousticRecognition + 2165528) [0x1a89c6b18]
+                                              1   ??? (EmbeddedAcousticRecognition + 6622332) [0x1a8e06c7c]
+                                                1   ??? (EmbeddedAcousticRecognition + 3133184) [0x1a8ab2f00]
+                                                  1   ??? (EmbeddedAcousticRecognition + 3133836) [0x1a8ab318c]
+                                                    1   ??? (EmbeddedAcousticRecognition + 3139636) [0x1a8ab4834]
+                                                      1   ??? (EmbeddedAcousticRecognition + 3135808) [0x1a8ab3940]
+                                                        1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                                                          1   ??? (libsystem_malloc.dylib + 26096) [0x19352b5f0]
+                                                            1   ??? (libsystem_malloc.dylib + 24848) [0x19352b110]
+                19  ??? (speechmodeltrainingd + 79084) [0x102d9f4ec]
+                  19  ??? (speechmodeltrainingd + 101268) [0x102da4b94]
+                    18  ??? (speechmodeltrainingd + 104940) [0x102da59ec]
+                      18  ??? (speechmodeltrainingd + 82316) [0x102da018c]
+                        18  ??? (EmbeddedAcousticRecognition + 5528848) [0x1a8cfbd10]
+                          14  ??? (EmbeddedAcousticRecognition + 42680) [0x1a87c06b8]
+                            14  ??? (EmbeddedAcousticRecognition + 6143000) [0x1a8d91c18]
+                              14  ??? (NaturalLanguage + 170144) [0x1b4e048a0]
+                                14  ??? (CoreNLP + 277016) [0x19aba7a18]
+                                  14  ??? (CoreNLP + 342696) [0x19abb7aa8]
+                                    14  ??? (CoreNLP + 342944) [0x19abb7ba0]
+                                      14  ??? (Montreal + 73324) [0x1988ffe6c]
+                                        14  ??? (Montreal + 74056) [0x198900148]
+                                          14  ??? (Montreal + 235108) [0x198927664]
+                                            14  ??? (Montreal + 568824) [0x198978df8]
+                                              14  ??? (Montreal + 544988) [0x1989730dc]
+                                                5   ??? (Montreal + 853684) [0x1989be6b4]
+                                                  2   ??? (Montreal + 863328) [0x1989c0c60]
+                                                    2   ??? (Montreal + 873228) [0x1989c330c]
+                                                      2   ??? (libBNNS.dylib + 44208) [0x1bbb5ccb0]
+                                                        2   ??? (libBNNS.dylib + 34276) [0x1bbb5a5e4]
+                                                          2   ??? (libBNNS.dylib + 83824) [0x1bbb66770]
+                                                            1   ??? (libBNNS.dylib + 37592) [0x1bbb5b2d8]
+                                                            1   ??? (libBNNS.dylib + 37548) [0x1bbb5b2ac]
+                                                  2   ??? (Montreal + 867512) [0x1989c1cb8]
+                                                    1   ??? (Montreal + 873268) [0x1989c3334]
+                                                      1   ??? (libBNNS.dylib + 1787552) [0x1bbd066a0]
+                                                        1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                                                          1   ??? (libsystem_malloc.dylib + 26096) [0x19352b5f0]
+                                                            1   ??? (libsystem_malloc.dylib + 24932) [0x19352b164]
+                                                    1   ??? (Montreal + 873228) [0x1989c330c]
+                                                      1   ??? (libBNNS.dylib + 44208) [0x1bbb5ccb0]
+                                                        1   ??? (libBNNS.dylib + 34276) [0x1bbb5a5e4]
+                                                          1   ??? (libBNNS.dylib + 83824) [0x1bbb66770]
+                                                            1   ??? (libBNNS.dylib + 37504) [0x1bbb5b280]
+                                                  1   ??? (libvDSP.dylib + 414708) [0x19a8b33f4]
+                                                2   ??? (Montreal + 867676) [0x1989c1d5c]
+                                                  2   ??? (Montreal + 202800) [0x19891f830]
+                                                    2   ??? (libvMisc.dylib + 324340) [0x1bcdf52f4]
+                                                      1   ??? (libsystem_m.dylib + 33828) [0x1f107a424]
+                                                      1   ??? (libsystem_m.dylib + 33764) [0x1f107a3e4]
+                                                2   ??? (Montreal + 864340) [0x1989c1054]
+                                                  2   ??? (Montreal + 202800) [0x19891f830]
+                                                    1   ??? (libvMisc.dylib + 324296) [0x1bcdf52c8]
+                                                      1   ??? (libsystem_m.dylib + 33828) [0x1f107a424]
+                                                    1   ??? (libvMisc.dylib + 324268) [0x1bcdf52ac]
+                                                      1   ??? (libsystem_m.dylib + 33764) [0x1f107a3e4]
+                                                        1   <Kernel mode>
+                                                2   ??? (Montreal + 863328) [0x1989c0c60]
+                                                  1   ??? (Montreal + 873268) [0x1989c3334]
+                                                    1   ??? (libBNNS.dylib + 1787552) [0x1bbd066a0]
+                                                      1   ??? (libsystem_malloc.dylib + 26028) [0x19352b5ac]
+                                                  1   ??? (Montreal + 873228) [0x1989c330c]
+                                                    1   ??? (libBNNS.dylib + 44208) [0x1bbb5ccb0]
+                                                      1   ??? (libBNNS.dylib + 34276) [0x1bbb5a5e4]
+                                                        1   ??? (libBNNS.dylib + 83824) [0x1bbb66770]
+                                                          1   ??? (libBNNS.dylib + 37560) [0x1bbb5b2b8]
+                                                1   ??? (Montreal + 867708) [0x1989c1d7c]
+                                                  1   ??? (libvMisc.dylib + 10852) [0x1bcda8a64]
+                                                1   ??? (Montreal + 867512) [0x1989c1cb8]
+                                                  1   ??? (Montreal + 873228) [0x1989c330c]
+                                                    1   ??? (libBNNS.dylib + 44208) [0x1bbb5ccb0]
+                                                      1   ??? (libBNNS.dylib + 34276) [0x1bbb5a5e4]
+                                                        1   ??? (libBNNS.dylib + 83824) [0x1bbb66770]
+                                                          1   ??? (libBNNS.dylib + 37344) [0x1bbb5b1e0]
+                                                1   ??? (Montreal + 860684) [0x1989c020c]
+                                                  1   ??? (Montreal + 873228) [0x1989c330c]
+                                                    1   ??? (libBNNS.dylib + 44208) [0x1bbb5ccb0]
+                                                      1   ??? (libBNNS.dylib + 34276) [0x1bbb5a5e4]
+                                                        1   ??? (libBNNS.dylib + 83824) [0x1bbb66770]
+                                                          1   ??? (libBNNS.dylib + 37572) [0x1bbb5b2c4]
+                          4   ??? (EmbeddedAcousticRecognition + 43372) [0x1a87c096c]
+                            2   ??? (EmbeddedAcousticRecognition + 41108) [0x1a87c0094]
+                              1   ??? (EmbeddedAcousticRecognition + 7809672) [0x1a8f28a88]
+                                1   ??? (EmbeddedAcousticRecognition + 1285004) [0x1a88efb8c]
+                                  1   ??? (EmbeddedAcousticRecognition + 1272580) [0x1a88ecb04]
+                                    1   ??? (EmbeddedAcousticRecognition + 8063132) [0x1a8f6689c]
+                                      1   ??? (EmbeddedAcousticRecognition + 62716) [0x1a87c54fc]
+                              1   ??? (EmbeddedAcousticRecognition + 7808720) [0x1a8f286d0]
+                                1   ??? (EmbeddedAcousticRecognition + 7808052) [0x1a8f28434]
+                                  1   ??? (libsystem_malloc.dylib + 20308) [0x193529f54]
+                            1   ??? (EmbeddedAcousticRecognition + 40984) [0x1a87c0018]
+                              1   ??? (EmbeddedAcousticRecognition + 2920900) [0x1a8a7f1c4]
+                                1   ??? (EmbeddedAcousticRecognition + 2920312) [0x1a8a7ef78]
+                                  1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                                    1   ??? (libsystem_malloc.dylib + 26096) [0x19352b5f0]
+                                      1   ??? (libsystem_malloc.dylib + 25124) [0x19352b224]
+                            1   ??? (EmbeddedAcousticRecognition + 40320) [0x1a87bfd80]
+                              1   ??? (EmbeddedAcousticRecognition + 7805056) [0x1a8f27880]
+                                1   ??? (EmbeddedAcousticRecognition + 3366892) [0x1a8aebfec]
+                                  1   ??? (SDAPI + 491044) [0x1e4b70e24]
+                                    1   ??? (SDAPI + 1230088) [0x1e4c25508]
+                                      1   ??? (SDAPI + 1232864) [0x1e4c25fe0]
+                                        1   ??? (SDAPI + 528192) [0x1e4b79f40]
+                                          1   ??? (SDAPI + 500312) [0x1e4b73258]
+                                            1   ??? (SDAPI + 501508) [0x1e4b73704]
+                                              1   ??? (SDAPI + 1787512) [0x1e4cad678]
+                                                1   ??? (SDAPI + 2017724) [0x1e4ce59bc]
+                    1   ??? (speechmodeltrainingd + 103816) [0x102da5588]
+                      1   ??? (<00221E4C-C79F-3270-9CBF-EFF1C1F6C595> + 13740) [0x1056ab5ac]
+                        1   ??? (IMDPersistence + 809420) [0x1a75959cc]
+                          1   ??? (IMDPersistence + 657328) [0x1a75707b0]
+                            1   ??? (IMDPersistence + 38136) [0x1a74d94f8]
+                              1   ??? (libxpc.dylib + 154500) [0x1f10f1b84]
+                                1   ??? (libxpc.dylib + 76016) [0x1f10de8f0]
+                                  1   ??? (libxpc.dylib + 154500) [0x1f10f1b84]
+                                    1   ??? (libxpc.dylib + 30764) [0x1f10d382c]
+                                      1   ??? (libxpc.dylib + 154500) [0x1f10f1b84]
+                                        1   ??? (libxpc.dylib + 75892) [0x1f10de874]
+                                          1   ??? (libxpc.dylib + 86544) [0x1f10e1210]
+                                            1   ??? (libxpc.dylib + 154528) [0x1f10f1ba0]
+                                              1   ??? (libobjc.A.dylib + 59828) [0x199f7f9b4]
+                                                1   ??? (libobjc.A.dylib + 20820) [0x199f76154]
+                                                  1   ??? (libobjc.A.dylib + 177928) [0x199f9c708]
+                4   ??? (speechmodeltrainingd + 93828) [0x102da2e84]
+                  3   ??? (speechmodeltrainingd + 139724) [0x102dae1cc]
+                    3   ??? (EmbeddedAcousticRecognition + 217588) [0x1a87eb1f4]
+                      3   ??? (EmbeddedAcousticRecognition + 243140) [0x1a87f15c4]
+                        3   ??? (EmbeddedAcousticRecognition + 243240) [0x1a87f1628]
+                          3   ??? (EmbeddedAcousticRecognition + 7910380) [0x1a8f413ec]
+                            3   ??? (EmbeddedAcousticRecognition + 7909684) [0x1a8f41134]
+                              3   ??? (EmbeddedAcousticRecognition + 7935016) [0x1a8f47428]
+                                3   ??? (EmbeddedAcousticRecognition + 7935160) [0x1a8f474b8]
+                                  3   ??? (EmbeddedAcousticRecognition + 8186652) [0x1a8f84b1c]
+                                    3   ??? (EmbeddedAcousticRecognition + 4819652) [0x1a8c4eac4]
+                                      3   ??? (EmbeddedAcousticRecognition + 4818876) [0x1a8c4e7bc]
+                                        2   ??? (EmbeddedAcousticRecognition + 4820236) [0x1a8c4ed0c]
+                                          2   ??? (EmbeddedAcousticRecognition + 4820172) [0x1a8c4eccc]
+                                            2   ??? (EmbeddedAcousticRecognition + 4823584) [0x1a8c4fa20]
+                                              2   ??? (EmbeddedAcousticRecognition + 4828836) [0x1a8c50ea4]
+                                                2   ??? (EmbeddedAcousticRecognition + 4828940) [0x1a8c50f0c]
+                                                  1   ??? (EmbeddedAcousticRecognition + 8258232) [0x1a8f962b8]
+                                                    1   ??? (EmbeddedAcousticRecognition + 8116) [0x1a87b7fb4]
+                                                  1   ??? (EmbeddedAcousticRecognition + 8258136) [0x1a8f96258]
+                                                    1   ??? (EmbeddedAcousticRecognition + 2168388) [0x1a89c7644]
+                                                      1   ??? (EmbeddedAcousticRecognition + 2169072) [0x1a89c78f0]
+                                                        1   ??? (EmbeddedAcousticRecognition + 2177888) [0x1a89c9b60]
+                                                          1   ??? (EmbeddedAcousticRecognition + 2178156) [0x1a89c9c6c]
+                                                            1   ??? (EmbeddedAcousticRecognition + 2178268) [0x1a89c9cdc]
+                                                              1   ??? (EmbeddedAcousticRecognition + 2180100) [0x1a89ca404]
+                                                                1   ??? (EmbeddedAcousticRecognition + 2178256) [0x1a89c9cd0]
+                                                                  1   ??? (EmbeddedAcousticRecognition + 2179696) [0x1a89ca270]
+                                                                    1   ??? (EmbeddedAcousticRecognition + 2178280) [0x1a89c9ce8]
+                                                                      1   ??? (EmbeddedAcousticRecognition + 2180620) [0x1a89ca60c]
+                                                                        1   ??? (EmbeddedAcousticRecognition + 2185844) [0x1a89cba74]
+                                        1   ??? (EmbeddedAcousticRecognition + 4820172) [0x1a8c4eccc]
+                                          1   ??? (EmbeddedAcousticRecognition + 4823584) [0x1a8c4fa20]
+                                            1   ??? (EmbeddedAcousticRecognition + 4828836) [0x1a8c50ea4]
+                                              1   ??? (EmbeddedAcousticRecognition + 4828940) [0x1a8c50f0c]
+                                                1   ??? (EmbeddedAcousticRecognition + 8258212) [0x1a8f962a4]
+                                                  1   ??? (EmbeddedAcousticRecognition + 2172128) [0x1a89c84e0]
+                                                    1   ??? (EmbeddedAcousticRecognition + 2165772) [0x1a89c6c0c]
+                                                      1   ??? (EmbeddedAcousticRecognition + 16608) [0x1a87ba0e0]
+                                                        1   ??? (libsystem_malloc.dylib + 20680) [0x19352a0c8]
+                                                          1   ??? (libsystem_malloc.dylib + 17592) [0x1935294b8]
+                                                            1   ??? (libsystem_malloc.dylib + 21360) [0x19352a370]
+                  1   ??? (speechmodeltrainingd + 141172) [0x102dae774]
+                    1   ??? (MediaPlayer + 1956104) [0x18a616908]
+                      1   ??? (MediaPlayer + 2031368) [0x18a628f08]
+                        1   ??? (MediaPlayer + 1993868) [0x18a61fc8c]
+                          1   ??? (MusicLibrary + 742796) [0x1a69b558c]
+                            1   ??? (MusicLibrary + 51744) [0x1a690ca20]
+                              1   ??? (MusicLibrary + 743528) [0x1a69b5868]
+                                1   ??? (MusicLibrary + 78188) [0x1a691316c]
+                                  1   ??? (libsqlite3.dylib + 279080) [0x1a0143228]
+                                    1   ??? (libsqlite3.dylib + 287740) [0x1a01453fc]
+                                      1   ??? (libsqlite3.dylib + 822412) [0x1a01c7c8c]
+                                        1   ??? (libsqlite3.dylib + 342432) [0x1a01529a0]
+                                          1   ??? (libsqlite3.dylib + 835744) [0x1a01cb0a0]
+                                            1   ??? (libsqlite3.dylib + 343372) [0x1a0152d4c]
+                3   ??? (speechmodeltrainingd + 76936) [0x102d9ec88]
+                  3   ??? (EmbeddedAcousticRecognition + 5526896) [0x1a8cfb570]
+                    3   ??? (EmbeddedAcousticRecognition + 8196332) [0x1a8f870ec]
+                      3   ??? (EmbeddedAcousticRecognition + 3366264) [0x1a8aebd78]
+                        3   ??? (EmbeddedAcousticRecognition + 3390484) [0x1a8af1c14]
+                          3   ??? (EmbeddedAcousticRecognition + 3391164) [0x1a8af1ebc]
+                            3   ??? (SDAPI + 2298044) [0x1e4d2a0bc]
+                              3   ??? (SDAPI + 597188) [0x1e4b8acc4]
+                                3   ??? (SDAPI + 609900) [0x1e4b8de6c]
+                                  3   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                    3   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                      2   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                        2   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                          1   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                            1   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                              1   ??? (SDAPI + 608756) [0x1e4b8d9f4]
+                                                1   ??? (SDAPI + 608324) [0x1e4b8d844]
+                                                  1   ??? (SDAPI + 2024584) [0x1e4ce7488]
+                                                    1   ??? (SDAPI + 3238076) [0x1e4e0f8bc]
+                                          1   ??? (SDAPI + 608324) [0x1e4b8d844]
+                                            1   ??? (SDAPI + 2024584) [0x1e4ce7488]
+                                              1   ??? (SDAPI + 3238068) [0x1e4e0f8b4]
+                                      1   ??? (SDAPI + 608324) [0x1e4b8d844]
+                                        1   ??? (SDAPI + 2024584) [0x1e4ce7488]
+                                          1   ??? (SDAPI + 3236812) [0x1e4e0f3cc]
+                1   ??? (speechmodeltrainingd + 96836) [0x102da3a44]
+                  1   ??? (EmbeddedAcousticRecognition + 228836) [0x1a87edde4]
+                    1   ??? (EmbeddedAcousticRecognition + 5989696) [0x1a8d6c540]
+                      1   ??? (EmbeddedAcousticRecognition + 2999500) [0x1a8a924cc]
+                        1   ??? (EmbeddedAcousticRecognition + 3002716) [0x1a8a9315c]
+                          1   ??? (EmbeddedAcousticRecognition + 3008980) [0x1a8a949d4]
+                            1   ??? (EmbeddedAcousticRecognition + 3009168) [0x1a8a94a90]
+                              1   ??? (EmbeddedAcousticRecognition + 3009168) [0x1a8a94a90]
+                                1   ??? (EmbeddedAcousticRecognition + 3009168) [0x1a8a94a90]
+                                  1   ??? (EmbeddedAcousticRecognition + 3027348) [0x1a8a99194]
+                                    1   ??? (libsystem_kernel.dylib + 7564) [0x1b8069d8c]
+                                      1   <Kernel mode>
+                1   ??? (speechmodeltrainingd + 96280) [0x102da3818]
+                  1   ??? (EmbeddedAcousticRecognition + 222608) [0x1a87ec590]
+                    1   ??? (EmbeddedAcousticRecognition + 6001708) [0x1a8d6f42c]
+                      1   ??? (EmbeddedAcousticRecognition + 3817508) [0x1a8b5a024]
+                        1   ??? (EmbeddedAcousticRecognition + 4161908) [0x1a8bae174]
+                1   ??? (speechmodeltrainingd + 95972) [0x102da36e4]
+                  1   ??? (EmbeddedAcousticRecognition + 222476) [0x1a87ec50c]
+                    1   ??? (EmbeddedAcousticRecognition + 5997324) [0x1a8d6e30c]
+                      1   ??? (EmbeddedAcousticRecognition + 1169920) [0x1a88d3a00]
+                        1   ??? (EmbeddedAcousticRecognition + 1107668) [0x1a88c46d4]
+                          1   ??? (EmbeddedAcousticRecognition + 252112) [0x1a87f38d0]
+                            1   ??? (EmbeddedAcousticRecognition + 497836) [0x1a882f8ac]
+                              1   ??? (EmbeddedAcousticRecognition + 524124) [0x1a8835f5c]
+                                1   ??? (EmbeddedAcousticRecognition + 531296) [0x1a8837b60]
+                                  1   ??? (EmbeddedAcousticRecognition + 532848) [0x1a8838170]
+                                    1   ??? (EmbeddedAcousticRecognition + 533464) [0x1a88383d8]
+                                      1   ??? (EmbeddedAcousticRecognition + 534392) [0x1a8838778]
+                                        1   ??? (EmbeddedAcousticRecognition + 535584) [0x1a8838c20]
+                                          1   ??? (EmbeddedAcousticRecognition + 535876) [0x1a8838d44]
+                                            1   ??? (EmbeddedAcousticRecognition + 6045284) [0x1a8d79e64]
+                                              1   ??? (EmbeddedAcousticRecognition + 6047048) [0x1a8d7a548]
+                                                1   ??? (EmbeddedAcousticRecognition + 6047988) [0x1a8d7a8f4]
+                1   ??? (speechmodeltrainingd + 95632) [0x102da3590]
+                  1   ??? (EmbeddedAcousticRecognition + 222212) [0x1a87ec404]
+                    1   ??? (EmbeddedAcousticRecognition + 5995948) [0x1a8d6ddac]
+                      1   ??? (EmbeddedAcousticRecognition + 3328088) [0x1a8ae2858]
+                        1   ??? (EmbeddedAcousticRecognition + 3330400) [0x1a8ae3160]
+                          1   ??? (EmbeddedAcousticRecognition + 3334016) [0x1a8ae3f80]
+                            1   ??? (EmbeddedAcousticRecognition + 2214312) [0x1a89d29a8]
+                              1   ??? (EmbeddedAcousticRecognition + 2216320) [0x1a89d3180]
+                                1   ??? (EmbeddedAcousticRecognition + 1368552) [0x1a89041e8]
+                                  1   ??? (EmbeddedAcousticRecognition + 1371684) [0x1a8904e24]
+                                    1   ??? (EmbeddedAcousticRecognition + 388192) [0x1a8814c60]
+                                      1   ??? (EmbeddedAcousticRecognition + 361980) [0x1a880e5fc]
+                                        1   ??? (EmbeddedAcousticRecognition + 364912) [0x1a880f170]
+                                          1   ??? (libsystem_malloc.dylib + 31808) [0x19352cc40]
+                                            1   ??? (libsystem_malloc.dylib + 27380) [0x19352baf4]
+                                              1   ??? (libsystem_kernel.dylib + 7992) [0x1b8069f38]
+                                                1   <Kernel mode>
+                1   ??? (speechmodeltrainingd + 94248) [0x102da3028]
+                  1   ??? (EmbeddedAcousticRecognition + 220064) [0x1a87ebba0]
+                    1   ??? (EmbeddedAcousticRecognition + 248216) [0x1a87f2998]
+                      1   ??? (EmbeddedAcousticRecognition + 248352) [0x1a87f2a20]
+                        1   ??? (EmbeddedAcousticRecognition + 5987476) [0x1a8d6bc94]
+                          1   ??? (EmbeddedAcousticRecognition + 2999500) [0x1a8a924cc]
+                            1   ??? (EmbeddedAcousticRecognition + 3002716) [0x1a8a9315c]
+                              1   ??? (EmbeddedAcousticRecognition + 3008980) [0x1a8a949d4]
+                                1   ??? (EmbeddedAcousticRecognition + 3009168) [0x1a8a94a90]
+                                  1   ??? (EmbeddedAcousticRecognition + 3027348) [0x1a8a99194]
+                                    1   ??? (libsystem_kernel.dylib + 7564) [0x1b8069d8c]
+                                      1   <Kernel mode>
+                1   ??? (speechmodeltrainingd + 93888) [0x102da2ec0]
+                  1   ??? (EmbeddedAcousticRecognition + 7914768) [0x1a8f42510]
+                    1   ??? (EmbeddedAcousticRecognition + 8188272) [0x1a8f85170]
+                      1   ??? (EmbeddedAcousticRecognition + 8190044) [0x1a8f8585c]
+                        1   ??? (EmbeddedAcousticRecognition + 8256596) [0x1a8f95c54]
+                          1   ??? (EmbeddedAcousticRecognition + 2642928) [0x1a8a3b3f0]
+                            1   ??? (EmbeddedAcousticRecognition + 3176876) [0x1a8abd9ac]
+                              1   ??? (libicucore.A.dylib + 1942432) [0x1811b33a0]
+                                1   ??? (libicucore.A.dylib + 1915204) [0x1811ac944]
+                                  1   ??? (libicucore.A.dylib + 1918744) [0x1811ad718]
+
+  Binary Images:
+           0x102d8c000 -                ???  speechmodeltrainingd        <A12A3DDA-7536-3717-9575-F98D15F420C2>  /System/Library/PrivateFrameworks/CoreSpeech.framework/speechmodeltrainingd
+           0x1056a8000 -                ???  ???                         <00221E4C-C79F-3270-9CBF-EFF1C1F6C595>
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib           <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x180fd9000 -        0x181288fff  libicucore.A.dylib          <CFDA0F78-1D98-3136-9C15-72CBD8D4DF82>  /usr/lib/libicucore.A.dylib
+           0x18a439000 -        0x18a88afff  MediaPlayer                 <00DFA3A6-4B5A-3E07-A833-A657E9CD9952>  /System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+           0x193525000 -        0x193546fff  libsystem_malloc.dylib      <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x1988ee000 -        0x198b0efff  Montreal                    <1B343288-14C6-3802-8733-A7BB27FF0173>  /System/Library/PrivateFrameworks/Montreal.framework/Montreal
+           0x199f71000 -        0x199fadfff  libobjc.A.dylib             <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x19a01a000 -        0x19a080fff  libc++.1.dylib              <157D84A7-B897-3C9B-B31D-CC81C2BF934F>  /usr/lib/libc++.1.dylib
+           0x19a081000 -        0x19a098fff  libc++abi.dylib             <FE24CEE6-11EC-3951-AA18-32594F98EF0D>  /usr/lib/libc++abi.dylib
+           0x19a84e000 -        0x19a931fff  libvDSP.dylib               <E539257B-86C3-38DA-B60E-F02F0DEDDE1D>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
+           0x19ab64000 -        0x19ac50fff  CoreNLP                     <2757CEE0-536F-3913-AD65-014DC820EBB2>  /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
+           0x1a00ff000 -        0x1a0297fff  libsqlite3.dylib            <D566EDA7-9175-3DBA-88ED-5FDF6C95957B>  /usr/lib/libsqlite3.dylib
+           0x1a6900000 -        0x1a6becfff  MusicLibrary                <C5A7C7B3-B11C-3182-8092-CE8AA4DE9DE8>  /System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary
+           0x1a74d0000 -        0x1a7658fff  IMDPersistence              <7FC5EA88-96E2-38A1-9A9B-F729D0D5A997>  /System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence
+           0x1a87b6000 -        0x1a9182fff  EmbeddedAcousticRecognition <1E4066D7-C581-32FD-9474-4D2A09F150FD>  /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition
+           0x1b4ddb000 -        0x1b4e31fff  NaturalLanguage             <DB63A164-C2A8-3B5E-89B6-F6B5BF2DE892>  /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib      <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1bbb52000 -        0x1bc0fdfff  libBNNS.dylib               <7D110DF7-110B-3BDE-AC1A-92B33915917A>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
+           0x1bcda6000 -        0x1bcdfafff  libvMisc.dylib              <7D17DCF7-A3BB-30B3-A6EC-7DA98CC650BA>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
+           0x1e4af9000 -        0x1e4e91fff  SDAPI                       <78AB5D3D-154B-3E26-A794-6DFCD74ADF2D>  /System/Library/PrivateFrameworks/SDAPI.framework/SDAPI
+           0x1f1072000 -        0x1f10a8fff  libsystem_m.dylib           <F19338F0-A323-3E0E-8066-B013EE03C3D0>  /usr/lib/system/libsystem_m.dylib
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib     <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f10cc000 -        0x1f1108fff  libxpc.dylib                <B56312CE-5ADE-34E5-ABB4-AFCBE0512205>  /usr/lib/system/libxpc.dylib
+
+
+Powerstats for:   ppn_network_extension_prod (Google One)
+UUID:             8B91D6B4-1561-3BF7-921F-98D557B8A882
+Path:             /private/var/containers/Bundle/Application/C0C8AFDE-059B-4789-9F70-2E6172BFF820/prod.app/PlugIns/ppn_network_extension_prod.appex/ppn_network_extension_prod
+Identifier:       com.google.one.NetworkExtension
+Version:          1.27 (1.27.428624434)
+Adam ID:          1451784328
+Is First Party:   No
+Beta Identifier:  32570AEB-9ACB-4CA8-AE19-59219A368605
+Architecture:     arm64
+Start time:       2022-04-10 05:35:06.548 -0400
+End time:         2022-04-10 05:36:33.106 -0400
+Num samples:      33 (22%)
+Primary state:    12 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    33 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 33 samples on AC
+  33  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    33  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      33  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        18  ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+          18  ??? (libdispatch.dylib + 45348) [0x180f91124]
+            18  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              18  ??? (libdispatch.dylib + 75824) [0x180f98830]
+                18  ??? (libnetwork.dylib + 4310684) [0x18238469c]
+                  18  ??? (Network + 1340444) [0x19a41441c]
+                    17  ??? (Network + 990512) [0x19a3bed30]
+                      16  ??? (ppn_network_extension_prod + 375520) [0x102887ae0]
+                        11  ??? (ppn_network_extension_prod + 1909640) [0x1029fe388]
+                          11  ??? (ppn_network_extension_prod + 1894952) [0x1029faa28]
+                            11  ??? (ppn_network_extension_prod + 1893536) [0x1029fa4a0]
+                              11  ??? (ppn_network_extension_prod + 1893740) [0x1029fa56c]
+                                11  ??? (ppn_network_extension_prod + 2349204) [0x102a69894]
+                                  11  ??? (ppn_network_extension_prod + 2349332) [0x102a69914]
+                                    11  ??? (ppn_network_extension_prod + 2352524) [0x102a6a58c]
+                                      10  ??? (ppn_network_extension_prod + 2353588) [0x102a6a9b4]
+                                        9   ??? (ppn_network_extension_prod + 2418704) [0x102a7a810]
+                                          7   ??? (ppn_network_extension_prod + 2309052) [0x102a5fbbc]
+                                            1   ??? (ppn_network_extension_prod + 2310596) [0x102a601c4]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2310392) [0x102a600f8]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2310292) [0x102a60094]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2310040) [0x102a5ff98]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2307716) [0x102a5f684]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2307704) [0x102a5f678]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                            1   ??? (ppn_network_extension_prod + 2307620) [0x102a5f624]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                          1   ??? (ppn_network_extension_prod + 2309068) [0x102a5fbcc]
+                                            1   ??? (ppn_network_extension_prod + 2307984) [0x102a5f790]
+                                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                          1   ??? (ppn_network_extension_prod + 2309036) [0x102a5fbac]
+                                            1   ??? (ppn_network_extension_prod + 2307324) [0x102a5f4fc]
+                                              1   <Requested Thread QoS Default>
+                                        1   ??? (ppn_network_extension_prod + 2418756) [0x102a7a844]
+                                          1   ??? (ppn_network_extension_prod + 2307124) [0x102a5f434]
+                                            1   ??? (ppn_network_extension_prod + 2310068) [0x102a5ffb4]
+                                              1   <Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default>
+                                      1   ??? (ppn_network_extension_prod + 2353536) [0x102a6a980]
+                                        1   ??? (ppn_network_extension_prod + 2416328) [0x102a79ec8]
+                                          1   ??? (ppn_network_extension_prod + 2307124) [0x102a5f434]
+                                            1   ??? (ppn_network_extension_prod + 2310640) [0x102a601f0]
+                                              1   <Requested Thread QoS Default>
+                        5   ??? (ppn_network_extension_prod + 1909772) [0x1029fe40c]
+                          5   ??? (ppn_network_extension_prod + 368732) [0x10288605c]
+                            4   ??? (ppn_network_extension_prod + 368132) [0x102885e04]
+                              3   ??? (NetworkExtension + 1320792) [0x195c1e758]
+                                3   ??? (libsystem_kernel.dylib + 193716) [0x1b80974b4]
+                                  1   <Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default>
+                                  1   <Requested Thread QoS Default>
+                                  1   <Kernel mode, Requested Thread QoS Default>
+                              1   ??? (libobjc.A.dylib + 8056) [0x199f72f78]
+                                1   <Requested Thread QoS Default>
+                            1   ??? (ppn_network_extension_prod + 368276) [0x102885e94]
+                              1   ??? (CoreFoundation + 141660) [0x1812ab95c]
+                                1   ??? (libobjc.A.dylib + 7912) [0x199f72ee8]
+                                  1   <Requested Thread QoS Default>
+                      1   ??? (ppn_network_extension_prod + 375060) [0x102887914]
+                        1   ??? (ppn_network_extension_prod + 370476) [0x10288672c]
+                          1   ??? (ppn_network_extension_prod + 371012) [0x102886944]
+                            1   ??? (ppn_network_extension_prod + 381120) [0x1028890c0]
+                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                    1   ??? (Network + 990536) [0x19a3bed48]
+                      1   ??? (Network + 990340) [0x19a3bec84]
+                        1   ??? (Network + 1340144) [0x19a4142f0]
+                          1   ??? (libnetwork.dylib + 7191740) [0x182643cbc]
+                            1   ??? (libnetwork.dylib + 7194532) [0x1826447a4]
+                              1   ??? (libdispatch.dylib + 153500) [0x180fab79c]
+                                1   ??? (libsystem_kernel.dylib + 7132) [0x1b8069bdc]
+                                  1   <Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default>
+        12  ??? (libdispatch.dylib + 48256) [0x180f91c80]
+          7   ??? (libdispatch.dylib + 45348) [0x180f91124]
+            7   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              7   ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                7   ??? (NetworkExtension + 1692048) [0x195c79190]
+                  5   ??? (NetworkExtension + 1693136) [0x195c795d0]
+                    5   ??? (NetworkExtension + 1318348) [0x195c1ddcc]
+                      5   ??? (ppn_network_extension_prod + 366048) [0x1028855e0]
+                        3   ??? (ppn_network_extension_prod + 1905720) [0x1029fd438]
+                          3   ??? (ppn_network_extension_prod + 1899456) [0x1029fbbc0]
+                            3   ??? (ppn_network_extension_prod + 1898432) [0x1029fb7c0]
+                              3   ??? (ppn_network_extension_prod + 1903356) [0x1029fcafc]
+                                3   ??? (ppn_network_extension_prod + 2215120) [0x102a48cd0]
+                                  3   ??? (ppn_network_extension_prod + 2214764) [0x102a48b6c]
+                                    3   ??? (ppn_network_extension_prod + 2421872) [0x102a7b470]
+                                      3   ??? (ppn_network_extension_prod + 2421712) [0x102a7b3d0]
+                                        3   ??? (ppn_network_extension_prod + 2421004) [0x102a7b10c]
+                                          3   ??? (ppn_network_extension_prod + 2420692) [0x102a7afd4]
+                                            1   ??? (ppn_network_extension_prod + 2307140) [0x102a5f444]
+                                              1   ??? (ppn_network_extension_prod + 2307984) [0x102a5f790]
+                                            1   ??? (ppn_network_extension_prod + 2307124) [0x102a5f434]
+                                              1   ??? (ppn_network_extension_prod + 2310700) [0x102a6022c]
+                                            1   ??? (ppn_network_extension_prod + 2307108) [0x102a5f424]
+                                              1   ??? (ppn_network_extension_prod + 2307472) [0x102a5f590]
+                        1   ??? (ppn_network_extension_prod + 1905924) [0x1029fd504]
+                          1   ??? (ppn_network_extension_prod + 1909360) [0x1029fe270]
+                            1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                              1   ??? (libsystem_malloc.dylib + 26096) [0x19352b5f0]
+                                1   ??? (libsystem_malloc.dylib + 24880) [0x19352b130]
+                        1   ??? (ppn_network_extension_prod + 1905884) [0x1029fd4dc]
+                          1   ??? (ppn_network_extension_prod + 379052) [0x1028888ac]
+                            1   ??? (ppn_network_extension_prod + 377228) [0x10288818c]
+                              1   ??? (libdispatch.dylib + 76944) [0x180f98c90]
+                                1   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                                  1   ??? (ppn_network_extension_prod + 377732) [0x102888384]
+                                    1   ??? (libsystem_malloc.dylib + 6824) [0x193526aa8]
+                  2   ??? (libsystem_kernel.dylib + 193232) [0x1b80972d0]
+          5   ??? (libdispatch.dylib + 45056) [0x180f91000]
+            5   ??? (libdispatch.dylib + 106812) [0x180fa013c]
+              5   ??? (libdispatch.dylib + 28396) [0x180f8ceec]
+                5   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                  5   ??? (NetworkExtension + 1707532) [0x195c7ce0c]
+                    4   ??? (NetworkExtension + 1693136) [0x195c795d0]
+                      4   ??? (NetworkExtension + 1318348) [0x195c1ddcc]
+                        4   ??? (ppn_network_extension_prod + 366048) [0x1028855e0]
+                          4   ??? (ppn_network_extension_prod + 1905720) [0x1029fd438]
+                            4   ??? (ppn_network_extension_prod + 1899456) [0x1029fbbc0]
+                              4   ??? (ppn_network_extension_prod + 1898432) [0x1029fb7c0]
+                                4   ??? (ppn_network_extension_prod + 1903356) [0x1029fcafc]
+                                  4   ??? (ppn_network_extension_prod + 2215120) [0x102a48cd0]
+                                    4   ??? (ppn_network_extension_prod + 2214764) [0x102a48b6c]
+                                      4   ??? (ppn_network_extension_prod + 2421872) [0x102a7b470]
+                                        4   ??? (ppn_network_extension_prod + 2421712) [0x102a7b3d0]
+                                          3   ??? (ppn_network_extension_prod + 2421260) [0x102a7b20c]
+                                            3   ??? (ppn_network_extension_prod + 2307124) [0x102a5f434]
+                                              1   ??? (ppn_network_extension_prod + 2310512) [0x102a60170]
+                                              1   ??? (ppn_network_extension_prod + 2310292) [0x102a60094]
+                                              1   ??? (ppn_network_extension_prod + 2310096) [0x102a5ffd0]
+                                          1   ??? (ppn_network_extension_prod + 2421292) [0x102a7b22c]
+                                            1   ??? (ppn_network_extension_prod + 2420692) [0x102a7afd4]
+                                              1   ??? (ppn_network_extension_prod + 2307124) [0x102a5f434]
+                                                1   ??? (ppn_network_extension_prod + 2307620) [0x102a5f624]
+                    1   ??? (libsystem_kernel.dylib + 193232) [0x1b80972d0]
+        3   ??? (libdispatch.dylib + 53120) [0x180f92f80]
+          2   ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+            2   ??? (libdispatch.dylib + 45348) [0x180f91124]
+              2   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                2   ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                  1   ??? (libnetwork.dylib + 7213468) [0x18264919c]
+                    1   ??? (libnetwork.dylib + 6823340) [0x1825e9dac]
+                      1   ??? (libnetwork.dylib + 6825468) [0x1825ea5fc]
+                        1   ??? (libnetwork.dylib + 6834560) [0x1825ec980]
+                          1   ??? (libnetwork.dylib + 5504892) [0x1824a7f7c]
+                            1   ??? (libnetwork.dylib + 8131808) [0x1827294e0]
+                              1   ??? (libnetwork.dylib + 5342100) [0x182480394]
+                                1   ??? (libnetwork.dylib + 5343716) [0x1824809e4]
+                                  1   ??? (libsystem_kernel.dylib + 20720) [0x1b806d0f0]
+                                    1   <Requested Thread QoS User Initiated, Override Thread QoS User Initiated>
+                  1   ??? (libnetwork.dylib + 7194804) [0x1826448b4]
+                    1   ??? (libnetwork.dylib + 6811444) [0x1825e6f34]
+                      1   ??? (libnetwork.dylib + 6814472) [0x1825e7b08]
+                        1   ??? (libnetwork.dylib + 48568) [0x181f73db8]
+                          1   ??? (libnetwork.dylib + 3261816) [0x182284578]
+                            1   ??? (libnetwork.dylib + 6822068) [0x1825e98b4]
+                              1   ??? (libnetwork.dylib + 2008012) [0x1821523cc]
+                                1   ??? (libobjc.A.dylib + 14744) [0x199f74998]
+                                  1   <Effective Thread QoS Default, Requested Thread QoS Default>
+          1   ??? (libdispatch.dylib + 106812) [0x180fa013c]
+            1   ??? (libdispatch.dylib + 28396) [0x180f8ceec]
+              1   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                1   ??? (libnetwork.dylib + 5322204) [0x18247b5dc]
+                  1   ??? (libnetwork.dylib + 5325776) [0x18247c3d0]
+                    1   ??? (libnetwork.dylib + 5327264) [0x18247c9a0]
+                      1   ??? (libobjc.A.dylib + 12568) [0x199f74118]
+                        1   <Effective Thread QoS Default, Requested Thread QoS Default>
+
+  Binary Images:
+           0x10282c000 -                ???  com.google.one.NetworkExtension 1.27 (1.27.428624434) <8B91D6B4-1561-3BF7-921F-98D557B8A882>  /private/var/containers/Bundle/Application/C0C8AFDE-059B-4789-9F70-2E6172BFF820/prod.app/PlugIns/ppn_network_extension_prod.appex/ppn_network_extension_prod
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib                                     <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x181289000 -        0x1816defff  CoreFoundation                                        <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x181f68000 -        0x1829f8fff  libnetwork.dylib                                      <AAC4F3CE-09C0-3F60-8B98-AA2D0F5B5DDE>  /usr/lib/libnetwork.dylib
+           0x193525000 -        0x193546fff  libsystem_malloc.dylib                                <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x195adc000 -        0x195d56fff  NetworkExtension                                      <CB6B3172-B129-377A-9313-7D18C5859758>  /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
+           0x199f71000 -        0x199fadfff  libobjc.A.dylib                                       <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x19a2cd000 -        0x19a476fff  Network                                               <6416662E-726C-3C98-807D-2C377539BB0F>  /System/Library/Frameworks/Network.framework/Network
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib                                <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib                               <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   dasd
+UUID:             2DEBC169-E5AC-338E-90F5-802F7267FD0D
+Path:             /usr/libexec/dasd
+Architecture:     arm64
+Start time:       2022-04-10 05:36:20.669 -0400
+End time:         2022-04-10 05:36:52.783 -0400
+Num samples:      17 (11%)
+Primary state:    14 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    17 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 17 samples on AC
+  17  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    17  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      17  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        17  ??? (libdispatch.dylib + 48256) [0x180f91c80]
+          14  ??? (libdispatch.dylib + 45348) [0x180f91124]
+            14  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              14  ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                14  ??? (LoggingSupport + 84824) [0x199fc2b58]
+                  14  ??? (LoggingSupport + 92508) [0x199fc495c]
+                    13  ??? (LoggingSupport + 74872) [0x199fc0478]
+                      11  ??? (LoggingSupport + 37100) [0x199fb70ec]
+                        11  ??? (LoggingSupport + 11628) [0x199fb0d6c]
+                          11  ??? (LoggingSupport + 16724) [0x199fb2154]
+                            7   ??? (LoggingSupport + 27776) [0x199fb4c80]
+                              6   ??? (LoggingSupport + 15964) [0x199fb1e5c]
+                                6   ??? (Foundation + 131088) [0x182a97010]
+                                  6   ??? (Foundation + 115184) [0x182a931f0]
+                                    3   ??? (Foundation + 317420) [0x182ac47ec]
+                                      2   ??? (Foundation + 408536) [0x182adabd8]
+                                        1   ??? (Foundation + 1906864) [0x182c488b0]
+                                          1   ??? (CoreFoundation + 832744) [0x1813544e8]
+                                            1   ??? (CoreFoundation + 183444) [0x1812b5c94]
+                                              1   ??? (libobjc.A.dylib + 134216) [0x199f91c48]
+                                        1   ??? (Foundation + 1906620) [0x182c487bc]
+                                          1   ??? (CoreFoundation + 832868) [0x181354564]
+                                            1   ??? (libsystem_c.dylib + 28280) [0x18c3ebe78]
+                                              1   ??? (CoreFoundation + 859136) [0x18135ac00]
+                                                1   ??? (CoreFoundation + 121016) [0x1812a68b8]
+                                                  1   ??? (CoreFoundation + 185752) [0x1812b6598]
+                                      1   ??? (libobjc.A.dylib + 8056) [0x199f72f78]
+                                    2   ??? (Foundation + 131088) [0x182a97010]
+                                      2   ??? (Foundation + 115184) [0x182a931f0]
+                                        2   ??? (Foundation + 131088) [0x182a97010]
+                                          2   ??? (Foundation + 115008) [0x182a93140]
+                                            2   ??? (Foundation + 131088) [0x182a97010]
+                                              2   ??? (Foundation + 115184) [0x182a931f0]
+                                                1   ??? (Foundation + 317532) [0x182ac485c]
+                                                  1   ??? (libobjc.A.dylib + 15860) [0x199f74df4]
+                                                    1   ??? (libobjc.A.dylib + 31348) [0x199f78a74]
+                                                      1   ??? (CoreFoundation + 133292) [0x1812a98ac]
+                                                        1   ??? (libsystem_malloc.dylib + 20680) [0x19352a0c8]
+                                                          1   ??? (libsystem_malloc.dylib + 17220) [0x193529344]
+                                                1   ??? (Foundation + 317420) [0x182ac47ec]
+                                                  1   ??? (libobjc.A.dylib + 8056) [0x199f72f78]
+                                    1   ??? (Foundation + 317456) [0x182ac4810]
+                                      1   ??? (libobjc.A.dylib + 7912) [0x199f72ee8]
+                              1   ??? (LoggingSupport + 15936) [0x199fb1e40]
+                                1   ??? (LoggingSupport + 20084) [0x199fb2e74]
+                            4   ??? (LoggingSupport + 27432) [0x199fb4b28]
+                              3   ??? (LoggingSupport + 12716) [0x199fb11ac]
+                                2   ??? (LoggingSupport + 25928) [0x199fb4548]
+                                1   ??? (LoggingSupport + 25852) [0x199fb44fc]
+                                  1   ??? (LoggingSupport + 121036) [0x199fcb8cc]
+                                    1   ??? (LoggingSupport + 108156) [0x199fc867c]
+                              1   ??? (LoggingSupport + 13464) [0x199fb1498]
+                                1   ??? (LoggingSupport + 48644) [0x199fb9e04]
+                      1   ??? (LoggingSupport + 36704) [0x199fb6f60]
+                        1   ??? (LoggingSupport + 45304) [0x199fb90f8]
+                          1   ??? (libsystem_c.dylib + 67568) [0x18c3f57f0]
+                      1   ??? (LoggingSupport + 35344) [0x199fb6a10]
+                        1   ??? (LoggingSupport + 61992) [0x199fbd228]
+                          1   ??? (LoggingSupport + 72932) [0x199fbfce4]
+                            1   ??? (LoggingSupport + 53612) [0x199fbb16c]
+                    1   ??? (LoggingSupport + 74920) [0x199fc04a8]
+                      1   ??? (LoggingSupport + 106836) [0x199fc8154]
+                        1   ??? (libobjc.A.dylib + 59828) [0x199f7f9b4]
+                          1   ??? (libobjc.A.dylib + 20804) [0x199f76144]
+                            1   ??? (libobjc.A.dylib + 33520) [0x199f792f0]
+                              1   ??? (LoggingSupport + 112496) [0x199fc9770]
+                                1   ??? (CoreFoundation + 141660) [0x1812ab95c]
+                                  1   ??? (CoreFoundation + 60488) [0x181297c48]
+                                    1   ??? (libobjc.A.dylib + 59828) [0x199f7f9b4]
+                                      1   ??? (libobjc.A.dylib + 20804) [0x199f76144]
+                                        1   ??? (libobjc.A.dylib + 33520) [0x199f792f0]
+                                          1   ??? (LoggingSupport + 77540) [0x199fc0ee4]
+                                            1   ??? (LoggingSupport + 59108) [0x199fbc6e4]
+                                              1   ??? (LoggingSupport + 62312) [0x199fbd368]
+                                                1   ??? (LoggingSupport + 85144) [0x199fc2c98]
+          3   ??? (libdispatch.dylib + 45056) [0x180f91000]
+            3   ??? (libdispatch.dylib + 135700) [0x180fa7214]
+              3   ??? (libdispatch.dylib + 15020) [0x180f89aac]
+                3   ??? (libxpc.dylib + 60364) [0x1f10dabcc]
+                  3   ??? (libxpc.dylib + 112296) [0x1f10e76a8]
+                    3   ??? (libxpc.dylib + 181380) [0x1f10f8484]
+                      3   ??? (libxpc.dylib + 181756) [0x1f10f85fc]
+                        3   ??? (libxpc.dylib + 180284) [0x1f10f803c]
+                          3   ??? (dasd + 763548) [0x10296a69c]
+                            3   ??? (dasd + 761880) [0x10296a018]
+                              3   ??? (dasd + 257252) [0x1028eece4]
+                                3   ??? (libdispatch.dylib + 76944) [0x180f98c90]
+                                  3   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                                    3   ??? (dasd + 257600) [0x1028eee40]
+                                      3   ??? (SignpostCollection + 15636) [0x1e6b70d14]
+                                        3   ??? (LoggingSupport + 24096) [0x199fb3e20]
+                                          3   ??? (LoggingSupport + 80456) [0x199fc1a48]
+                                            3   ??? (LoggingSupport + 70352) [0x199fbf2d0]
+                                              3   ??? (LoggingSupport + 67368) [0x199fbe728]
+                                                3   ??? (LoggingSupport + 55276) [0x199fbb7ec]
+                                                  3   ??? (libsystem_kernel.dylib + 12912) [0x1b806b270]
+                                                    3   <Kernel mode>
+
+  Binary Images:
+           0x1028b0000 -                ???  dasd                    <2DEBC169-E5AC-338E-90F5-802F7267FD0D>  /usr/libexec/dasd
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib       <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x181289000 -        0x1816defff  CoreFoundation          <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x182a77000 -        0x182d7ffff  Foundation              <FEEEF9B1-B0E6-3561-ADFA-3EF0302D23F8>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x18c3e5000 -        0x18c464fff  libsystem_c.dylib       <B0793D31-ED1B-3549-B861-92A10841BF68>  /usr/lib/system/libsystem_c.dylib
+           0x193525000 -        0x193546fff  libsystem_malloc.dylib  <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x199f71000 -        0x199fadfff  libobjc.A.dylib         <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x199fae000 -        0x19a019fff  LoggingSupport          <F610870A-A3B2-31B7-B936-8450FA349A48>  /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib  <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1e6b6d000 -        0x1e6b78fff  SignpostCollection      <AC028499-E4FE-3B74-B534-A4ED128D1A95>  /System/Library/PrivateFrameworks/SignpostCollection.framework/SignpostCollection
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f10cc000 -        0x1f1108fff  libxpc.dylib            <B56312CE-5ADE-34E5-ABB4-AFCBE0512205>  /usr/lib/system/libxpc.dylib
+
+
+Powerstats for:   com.apple.StreamingUnzipService
+UUID:             8732E5D0-FEA1-37CE-BCF3-D782BE0C800F
+Path:             /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService
+Identifier:       com.apple.StreamingUnzipService
+Version:          1.0 (1)
+Architecture:     arm64
+Start time:       2022-04-10 05:35:06.044 -0400
+End time:         2022-04-10 05:36:01.013 -0400
+Num samples:      11 (7%)
+Primary state:    8 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    11 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 11 samples on AC
+  10  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    10  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      10  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        10  ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+          10  ??? (libdispatch.dylib + 45056) [0x180f91000]
+            10  ??? (libdispatch.dylib + 133196) [0x180fa684c]
+              10  ??? (libdispatch.dylib + 45056) [0x180f91000]
+                10  ??? (libdispatch.dylib + 129836) [0x180fa5b2c]
+                  10  ??? (libdispatch.dylib + 15084) [0x180f89aec]
+                    10  ??? (libxpc.dylib + 64596) [0x1f10dbc54]
+                      10  ??? (libxpc.dylib + 63544) [0x1f10db838]
+                        10  ??? (Foundation + 124516) [0x182a95664]
+                          7   ??? (Foundation + 188908) [0x182aa51ec]
+                            7   ??? (Foundation + 267820) [0x182ab862c]
+                              7   ??? (com.apple.StreamingUnzipService + 114836) [0x1042e4094]
+                                7   ??? (Foundation + 230224) [0x182aaf350]
+                                  7   ??? (com.apple.StreamingUnzipService + 115420) [0x1042e42dc]
+                                    2   ??? (com.apple.StreamingUnzipService + 93456) [0x1042ded10]
+                                      2   ??? (com.apple.StreamingUnzipService + 61232) [0x1042d6f30]
+                                        2   ??? (libsystem_kernel.dylib + 11628) [0x1b806ad6c]
+                                          1   <Kernel mode>
+                                    1   ??? (libsystem_kernel.dylib + 19596) [0x1b806cc8c]
+                                    1   ??? (libsystem_kernel.dylib + 12020) [0x1b806aef4]
+                                      1   <Kernel mode>
+                                    1   ??? (com.apple.StreamingUnzipService + 99508) [0x1042e04b4]
+                                      1   ??? (libsystem_kernel.dylib + 10244) [0x1b806a804]
+                                    1   ??? (com.apple.StreamingUnzipService + 96840) [0x1042dfa48]
+                                      1   ??? (libcompression.dylib + 23456) [0x1efeeaba0]
+                                        1   ??? (libcompression.dylib + 23924) [0x1efeead74]
+                                          1   ??? (libcompression.dylib + 22320) [0x1efeea730]
+                                            1   ??? (libcompression.dylib + 41448) [0x1efeef1e8]
+                                    1   ??? (com.apple.StreamingUnzipService + 89504) [0x1042ddda0]
+                                      1   ??? (libsystem_kernel.dylib + 14132) [0x1b806b734]
+                                        1   <Kernel mode>
+                          2   ??? (Foundation + 188952) [0x182aa5218]
+                            2   ??? (Foundation + 414240) [0x182adc220]
+                              2   ??? (com.apple.StreamingUnzipService + 117444) [0x1042e4ac4]
+                                2   ??? (libsystem_c.dylib + 85816) [0x18c3f9f38]
+                                  1   ??? (libsystem_c.dylib + 89196) [0x18c3fac6c]
+                                    1   ??? (libsystem_kernel.dylib + 13120) [0x1b806b340]
+                                  1   ??? (libsystem_c.dylib + 87364) [0x18c3fa544]
+                                    1   ??? (libsystem_kernel.dylib + 11776) [0x1b806ae00]
+                          1   ??? (Foundation + 187436) [0x182aa4c2c]
+                            1   ??? (Foundation + 2438020) [0x182cca384]
+                              1   ??? (Foundation + 2438424) [0x182cca518]
+                                1   ??? (<D16B72C0-D619-3E48-9262-2C10A1D3066F> + 6592) [0x1045f99c0]
+  1   ??? (libsystem_pthread.dylib + 3668) [0x1f10b1e54]
+
+  Binary Images:
+           0x1042c8000 -                ???  com.apple.StreamingUnzipService 1.0 (1) <8732E5D0-FEA1-37CE-BCF3-D782BE0C800F>  /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService
+           0x1045f8000 -                ???  ???                                     <D16B72C0-D619-3E48-9262-2C10A1D3066F>
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib                       <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x182a77000 -        0x182d7ffff  Foundation                              <FEEEF9B1-B0E6-3561-ADFA-3EF0302D23F8>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x18c3e5000 -        0x18c464fff  libsystem_c.dylib                       <B0793D31-ED1B-3549-B861-92A10841BF68>  /usr/lib/system/libsystem_c.dylib
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib                  <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1efee5000 -        0x1effb0fff  libcompression.dylib                    <2F165FAE-65F6-36F9-8885-EF38E130E7CC>  /usr/lib/libcompression.dylib
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib                 <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f10cc000 -        0x1f1108fff  libxpc.dylib                            <B56312CE-5ADE-34E5-ABB4-AFCBE0512205>  /usr/lib/system/libxpc.dylib
