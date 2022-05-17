@@ -1,0 +1,202 @@
+{"share_with_app_devs":0,"app_version":"","bug_type":"202","timestamp":"2022-04-13 19:18:01.00 -0400","os_version":"iPhone OS 15.4 (19E241)","slice_uuid":"E819A272-379D-3B54-877A-EBD44156CEE5","is_first_party":1,"build_version":"","incident_id":"B0313AAA-EB65-4347-9E1F-BF1B83A7BD97","app_name":"apfs_iosd","name":"apfs_iosd"}
+Date/Time:        2022-04-13 19:15:28.294 -0400
+End time:         2022-04-13 19:18:00.224 -0400
+OS Version:       iPhone OS 15.4 (Build 19E241)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: B0313AAA-EB65-4347-9E1F-BF1B83A7BD97
+
+Data Source:      Microstackshots
+Shared Cache:     3056B876-FD8B-3268-A09F-FC2EB0320C03 slid base address 0x180738000, slide 0x738000
+
+Command:          apfs_iosd
+Path:             /System/Library/Filesystems/apfs.fs/apfs_iosd
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              484
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 152 seconds (59% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     152s
+Duration:         151.93s
+Duration Sampled: 136.07s
+Steps:            49
+
+Hardware model:   iPad13,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  111.58 GB/238.39 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  35  ??? (libsystem_pthread.dylib + 3676) [0x1f08b1e5c]
+  35  ??? (libsystem_pthread.dylib + 4284) [0x1f08b20bc]
+  35  ??? (libdispatch.dylib + 91392) [0x18079c500]
+  35  ??? (libdispatch.dylib + 48256) [0x180791c80]
+  35  ??? (libdispatch.dylib + 45348) [0x180791124]
+  35  ??? (libdispatch.dylib + 14892) [0x180789a2c]
+  35  ??? (libdispatch.dylib + 7784) [0x180787e68]
+  35  ??? (apfs_iosd + 29944) [0x104fab4f8]
+  35  ??? (apfs_iosd + 137124) [0x104fc57a4]
+  33  ??? (apfs_iosd + 136456) [0x104fc5508]
+  33  ??? (apfs_iosd + 30512) [0x104fab730]
+  27  ??? (apfs_iosd + 19708) [0x104fa8cfc]
+  27  ??? (AppleFSCompression + 18520) [0x1c38f8858]
+  24  ??? (AppleFSCompression + 43200) [0x1c38fe8c0]
+  15  ??? (AppleFSCompression + 44324) [0x1c38fed24]
+  4   ??? (libz.1.dylib + 21888) [0x1f03d6580]
+
+
+Powerstats for:   apfs_iosd [484]
+UUID:             E819A272-379D-3B54-877A-EBD44156CEE5
+Path:             /System/Library/Filesystems/apfs.fs/apfs_iosd
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        2688 KB
+Start time:       2022-04-13 19:15:43.183 -0400
+End time:         2022-04-13 19:17:57.619 -0400
+Num samples:      35 (71%)
+Primary state:    24 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    35 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 35 samples on AC
+  35  ??? (libsystem_pthread.dylib + 3676) [0x1f08b1e5c]
+    35  ??? (libsystem_pthread.dylib + 4284) [0x1f08b20bc]
+      35  ??? (libdispatch.dylib + 91392) [0x18079c500]
+        35  ??? (libdispatch.dylib + 48256) [0x180791c80]
+          35  ??? (libdispatch.dylib + 45348) [0x180791124]
+            35  ??? (libdispatch.dylib + 14892) [0x180789a2c]
+              35  ??? (libdispatch.dylib + 7784) [0x180787e68]
+                35  ??? (apfs_iosd + 29944) [0x104fab4f8]
+                  35  ??? (apfs_iosd + 137124) [0x104fc57a4]
+                    33  ??? (apfs_iosd + 136456) [0x104fc5508]
+                      33  ??? (apfs_iosd + 30512) [0x104fab730]
+                        27  ??? (apfs_iosd + 19708) [0x104fa8cfc]
+                          27  ??? (AppleFSCompression + 18520) [0x1c38f8858]
+                            24  ??? (AppleFSCompression + 43200) [0x1c38fe8c0]
+                              15  ??? (AppleFSCompression + 44324) [0x1c38fed24]
+                                4   ??? (libz.1.dylib + 21888) [0x1f03d6580]
+                                3   ??? (libz.1.dylib + 22040) [0x1f03d6618]
+                                3   ??? (libz.1.dylib + 21896) [0x1f03d6588]
+                                2   ??? (libz.1.dylib + 22512) [0x1f03d67f0]
+                                1   ??? (libz.1.dylib + 22352) [0x1f03d6750]
+                                1   ??? (libz.1.dylib + 22340) [0x1f03d6744]
+                                1   ??? (libz.1.dylib + 21536) [0x1f03d6420]
+                              7   ??? (AppleFSCompression + 43948) [0x1c38febac]
+                                7   ??? (AppleFSCompression + 42432) [0x1c38fe5c0]
+                                  2   ??? (libsystem_platform.dylib + 2808) [0x1f08a9af8]
+                                    2   <Kernel mode>
+                                  2   ??? (apfs_iosd + 37472) [0x104fad260]
+                                    2   ??? (apfs_iosd + 37644) [0x104fad30c]
+                                      1   ??? (apfs_iosd + 120120) [0x104fc1538]
+                                      1   ??? (apfs_iosd + 36884) [0x104fad014]
+                                        1   ??? (libsystem_kernel.dylib + 10072) [0x1b786a758]
+                                          1   <Kernel mode>
+                                  2   ??? (apfs_iosd + 37416) [0x104fad228]
+                                    2   ??? (apfs_iosd + 37644) [0x104fad30c]
+                                      2   ??? (apfs_iosd + 36884) [0x104fad014]
+                                        2   ??? (libsystem_kernel.dylib + 10072) [0x1b786a758]
+                                          2   <Kernel mode>
+                                  1   ??? (apfs_iosd + 37320) [0x104fad1c8]
+                                    1   ??? (apfs_iosd + 37644) [0x104fad30c]
+                                      1   ??? (apfs_iosd + 36884) [0x104fad014]
+                                        1   ??? (libsystem_kernel.dylib + 10072) [0x1b786a758]
+                                          1   <Kernel mode>
+                              2   ??? (AppleFSCompression + 43904) [0x1c38feb80]
+                                2   ??? (AppleFSCompression + 42432) [0x1c38fe5c0]
+                                  2   ??? (apfs_iosd + 37320) [0x104fad1c8]
+                                    2   ??? (apfs_iosd + 37644) [0x104fad30c]
+                                      2   ??? (apfs_iosd + 36884) [0x104fad014]
+                                        2   ??? (libsystem_kernel.dylib + 10072) [0x1b786a758]
+                                          1   <Kernel mode>
+                            3   ??? (AppleFSCompression + 43228) [0x1c38fe8dc]
+                              3   ??? (libsystem_malloc.dylib + 24268) [0x192d2aecc]
+                                3   ??? (libsystem_kernel.dylib + 5140) [0x1b7869414]
+                                  2   <Kernel mode>
+                        2   ??? (apfs_iosd + 20112) [0x104fa8e90]
+                          2   ??? (libcorecrypto.dylib + 6524) [0x1a0c6497c]
+                            1   ??? (libcorecrypto.dylib + 24992) [0x1a0c691a0]
+                            1   ??? (libcorecrypto.dylib + 24628) [0x1a0c69034]
+                        2   ??? (apfs_iosd + 20008) [0x104fa8e28]
+                          2   ??? (apfs_iosd + 36884) [0x104fad014]
+                            2   ??? (libsystem_kernel.dylib + 10072) [0x1b786a758]
+                              1   <Kernel mode>
+                        1   ??? (apfs_iosd + 153068) [0x104fc95ec]
+                        1   ??? (apfs_iosd + 20612) [0x104fa9084]
+                          1   ??? (apfs_iosd + 153096) [0x104fc9608]
+                            1   ??? (libsystem_malloc.dylib + 24268) [0x192d2aecc]
+                              1   ??? (libsystem_kernel.dylib + 5140) [0x1b7869414]
+                                1   <Kernel mode>
+                    2   ??? (apfs_iosd + 136488) [0x104fc5528]
+                      2   ??? (apfs_iosd + 85928) [0x104fb8fa8]
+                        1   ??? (apfs_iosd + 84688) [0x104fb8ad0]
+                          1   ??? (apfs_iosd + 61548) [0x104fb306c]
+                            1   ??? (apfs_iosd + 129488) [0x104fc39d0]
+                        1   ??? (apfs_iosd + 84576) [0x104fb8a60]
+                          1   ??? (libsystem_pthread.dylib + 10772) [0x1f08b3a14]
+
+  Binary Images:
+           0x104fa4000 -                ???  apfs_iosd                <E819A272-379D-3B54-877A-EBD44156CEE5>  /System/Library/Filesystems/apfs.fs/apfs_iosd
+           0x180786000 -        0x1807cbfff  libdispatch.dylib        <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x192d25000 -        0x192d46fff  libsystem_malloc.dylib   <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x1a0c63000 -        0x1a0cddfff  libcorecrypto.dylib      <AB8B57FC-C74C-33D7-9E5C-3945C9948D33>  /usr/lib/system/libcorecrypto.dylib
+           0x1b7868000 -        0x1b789dfff  libsystem_kernel.dylib   <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1c38f4000 -        0x1c3903fff  AppleFSCompression       <CB478531-A3C1-3D3E-910F-516232FDF316>  /System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression
+           0x1f03d1000 -        0x1f03e2fff  libz.1.dylib             <CE45C61C-E040-3412-AA81-A4237752FC4C>  /usr/lib/libz.1.dylib
+           0x1f08a9000 -        0x1f08affff  libsystem_platform.dylib <3B2D31B3-4991-36CC-8D6A-08A26CC1CA59>  /usr/lib/system/libsystem_platform.dylib
+           0x1f08b1000 -        0x1f08bcfff  libsystem_pthread.dylib  <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   CommCenter
+UUID:             8609325B-5369-3679-8D8E-64D634758477
+Path:             /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter
+Architecture:     arm64e
+Start time:       2022-04-13 19:17:23.125 -0400
+End time:         2022-04-13 19:17:58.270 -0400
+Num samples:      4 (8%)
+Primary state:    3 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    4 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 4 samples on AC
+  4  ??? (libsystem_pthread.dylib + 3688) [0x1f08b1e68]
+    4  ??? (libsystem_pthread.dylib + 6572) [0x1f08b29ac]
+      4  ??? (libATCommandStudioDynamic.dylib + 124504) [0x1ee562658]
+        4  ??? (CommCenter + 4215116) [0x1010dd14c]
+          4  ??? (CoreFoundation + 657560) [0x180b29898]
+            4  ??? (CoreFoundation + 128696) [0x180aa86b8]
+              3  ??? (CoreFoundation + 49492) [0x180a95154]
+                3  ??? (CoreFoundation + 337236) [0x180adb554]
+                  3  ??? (CoreFoundation + 322888) [0x180ad7d48]
+                    3  ??? (CoreFoundation + 46816) [0x180a946e0]
+                      2  ??? (IOKit + 5956) [0x18dc99744]
+                        2  ??? (CommCenter + 4797388) [0x10116b3cc]
+                          2  ??? (CommCenter + 5991132) [0x10128eadc]
+                            2  ??? (ApplePDPHelper + 5540) [0x1c3a985a4]
+                              2  ??? (IOKit + 9704) [0x18dc9a5e8]
+                                2  ??? (IOKit + 9892) [0x18dc9a6a4]
+                                  1  ??? (libsystem_platform.dylib + 2640) [0x1f08a9a50]
+                                    1  <User mode>
+                                  1  ??? (IOKit + 13112) [0x18dc9b338]
+                                    1  ??? (libsystem_kernel.dylib + 5344) [0x1b78694e0]
+                      1  ??? (IOKit + 5772) [0x18dc9968c]
+                        1  ??? (libsystem_kernel.dylib + 33504) [0x1b78702e0]
+                          1  ??? (libsystem_kernel.dylib + 5344) [0x1b78694e0]
+              1  ??? (CoreFoundation + 48300) [0x180a94cac]
+                1  ??? (CoreFoundation + 30752) [0x180a90820]
+                  1  ??? (libsystem_kernel.dylib + 5344) [0x1b78694e0]
+
+  Binary Images:
+           0x100cd8000 -                ???  CommCenter                      <8609325B-5369-3679-8D8E-64D634758477>  /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter
+           0x180a89000 -        0x180edefff  CoreFoundation                  <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18dc98000 -        0x18dd4efff  IOKit                           <E7BA650F-99CF-3C01-B400-B021E902AF6C>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b7868000 -        0x1b789dfff  libsystem_kernel.dylib          <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1c3a97000 -        0x1c3a99fff  ApplePDPHelper                  <C7F2A35B-D8FA-388F-B134-AF1B0E08C25B>  /System/Library/PrivateFrameworks/ApplePDPHelper.framework/ApplePDPHelper
+           0x1ee544000 -        0x1ee5a3fff  libATCommandStudioDynamic.dylib <05517C29-4A85-385F-889A-75A87533C64E>  /usr/lib/libATCommandStudioDynamic.dylib
+           0x1f08a9000 -        0x1f08affff  libsystem_platform.dylib        <3B2D31B3-4991-36CC-8D6A-08A26CC1CA59>  /usr/lib/system/libsystem_platform.dylib
+           0x1f08b1000 -        0x1f08bcfff  libsystem_pthread.dylib         <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib

@@ -1,0 +1,388 @@
+{"share_with_app_devs":0,"app_version":"","bug_type":"202","timestamp":"2022-04-09 19:06:15.00 -0400","os_version":"iPhone OS 15.4 (19E241)","slice_uuid":"E819A272-379D-3B54-877A-EBD44156CEE5","is_first_party":1,"build_version":"","incident_id":"B6BFBEFA-72D5-441E-8C25-BE826563F3A3","app_name":"apfs_iosd","name":"apfs_iosd"}
+Date/Time:        2022-04-09 19:02:22.267 -0400
+End time:         2022-04-09 19:05:07.940 -0400
+OS Version:       iPhone OS 15.4 (Build 19E241)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: B6BFBEFA-72D5-441E-8C25-BE826563F3A3
+
+Data Source:      Microstackshots
+Shared Cache:     3056B876-FD8B-3268-A09F-FC2EB0320C03 slid base address 0x180f38000, slide 0xf38000
+
+Command:          apfs_iosd
+Path:             /System/Library/Filesystems/apfs.fs/apfs_iosd
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              1041
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 166 seconds (54% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     166s
+Duration:         165.67s
+Duration Sampled: 164.71s
+Steps:            173
+
+Hardware model:   iPad13,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  114.06 GB/238.39 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  127  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+  127  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+  127  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+  127  ??? (libdispatch.dylib + 48256) [0x180f91c80]
+  127  ??? (libdispatch.dylib + 45348) [0x180f91124]
+  127  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+  127  ??? (libdispatch.dylib + 7784) [0x180f87e68]
+  127  ??? (apfs_iosd + 29944) [0x104c674f8]
+  127  ??? (apfs_iosd + 137124) [0x104c817a4]
+  122  ??? (apfs_iosd + 136456) [0x104c81508]
+  122  ??? (apfs_iosd + 30512) [0x104c67730]
+  81   ??? (apfs_iosd + 19708) [0x104c64cfc]
+  81   ??? (AppleFSCompression + 18520) [0x1c40f8858]
+  77   ??? (AppleFSCompression + 43200) [0x1c40fe8c0]
+  58   ??? (AppleFSCompression + 44324) [0x1c40fed24]
+  11   ??? (libz.1.dylib + 21888) [0x1f0bd6580]
+
+
+Powerstats for:   apfs_iosd [1041]
+UUID:             E819A272-379D-3B54-877A-EBD44156CEE5
+Path:             /System/Library/Filesystems/apfs.fs/apfs_iosd
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        2112 KB -> 2672 KB (+560 KB) (max 2848 KB )
+Pageins:          2 pages
+Start time:       2022-04-09 19:02:24.942 -0400
+End time:         2022-04-09 19:05:07.285 -0400
+Num samples:      127 (73%)
+Primary state:    81 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    127 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 127 samples on AC
+  127  ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    127  ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      127  ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        127  ??? (libdispatch.dylib + 48256) [0x180f91c80]
+          127  ??? (libdispatch.dylib + 45348) [0x180f91124]
+            127  ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              127  ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                127  ??? (apfs_iosd + 29944) [0x104c674f8]
+                  127  ??? (apfs_iosd + 137124) [0x104c817a4]
+                    122  ??? (apfs_iosd + 136456) [0x104c81508]
+                      122  ??? (apfs_iosd + 30512) [0x104c67730]
+                        81   ??? (apfs_iosd + 19708) [0x104c64cfc]
+                          81   ??? (AppleFSCompression + 18520) [0x1c40f8858]
+                            77   ??? (AppleFSCompression + 43200) [0x1c40fe8c0]
+                              58   ??? (AppleFSCompression + 44324) [0x1c40fed24]
+                                11   ??? (libz.1.dylib + 21888) [0x1f0bd6580]
+                                  1    <Kernel mode>
+                                7    ??? (libz.1.dylib + 21896) [0x1f0bd6588]
+                                6    ??? (libz.1.dylib + 22040) [0x1f0bd6618]
+                                3    ??? (libz.1.dylib + 21852) [0x1f0bd655c]
+                                3    ??? (libz.1.dylib + 21832) [0x1f0bd6548]
+                                  1    <Kernel mode>
+                                2    ??? (libz.1.dylib + 22512) [0x1f0bd67f0]
+                                2    ??? (libz.1.dylib + 21668) [0x1f0bd64a4]
+                                2    ??? (libz.1.dylib + 21660) [0x1f0bd649c]
+                                2    ??? (libz.1.dylib + 21636) [0x1f0bd6484]
+                                2    ??? (libz.1.dylib + 21620) [0x1f0bd6474]
+                                1    ??? (libz.1.dylib + 22504) [0x1f0bd67e8]
+                                1    ??? (libz.1.dylib + 22352) [0x1f0bd6750]
+                                1    ??? (libz.1.dylib + 22340) [0x1f0bd6744]
+                                1    ??? (libz.1.dylib + 22148) [0x1f0bd6684]
+                                1    ??? (libz.1.dylib + 22104) [0x1f0bd6658]
+                                1    ??? (libz.1.dylib + 22036) [0x1f0bd6614]
+                                1    ??? (libz.1.dylib + 22004) [0x1f0bd65f4]
+                                1    ??? (libz.1.dylib + 21976) [0x1f0bd65d8]
+                                1    ??? (libz.1.dylib + 21856) [0x1f0bd6560]
+                                1    ??? (libz.1.dylib + 21672) [0x1f0bd64a8]
+                                1    ??? (libz.1.dylib + 21652) [0x1f0bd6494]
+                                1    ??? (libz.1.dylib + 21644) [0x1f0bd648c]
+                                1    ??? (libz.1.dylib + 14496) [0x1f0bd48a0]
+                                  1    ??? (libz.1.dylib + 19596) [0x1f0bd5c8c]
+                                1    ??? (libz.1.dylib + 13264) [0x1f0bd43d0]
+                                1    ??? (libz.1.dylib + 10676) [0x1f0bd39b4]
+                                  1    ??? (libz.1.dylib + 25448) [0x1f0bd7368]
+                                1    ??? (libz.1.dylib + 9876) [0x1f0bd3694]
+                                  1    <Kernel mode>
+                                1    ??? (libz.1.dylib + 2872) [0x1f0bd1b38]
+                                1    ??? (libz.1.dylib + 2772) [0x1f0bd1ad4]
+                              13   ??? (AppleFSCompression + 43948) [0x1c40febac]
+                                13   ??? (AppleFSCompression + 42432) [0x1c40fe5c0]
+                                  7    ??? (apfs_iosd + 37320) [0x104c691c8]
+                                    7    ??? (apfs_iosd + 37644) [0x104c6930c]
+                                      7    ??? (apfs_iosd + 36884) [0x104c69014]
+                                        7    ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                                          7    <Kernel mode>
+                                  3    ??? (apfs_iosd + 37416) [0x104c69228]
+                                    3    ??? (apfs_iosd + 37644) [0x104c6930c]
+                                      3    ??? (apfs_iosd + 36884) [0x104c69014]
+                                        3    ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                                          3    <Kernel mode>
+                                  2    ??? (apfs_iosd + 37472) [0x104c69260]
+                                    2    ??? (apfs_iosd + 37644) [0x104c6930c]
+                                      2    ??? (apfs_iosd + 36884) [0x104c69014]
+                                        2    ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                                          2    <Kernel mode>
+                                  1    ??? (libsystem_platform.dylib + 2808) [0x1f10a9af8]
+                                    1    <Kernel mode>
+                              6    ??? (AppleFSCompression + 43904) [0x1c40feb80]
+                                6    ??? (AppleFSCompression + 42432) [0x1c40fe5c0]
+                                  6    ??? (apfs_iosd + 37320) [0x104c691c8]
+                                    6    ??? (apfs_iosd + 37644) [0x104c6930c]
+                                      6    ??? (apfs_iosd + 36884) [0x104c69014]
+                                        6    ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                                          5    <Kernel mode>
+                            2    ??? (AppleFSCompression + 43228) [0x1c40fe8dc]
+                              1    ??? (libsystem_malloc.dylib + 24268) [0x19352aecc]
+                                1    ??? (libsystem_kernel.dylib + 5140) [0x1b8069414]
+                                  1    <Kernel mode>
+                              1    ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                                1    ??? (libsystem_malloc.dylib + 24768) [0x19352b0c0]
+                            1    ??? (AppleFSCompression + 43264) [0x1c40fe900]
+                              1    ??? (libz.1.dylib + 14864) [0x1f0bd4a10]
+                                1    ??? (libsystem_malloc.dylib + 24268) [0x19352aecc]
+                                  1    ??? (libsystem_kernel.dylib + 5140) [0x1b8069414]
+                                    1    <Kernel mode>
+                            1    ??? (AppleFSCompression + 43240) [0x1c40fe8e8]
+                              1    ??? (libsystem_malloc.dylib + 24268) [0x19352aecc]
+                                1    ??? (libsystem_kernel.dylib + 5140) [0x1b8069414]
+                                  1    <Kernel mode>
+                        19   ??? (apfs_iosd + 20008) [0x104c64e28]
+                          19   ??? (apfs_iosd + 36884) [0x104c69014]
+                            18   ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                              18   <Kernel mode>
+                            1    ??? (apfs_iosd + 120364) [0x104c7d62c]
+                        15   ??? (apfs_iosd + 20112) [0x104c64e90]
+                          14   ??? (libcorecrypto.dylib + 6524) [0x1a146497c]
+                            3    ??? (libcorecrypto.dylib + 25028) [0x1a14691c4]
+                            1    ??? (libcorecrypto.dylib + 25308) [0x1a14692dc]
+                            1    ??? (libcorecrypto.dylib + 25224) [0x1a1469288]
+                            1    ??? (libcorecrypto.dylib + 25216) [0x1a1469280]
+                            1    ??? (libcorecrypto.dylib + 25200) [0x1a1469270]
+                            1    ??? (libcorecrypto.dylib + 25140) [0x1a1469234]
+                            1    ??? (libcorecrypto.dylib + 25112) [0x1a1469218]
+                            1    ??? (libcorecrypto.dylib + 25056) [0x1a14691e0]
+                            1    ??? (libcorecrypto.dylib + 24960) [0x1a1469180]
+                            1    ??? (libcorecrypto.dylib + 24932) [0x1a1469164]
+                            1    ??? (libcorecrypto.dylib + 24840) [0x1a1469108]
+                            1    ??? (libcorecrypto.dylib + 24628) [0x1a1469034]
+                              1    <Kernel mode>
+                          1    ??? (libcorecrypto.dylib + 6504) [0x1a1464968]
+                            1    ??? (libsystem_platform.dylib + 3060) [0x1f10a9bf4]
+                        2    ??? (apfs_iosd + 20612) [0x104c65084]
+                          2    ??? (apfs_iosd + 153096) [0x104c85608]
+                            2    ??? (libsystem_malloc.dylib + 24268) [0x19352aecc]
+                              2    ??? (libsystem_kernel.dylib + 5140) [0x1b8069414]
+                                1    <Kernel mode>
+                        2    ??? (apfs_iosd + 19528) [0x104c64c48]
+                          2    ??? (apfs_iosd + 153164) [0x104c8564c]
+                            2    ??? (libsystem_malloc.dylib + 24608) [0x19352b020]
+                              1    ??? (libsystem_malloc.dylib + 28388) [0x19352bee4]
+                              1    ??? (libsystem_malloc.dylib + 28332) [0x19352beac]
+                                1    ??? (libsystem_malloc.dylib + 23132) [0x19352aa5c]
+                                  1    ??? (libsystem_malloc.dylib + 34012) [0x19352d4dc]
+                                    1    ??? (libsystem_kernel.dylib + 5176) [0x1b8069438]
+                                      1    <Kernel mode>
+                        1    ??? (apfs_iosd + 39752) [0x104c69b48]
+                        1    ??? (apfs_iosd + 19912) [0x104c64dc8]
+                          1    ??? (apfs_iosd + 115752) [0x104c7c428]
+                            1    ??? (libsystem_pthread.dylib + 9440) [0x1f10b34e0]
+                        1    ??? (apfs_iosd + 19360) [0x104c64ba0]
+                          1    ??? (apfs_iosd + 38228) [0x104c69554]
+                            1    ??? (libsystem_malloc.dylib + 6824) [0x193526aa8]
+                    3    ??? (apfs_iosd + 136488) [0x104c81528]
+                      3    ??? (apfs_iosd + 85928) [0x104c74fa8]
+                        2    ??? (apfs_iosd + 83788) [0x104c7474c]
+                          2    ??? (apfs_iosd + 53488) [0x104c6d0f0]
+                            2    ??? (apfs_iosd + 53832) [0x104c6d248]
+                              2    ??? (apfs_iosd + 234260) [0x104c99314]
+                                1    ??? (libsystem_pthread.dylib + 22884) [0x1f10b6964]
+                                1    ??? (apfs_iosd + 237372) [0x104c99f3c]
+                                  1    ??? (apfs_iosd + 219408) [0x104c95910]
+                        1    ??? (apfs_iosd + 84100) [0x104c74884]
+                          1    ??? (apfs_iosd + 53488) [0x104c6d0f0]
+                            1    ??? (apfs_iosd + 53832) [0x104c6d248]
+                              1    ??? (apfs_iosd + 234136) [0x104c99298]
+                                1    ??? (apfs_iosd + 236424) [0x104c99b88]
+                                  1    ??? (libsystem_kernel.dylib + 10072) [0x1b806a758]
+                                    1    <Kernel mode>
+                    2    ??? (apfs_iosd + 136468) [0x104c81514]
+                      2    ??? (apfs_iosd + 153096) [0x104c85608]
+                        1    ??? (libsystem_malloc.dylib + 20680) [0x19352a0c8]
+                          1    ??? (libsystem_malloc.dylib + 17492) [0x193529454]
+                            1    ??? (libsystem_malloc.dylib + 12044) [0x193527f0c]
+                        1    ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                          1    ??? (libsystem_malloc.dylib + 26096) [0x19352b5f0]
+                            1    ??? (libsystem_malloc.dylib + 25216) [0x19352b280]
+
+  Binary Images:
+           0x104c60000 -                ???  apfs_iosd                <E819A272-379D-3B54-877A-EBD44156CEE5>  /System/Library/Filesystems/apfs.fs/apfs_iosd
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib        <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x193525000 -        0x193546fff  libsystem_malloc.dylib   <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x1a1463000 -        0x1a14ddfff  libcorecrypto.dylib      <AB8B57FC-C74C-33D7-9E5C-3945C9948D33>  /usr/lib/system/libcorecrypto.dylib
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib   <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1c40f4000 -        0x1c4103fff  AppleFSCompression       <CB478531-A3C1-3D3E-910F-516232FDF316>  /System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression
+           0x1f0bd1000 -        0x1f0be2fff  libz.1.dylib             <CE45C61C-E040-3412-AA81-A4237752FC4C>  /usr/lib/libz.1.dylib
+           0x1f10a9000 -        0x1f10affff  libsystem_platform.dylib <3B2D31B3-4991-36CC-8D6A-08A26CC1CA59>  /usr/lib/system/libsystem_platform.dylib
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib  <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   maild
+UUID:             C16D065A-527E-34F3-9C30-19927552B0BD
+Path:             /System/Library/PrivateFrameworks/EmailDaemon.framework/maild
+Architecture:     arm64
+Start time:       2022-04-09 19:02:22.572 -0400
+End time:         2022-04-09 19:03:27.046 -0400
+Num samples:      10 (6%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    10 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 10 samples on AC
+  9   ??? (libsystem_pthread.dylib + 3676) [0x1f10b1e5c]
+    9   ??? (libsystem_pthread.dylib + 4284) [0x1f10b20bc]
+      9   ??? (libdispatch.dylib + 91392) [0x180f9c500]
+        5   ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+          3   ??? (libdispatch.dylib + 45348) [0x180f91124]
+            3   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+              2   ??? (libdispatch.dylib + 75824) [0x180f98830]
+                1   ??? (CFNetwork + 905856) [0x181b84280]
+                  1   ??? (CFNetwork + 1861420) [0x181c6d72c]
+                    1   ??? (libsqlite3.dylib + 279080) [0x1a0143228]
+                      1   ??? (libsqlite3.dylib + 303232) [0x1a0149080]
+                        1   ??? (libsqlite3.dylib + 1115548) [0x1a020f59c]
+                          1   ??? (libsqlite3.dylib + 629160) [0x1a01989a8]
+                            1   <Requested Thread QoS Utility>
+                1   ??? (CFNetwork + 904592) [0x181b83d90]
+                  1   ??? (CoreFoundation + 274068) [0x1812cbe94]
+                    1   ??? (CoreFoundation + 72252) [0x18129aa3c]
+                      1   ??? (CoreFoundation + 79304) [0x18129c5c8]
+                        1   ??? (CoreFoundation + 257700) [0x1812c7ea4]
+                          1   ??? (CoreFoundation + 61028) [0x181297e64]
+                            1   ??? (CoreFoundation + 26212) [0x18128f664]
+                              1   <Requested Thread QoS Utility>
+              1   ??? (libdispatch.dylib + 7784) [0x180f87e68]
+                1   ??? (CFNetwork + 1951508) [0x181c83714]
+                  1   ??? (CFNetwork + 1935208) [0x181c7f768]
+                    1   ??? (CFNetwork + 174056) [0x181ad17e8]
+                      1   ??? (CFNetwork + 431540) [0x181b105b4]
+                        1   ??? (CFNetwork + 217304) [0x181adc0d8]
+                          1   ??? (CFNetwork + 2424980) [0x181cf7094]
+                            1   ??? (Email + 214440) [0x1a0dff5a8]
+                              1   ??? (Email + 278728) [0x1a0e0f0c8]
+                                1   ??? (CFNetwork + 2162124) [0x181cb6dcc]
+                                  1   ??? (CFNetwork + 419736) [0x181b0d798]
+                                    1   ??? (CFNetwork + 511548) [0x181b23e3c]
+                                      1   ??? (CFNetwork + 193268) [0x181ad62f4]
+                                        1   ??? (CFNetwork + 146004) [0x181acaa54]
+                                          1   ??? (CFNetwork + 923828) [0x181b888b4]
+                                            1   ??? (CFNetwork + 858892) [0x181b78b0c]
+                                              1   ??? (CFNetwork + 1184500) [0x181bc82f4]
+                                                1   ??? (CFNetwork + 269088) [0x181ae8b20]
+                                                  1   ??? (Foundation + 2502512) [0x182cd9f70]
+          2   ??? (libdispatch.dylib + 45056) [0x180f91000]
+            2   ??? (libdispatch.dylib + 106812) [0x180fa013c]
+              2   ??? (libdispatch.dylib + 28396) [0x180f8ceec]
+                2   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                  2   ??? (libdispatch.dylib + 75824) [0x180f98830]
+                    2   ??? (CFNetwork + 921964) [0x181b8816c]
+                      2   ??? (libsqlite3.dylib + 40480) [0x1a0108e20]
+                        2   ??? (CFNetwork + 1862096) [0x181c6d9d0]
+                          2   ??? (CFNetwork + 2683160) [0x181d36118]
+                            2   ??? (libsystem_kernel.dylib + 21540) [0x1b806d424]
+                              2   <Kernel mode, Requested Thread QoS Utility>
+        2   ??? (libdispatch.dylib + 48256) [0x180f91c80]
+          2   ??? (libdispatch.dylib + 45056) [0x180f91000]
+            2   ??? (libdispatch.dylib + 135700) [0x180fa7214]
+              2   ??? (libdispatch.dylib + 15020) [0x180f89aac]
+                2   ??? (libxpc.dylib + 60364) [0x1f10dabcc]
+                  2   ??? (libxpc.dylib + 112296) [0x1f10e76a8]
+                    2   ??? (libxpc.dylib + 181380) [0x1f10f8484]
+                      2   ??? (libxpc.dylib + 181756) [0x1f10f85fc]
+                        2   ??? (libxpc.dylib + 180284) [0x1f10f803c]
+                          2   ??? (Foundation + 975868) [0x182b653fc]
+                            2   ??? (Foundation + 1712248) [0x182c19078]
+                              2   ??? (EmailDaemon + 1153264) [0x1b2b5a8f0]
+                                2   ??? (EmailDaemon + 265012) [0x1b2a81b34]
+                                  1   ??? (EmailDaemon + 170872) [0x1b2a6ab78]
+                                    1   ??? (EmailDaemon + 186416) [0x1b2a6e830]
+                                      1   ??? (EmailDaemon + 88400) [0x1b2a56950]
+                                        1   ??? (EmailDaemon + 10944) [0x1b2a43ac0]
+                                          1   ??? (Message + 57520) [0x1996210b0]
+                                            1   ??? (EmailDaemon + 26508) [0x1b2a4778c]
+                                              1   ??? (EmailDaemon + 76924) [0x1b2a53c7c]
+                                                1   ??? (EmailDaemon + 134112) [0x1b2a61be0]
+                                                  1   ??? (EmailFoundation + 148948) [0x19984b5d4]
+                                                    1   ??? (EmailFoundation + 128228) [0x1998464e4]
+                                                      1   ??? (EmailFoundation + 102296) [0x19983ff98]
+                                                        1   ??? (EmailFoundation + 112796) [0x19984289c]
+                                                          1   ??? (EmailFoundation + 111300) [0x1998422c4]
+                                                            1   ??? (EmailFoundation + 109772) [0x199841ccc]
+                                                              1   ??? (Foundation + 661568) [0x182b18840]
+                                                                1   ??? (libsystem_malloc.dylib + 8832) [0x193527280]
+                                  1   ??? (EmailDaemon + 170780) [0x1b2a6ab1c]
+                                    1   ??? (EmailDaemon + 274688) [0x1b2a84100]
+                                      1   ??? (CFNetwork + 84520) [0x181abba28]
+                                        1   ??? (libnetwork.dylib + 683024) [0x18200ec10]
+                                          1   ??? (libnetwork.dylib + 712128) [0x182015dc0]
+                                            1   ??? (libnetwork.dylib + 485732) [0x181fde964]
+                                              1   ??? (libnetwork.dylib + 739100) [0x18201c71c]
+                                                1   ??? (libxpc.dylib + 81580) [0x1f10dfeac]
+                                                  1   ??? (libxpc.dylib + 87428) [0x1f10e1584]
+                                                    1   ??? (libxpc.dylib + 87812) [0x1f10e1704]
+        1   ??? (libdispatch.dylib + 53120) [0x180f92f80]
+          1   ??? (libdispatch.dylib + 48308) [0x180f91cb4]
+            1   ??? (libdispatch.dylib + 45348) [0x180f91124]
+              1   ??? (libdispatch.dylib + 14892) [0x180f89a2c]
+                1   ??? (libdispatch.dylib + 75824) [0x180f98830]
+                  1   ??? (CFNetwork + 49552) [0x181ab3190]
+                    1   ??? (CFNetwork + 1589612) [0x181c2b16c]
+                      1   ??? (CFNetwork + 2153524) [0x181cb4c34]
+                        1   ??? (CFNetwork + 652776) [0x181b465e8]
+                          1   ??? (CFNetwork + 1590644) [0x181c2b574]
+                            1   ??? (CFNetwork + 1147324) [0x181bbf1bc]
+                              1   ??? (CFNetwork + 88320) [0x181abc900]
+                                1   ??? (CFNetwork + 65532) [0x181ab6ffc]
+                                  1   ??? (CFNetwork + 380300) [0x181b03d8c]
+                                    1   ??? (CFNetwork + 239920) [0x181ae1930]
+                                      1   ??? (CFNetwork + 474364) [0x181b1acfc]
+                                        1   ??? (CoreFoundation + 123416) [0x1812a7218]
+                                          1   ??? (CoreFoundation + 439836) [0x1812f461c]
+                                            1   <Requested Thread QoS Default>
+        1   ??? (libdispatch.dylib + 48344) [0x180f91cd8]
+          1   ??? (libdispatch.dylib + 14856) [0x180f89a08]
+            1   ??? (libobjc.A.dylib + 15860) [0x199f74df4]
+              1   ??? (libobjc.A.dylib + 31348) [0x199f78a74]
+                1   ??? (CFNetwork + 71428) [0x181ab8704]
+                  1   ??? (CFNetwork + 94568) [0x181abe168]
+                    1   ??? (CoreFoundation + 276372) [0x1812cc794]
+                      1   ??? (libsystem_malloc.dylib + 7584) [0x193526da0]
+                        1   ??? (libsystem_malloc.dylib + 24768) [0x19352b0c0]
+  1   ??? (libsystem_pthread.dylib + 3668) [0x1f10b1e54]
+    1   <Kernel mode>
+
+  Binary Images:
+           0x10440c000 -                ???  maild                   <C16D065A-527E-34F3-9C30-19927552B0BD>  /System/Library/PrivateFrameworks/EmailDaemon.framework/maild
+           0x180f86000 -        0x180fcbfff  libdispatch.dylib       <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x181289000 -        0x1816defff  CoreFoundation          <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x181aa7000 -        0x181f67fff  CFNetwork               <EAE64611-A840-36FE-A69D-5658F1BCF4D0>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x181f68000 -        0x1829f8fff  libnetwork.dylib        <AAC4F3CE-09C0-3F60-8B98-AA2D0F5B5DDE>  /usr/lib/libnetwork.dylib
+           0x182a77000 -        0x182d7ffff  Foundation              <FEEEF9B1-B0E6-3561-ADFA-3EF0302D23F8>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x193525000 -        0x193546fff  libsystem_malloc.dylib  <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x199613000 -        0x199826fff  Message                 <303C8E1E-8A48-3868-AE21-DD481C2CE5FE>  /System/Library/PrivateFrameworks/Message.framework/Message
+           0x199827000 -        0x1998b7fff  EmailFoundation         <AAD01E16-8DA3-3140-A321-92AC9254B52A>  /System/Library/PrivateFrameworks/EmailFoundation.framework/EmailFoundation
+           0x199f71000 -        0x199fadfff  libobjc.A.dylib         <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x1a00ff000 -        0x1a0297fff  libsqlite3.dylib        <D566EDA7-9175-3DBA-88ED-5FDF6C95957B>  /usr/lib/libsqlite3.dylib
+           0x1a0dcb000 -        0x1a0ea1fff  Email                   <4C93A970-559C-3AE0-9535-E3FAB91C7F43>  /System/Library/PrivateFrameworks/Email.framework/Email
+           0x1b2a41000 -        0x1b2c71fff  EmailDaemon             <58C7C3FE-66C3-3FF4-BB03-F666C30927A4>  /System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon
+           0x1b8068000 -        0x1b809dfff  libsystem_kernel.dylib  <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f10b1000 -        0x1f10bcfff  libsystem_pthread.dylib <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f10cc000 -        0x1f1108fff  libxpc.dylib            <B56312CE-5ADE-34E5-ABB4-AFCBE0512205>  /usr/lib/system/libxpc.dylib
