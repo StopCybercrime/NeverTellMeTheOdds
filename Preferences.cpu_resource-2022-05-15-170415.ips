@@ -1,0 +1,406 @@
+{"app_name":"Preferences","timestamp":"2022-05-15 17:04:15.00 -0400","app_version":"1","slice_uuid":"C2ABF198-E030-3481-9FAE-5EE03708B817","adam_id":0,"build_version":"1112.96","bundleID":"com.apple.Preferences","share_with_app_devs":0,"is_first_party":1,"bug_type":"202","os_version":"iPhone OS 15.4.1 (19E258)","incident_id":"F825737D-FA69-48E7-BCD7-6B8985080933","name":"Preferences"}
+Date/Time:        2022-05-15 17:02:32.974 -0400
+End time:         2022-05-15 17:04:14.500 -0400
+OS Version:       iPhone OS 15.4.1 (Build 19E258)
+Architecture:     arm64e
+Report Version:   35
+Incident Identifier: F825737D-FA69-48E7-BCD7-6B8985080933
+
+Data Source:      Microstackshots
+Shared Cache:     DBCBEDE8-6A7A-33D4-A982-44D98DD7258B slid base address 0x1e37cc000, slide 0x637cc000
+
+Command:          Preferences
+Path:             /Applications/Preferences.app/Preferences
+Identifier:       com.apple.Preferences
+Version:          1 (1112.96)
+Beta Identifier:  2FF506F9-42AC-4CB2-A85A-CF68DE36F000
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              10719
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 102 seconds (89% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     102s
+Duration:         101.53s
+Duration Sampled: 100.58s
+Steps:            127
+
+Hardware model:   iPhone14,3
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  681.32 GB/953.56 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  102  ??? (libsystem_pthread.dylib + 3676) [0x2552e9e5c]
+  99   ??? (libsystem_pthread.dylib + 4284) [0x2552ea0bc]
+  99   ??? (libdispatch.dylib + 91392) [0x1e3833500]
+  98   ??? (libdispatch.dylib + 48308) [0x1e3828cb4]
+  96   ??? (libdispatch.dylib + 45348) [0x1e3828124]
+  96   ??? (libdispatch.dylib + 14892) [0x1e3820a2c]
+  96   ??? (libdispatch.dylib + 7784) [0x1e381ee68]
+  96   ??? (StorageData + 103116) [0x2627d02cc]
+  58   ??? (StorageData + 93556) [0x2627cdd74]
+  56   ??? (CoreFoundation + 516676) [0x1e3b9e244]
+  19   ??? (CoreFoundation + 107648) [0x1e3b3a480]
+
+
+Powerstats for:   Preferences (Settings) [10719]
+UUID:             C2ABF198-E030-3481-9FAE-5EE03708B817
+Path:             /Applications/Preferences.app/Preferences
+Identifier:       com.apple.Preferences
+Version:          1 (1112.96)
+Beta Identifier:  2FF506F9-42AC-4CB2-A85A-CF68DE36F000
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        29.03 MB -> 68.50 MB (+39.47 MB) (max 76.47 MB )
+Pageins:          939 pages
+Start time:       2022-05-15 17:02:39.262 -0400
+End time:         2022-05-15 17:04:13.645 -0400
+Num samples:      102 (80%)
+Primary state:    98 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 102 samples Active
+Power Source:     102 samples on Battery, 0 samples on AC
+  102  ??? (libsystem_pthread.dylib + 3676) [0x2552e9e5c]
+    99   ??? (libsystem_pthread.dylib + 4284) [0x2552ea0bc]
+      99   ??? (libdispatch.dylib + 91392) [0x1e3833500]
+        98   ??? (libdispatch.dylib + 48308) [0x1e3828cb4]
+          96   ??? (libdispatch.dylib + 45348) [0x1e3828124]
+            96   ??? (libdispatch.dylib + 14892) [0x1e3820a2c]
+              96   ??? (libdispatch.dylib + 7784) [0x1e381ee68]
+                96   ??? (StorageData + 103116) [0x2627d02cc]
+                  58   ??? (StorageData + 93556) [0x2627cdd74]
+                    56   ??? (CoreFoundation + 516676) [0x1e3b9e244]
+                      19   ??? (CoreFoundation + 107648) [0x1e3b3a480]
+                      7    ??? (CoreFoundation + 107608) [0x1e3b3a458]
+                      4    ??? (CoreFoundation + 107620) [0x1e3b3a464]
+                      3    ??? (CoreFoundation + 107480) [0x1e3b3a3d8]
+                      2    ??? (CoreFoundation + 290652) [0x1e3b66f5c]
+                      2    ??? (CoreFoundation + 185444) [0x1e3b4d464]
+                      2    ??? (CoreFoundation + 138544) [0x1e3b41d30]
+                      2    ??? (CoreFoundation + 107452) [0x1e3b3a3bc]
+                      1    ??? (CoreFoundation + 285664) [0x1e3b65be0]
+                      1    ??? (CoreFoundation + 185436) [0x1e3b4d45c]
+                      1    ??? (CoreFoundation + 138600) [0x1e3b41d68]
+                      1    ??? (CoreFoundation + 138564) [0x1e3b41d44]
+                      1    ??? (CoreFoundation + 138532) [0x1e3b41d24]
+                      1    ??? (CoreFoundation + 108592) [0x1e3b3a830]
+                      1    ??? (CoreFoundation + 107660) [0x1e3b3a48c]
+                      1    ??? (CoreFoundation + 107628) [0x1e3b3a46c]
+                      1    ??? (CoreFoundation + 107500) [0x1e3b3a3ec]
+                      1    ??? (CoreFoundation + 98148) [0x1e3b37f64]
+                        1    ??? (CoreFoundation + 185920) [0x1e3b4d640]
+                      1    ??? (CoreFoundation + 98008) [0x1e3b37ed8]
+                        1    ??? (CoreFoundation + 185752) [0x1e3b4d598]
+                      1    ??? (CoreFoundation + 97980) [0x1e3b37ebc]
+                        1    ??? (CoreFoundation + 185844) [0x1e3b4d5f4]
+                      1    ??? (CoreFoundation + 97916) [0x1e3b37e7c]
+                      1    ??? (CoreFoundation + 97912) [0x1e3b37e78]
+                      1    ??? (CoreFoundation + 97864) [0x1e3b37e48]
+                    1    ??? (CoreFoundation + 516676) [0x1e3b9e244]
+                    1    ??? (CoreFoundation + 154732) [0x1e3b45c6c]
+                  5    ??? (libobjc.A.dylib + 14776) [0x1fc80b9b8]
+                  5    ??? (StorageData + 93316) [0x2627cdc84]
+                    3    ??? (CoreFoundation + 329528) [0x1e3b70738]
+                      2    ??? (CoreFoundation + 317164) [0x1e3b6d6ec]
+                        1    <Kernel mode>
+                      1    ??? (CoreFoundation + 317184) [0x1e3b6d700]
+                    1    ??? (libobjc.A.dylib + 14696) [0x1fc80b968]
+                    1    ??? (CoreFoundation + 329496) [0x1e3b70718]
+                      1    ??? (CoreFoundation + 242728) [0x1e3b5b428]
+                        1    ??? (libsystem_malloc.dylib + 24608) [0x1f5dc2020]
+                          1    ??? (libsystem_malloc.dylib + 28332) [0x1f5dc2eac]
+                            1    ??? (libsystem_malloc.dylib + 23132) [0x1f5dc1a5c]
+                              1    ??? (libsystem_malloc.dylib + 34012) [0x1f5dc44dc]
+                                1    ??? (libsystem_kernel.dylib + 5176) [0x21b67b438]
+                                  1    <Kernel mode, Effective Thread QoS User Initiated>
+                  3    ??? (StorageData + 93592) [0x2627cdd98]
+                    3    ??? (libobjc.A.dylib + 15860) [0x1fc80bdf4]
+                      1    ??? (libobjc.A.dylib + 31368) [0x1fc80fa88]
+                      1    ??? (libobjc.A.dylib + 31316) [0x1fc80fa54]
+                      1    ??? (libobjc.A.dylib + 31212) [0x1fc80f9ec]
+                  3    ??? (libobjc.A.dylib + 16516) [0x1fc80c084]
+                  3    ??? (libobjc.A.dylib + 7940) [0x1fc809f04]
+                  3    ??? (libobjc.A.dylib + 7912) [0x1fc809ee8]
+                  2    ??? (libobjc.A.dylib + 10936) [0x1fc80aab8]
+                  2    ??? (libobjc.A.dylib + 7896) [0x1fc809ed8]
+                  2    ??? (libobjc.A.dylib + 7872) [0x1fc809ec0]
+                  2    ??? (StorageData + 93584) [0x2627cdd90]
+                    1    ??? (CoreFoundation + 84672) [0x1e3b34ac0]
+                    1    ??? (CoreFoundation + 84576) [0x1e3b34a60]
+                  2    ??? (StorageData + 93536) [0x2627cdd60]
+                    1    ??? (CoreFoundation + 150688) [0x1e3b44ca0]
+                      1    ??? (CoreFoundation + 60180) [0x1e3b2eb14]
+                    1    ??? (CoreFoundation + 60108) [0x1e3b2eacc]
+                  1    ??? (StorageData + 93512) [0x2627cdd48]
+                    1    ??? (libobjc.A.dylib + 11040) [0x1fc80ab20]
+                  1    ??? (StorageData + 14896) [0x2627baa30]
+                  1    ??? (libobjc.A.dylib + 20884) [0x1fc80d194]
+                  1    ??? (libobjc.A.dylib + 7880) [0x1fc809ec8]
+                  1    ??? (CoreFoundation + 516652) [0x1e3b9e22c]
+                  1    ??? (CoreFoundation + 84544) [0x1e3b34a40]
+          2    ??? (libdispatch.dylib + 45368) [0x1e3828138]
+            2    ??? (libobjc.A.dylib + 15860) [0x1fc80bdf4]
+              2    ??? (libobjc.A.dylib + 31348) [0x1fc80fa74]
+                1    ??? (libobjc.A.dylib + 12600) [0x1fc80b138]
+                1    ??? (libobjc.A.dylib + 12560) [0x1fc80b110]
+        1    ??? (libdispatch.dylib + 133196) [0x1e383d84c]
+          1    ??? (libdispatch.dylib + 45056) [0x1e3828000]
+            1    ??? (libdispatch.dylib + 129836) [0x1e383cb2c]
+              1    ??? (libdispatch.dylib + 15084) [0x1e3820aec]
+                1    ??? (QuartzCore + 689932) [0x1e78fa70c]
+                  1    ??? (QuartzCore + 953192) [0x1e793ab68]
+                    1    ??? (UIKitCore + 3616716) [0x1e6303fcc]
+                      1    ??? (UIKitCore + 7464664) [0x1e66af6d8]
+                        1    ??? (UIKitCore + 4820540) [0x1e6429e3c]
+                          1    ??? (FrontBoardServices + 57840) [0x1f5d1d1f0]
+                            1    ??? (FrontBoardServices + 110148) [0x1f5d29e44]
+                              1    ??? (BoardServices + 29584) [0x202033390]
+                                1    ??? (BoardServices + 8916) [0x20202e2d4]
+                                  1    ??? (libxpc.dylib + 56336) [0x255311c10]
+                                    1    ??? (libxpc.dylib + 52960) [0x255310ee0]
+                                      1    ??? (libxpc.dylib + 59380) [0x2553127f4]
+                                        1    ??? (libxpc.dylib + 111620) [0x25531f404]
+                                          1    ??? (libdispatch.dylib + 14516) [0x1e38208b4]
+                                            1    ??? (libdispatch.dylib + 169916) [0x1e38467bc]
+                                              1    ??? (libdispatch.dylib + 167072) [0x1e3845ca0]
+                                                1    ??? (libsystem_kernel.dylib + 5200) [0x21b67b450]
+                                                  1    <Kernel mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+    3    ??? (libsystem_pthread.dylib + 4224) [0x2552ea080]
+      3    ??? (libdispatch.dylib + 88428) [0x1e383296c]
+        3    ??? (libdispatch.dylib + 86372) [0x1e3832164]
+          3    ??? (libdispatch.dylib + 25944) [0x1e3823558]
+            3    ??? (libdispatch.dylib + 28396) [0x1e3823eec]
+              3    ??? (libdispatch.dylib + 14892) [0x1e3820a2c]
+                3    ??? (libdispatch.dylib + 75824) [0x1e382f830]
+                  3    ??? (Foundation + 384144) [0x1e536bc90]
+                    3    ??? (Foundation + 326376) [0x1e535dae8]
+                      3    ??? (Foundation + 312544) [0x1e535a4e0]
+                        3    ??? (Foundation + 242116) [0x1e53491c4]
+                          2    ??? (Foundation + 405012) [0x1e5370e14]
+                            2    ??? (Foundation + 330396) [0x1e535ea9c]
+                              2    ??? (StorageData + 8252) [0x2627b903c]
+                                2    ??? (StorageData + 86676) [0x2627cc294]
+                                  2    ??? (StorageData + 87004) [0x2627cc3dc]
+                                    2    ??? (libsystem_kernel.dylib + 16864) [0x21b67e1e0]
+                          1    ??? (Foundation + 1547756) [0x1e5487dec]
+                            1    ??? (CoreFoundation + 262400) [0x1e3b60100]
+                              1    ??? (CoreFoundation + 140820) [0x1e3b42614]
+                                1    ??? (StorageData + 22420) [0x2627bc794]
+                                  1    ??? (StorageData + 42036) [0x2627c1434]
+                                    1    ??? (StorageData + 28896) [0x2627be0e0]
+                                      1    ??? (StorageData + 11384) [0x2627b9c78]
+                                        1    ??? (StorageData + 11768) [0x2627b9df8]
+                                          1    ??? (libsystem_kernel.dylib + 7564) [0x21b67bd8c]
+                                            1    <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x104670000 -                ???  com.apple.Preferences 1 (1112.96) <C2ABF198-E030-3481-9FAE-5EE03708B817>  /Applications/Preferences.app/Preferences
+           0x1e381d000 -        0x1e3862fff  libdispatch.dylib                 <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x1e3b20000 -        0x1e3f75fff  CoreFoundation                    <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1e530e000 -        0x1e5616fff  Foundation                        <FEEEF9B1-B0E6-3561-ADFA-3EF0302D23F8>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1e5f91000 -        0x1e782bfff  UIKitCore                         <E6E89BB5-B586-3725-BF8F-4C85DCD443BD>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1e7852000 -        0x1e7b61fff  QuartzCore                        <A491AE8B-354B-35C1-AB22-AF42A96B6704>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1f5d0f000 -        0x1f5dbbfff  FrontBoardServices                <DD7EC2BA-239D-3F93-8618-9CF707055514>  /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+           0x1f5dbc000 -        0x1f5dddfff  libsystem_malloc.dylib            <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x1fc808000 -        0x1fc844fff  libobjc.A.dylib                   <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x20202c000 -        0x20207ffff  BoardServices                     <C3632471-2BDD-3E21-A4EE-5C71EF2938CB>  /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
+           0x21b67a000 -        0x21b6affff  libsystem_kernel.dylib            <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x2552e9000 -        0x2552f4fff  libsystem_pthread.dylib           <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
+           0x255304000 -        0x255340fff  libxpc.dylib                      <B56312CE-5ADE-34E5-ABB4-AFCBE0512205>  /usr/lib/system/libxpc.dylib
+           0x2627b7000 -        0x2627e1fff  StorageData                       <8BB08B5C-612E-3FF1-A2B4-A42DAB467592>  /System/Library/PrivateFrameworks/StorageData.framework/StorageData
+
+
+Powerstats for:   backboardd
+UUID:             EB995133-C6FB-3D2E-8121-B205C835F9F7
+Path:             /usr/libexec/backboardd
+Architecture:     arm64e
+Start time:       2022-05-15 17:02:33.067 -0400
+End time:         2022-05-15 17:03:50.502 -0400
+Num samples:      14 (11%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 14 samples Active
+Power Source:     14 samples on Battery, 0 samples on AC
+  9   ??? (libsystem_pthread.dylib + 3688) [0x2552e9e68]
+    9   ??? (libsystem_pthread.dylib + 6572) [0x2552ea9ac]
+      9   ??? (QuartzCore + 2542036) [0x1e7abe9d4]
+        7   ??? (QuartzCore + 2510560) [0x1e7ab6ee0]
+          7   ??? (CoreFoundation + 657560) [0x1e3bc0898]
+            7   ??? (CoreFoundation + 128696) [0x1e3b3f6b8]
+              7   ??? (CoreFoundation + 49492) [0x1e3b2c154]
+                7   ??? (CoreFoundation + 337236) [0x1e3b72554]
+                  7   ??? (CoreFoundation + 322888) [0x1e3b6ed48]
+                    7   ??? (CoreFoundation + 46816) [0x1e3b2b6e0]
+                      6   ??? (QuartzCore + 95064) [0x1e7869358]
+                        5   ??? (QuartzCore + 89408) [0x1e7867d40]
+                          2   ??? (QuartzCore + 132148) [0x1e7872434]
+                            2   ??? (QuartzCore + 1004280) [0x1e79472f8]
+                              2   ??? (QuartzCore + 345400) [0x1e78a6538]
+                                1   ??? (QuartzCore + 241228) [0x1e788ce4c]
+                                  1   ??? (QuartzCore + 433972) [0x1e78bbf34]
+                                    1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                      1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                        1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                          1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                            1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                              1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                                  1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                    1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                                      1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                        1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                                          1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                            1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                                              1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                                1   ??? (QuartzCore + 340264) [0x1e78a5128]
+                                                                  1   ??? (QuartzCore + 276124) [0x1e789569c]
+                                                                    1   ??? (QuartzCore + 338752) [0x1e78a4b40]
+                                                                      1   ??? (QuartzCore + 465008) [0x1e78c3870]
+                                1   ??? (QuartzCore + 240988) [0x1e788cd5c]
+                                  1   ??? (QuartzCore + 515828) [0x1e78cfef4]
+                                    1   ??? (QuartzCore + 188032) [0x1e787fe80]
+                                      1   ??? (QuartzCore + 351488) [0x1e78a7d00]
+                                        1   ??? (QuartzCore + 515828) [0x1e78cfef4]
+                                          1   ??? (QuartzCore + 188032) [0x1e787fe80]
+                                            1   ??? (QuartzCore + 351488) [0x1e78a7d00]
+                                              1   ??? (QuartzCore + 515828) [0x1e78cfef4]
+                                                1   ??? (QuartzCore + 183268) [0x1e787ebe4]
+                                                  1   ??? (QuartzCore + 426828) [0x1e78ba34c]
+                          2   ??? (QuartzCore + 132656) [0x1e7872630]
+                            1   ??? (QuartzCore + 260564) [0x1e78919d4]
+                              1   ??? (QuartzCore + 271464) [0x1e7894468]
+                                1   ??? (QuartzCore + 841684) [0x1e791f7d4]
+                                  1   ??? (QuartzCore + 431076) [0x1e78bb3e4]
+                            1   ??? (QuartzCore + 259588) [0x1e7891604]
+                              1   ??? (QuartzCore + 378060) [0x1e78ae4cc]
+                                1   ??? (Metal + 97820) [0x1fe4fde1c]
+                                  1   ??? (libdispatch.dylib + 78008) [0x1e38300b8]
+                                    1   ??? (libdispatch.dylib + 14892) [0x1e3820a2c]
+                                      1   ??? (Metal + 90304) [0x1fe4fc0c0]
+                                        1   ??? (Metal + 78788) [0x1fe4f93c4]
+                                          1   ??? (IOGPU + 20132) [0x244a47ea4]
+                                            1   ??? (IOGPU + 13656) [0x244a46558]
+                                              1   ??? (IOGPU + 12784) [0x244a461f0]
+                                                1   ??? (IOKit + 9892) [0x1f0d316a4]
+                                                  1   ??? (IOKit + 13112) [0x1f0d32338]
+                                                    1   ??? (libsystem_kernel.dylib + 5344) [0x21b67b4e0]
+                                                      1   <Kernel mode>
+                          1   ??? (QuartzCore + 128256) [0x1e7871500]
+                            1   ??? (QuartzCore + 691036) [0x1e78fab5c]
+                              1   ??? (QuartzCore + 139688) [0x1e78741a8]
+                                1   ??? (IOMobileFramebuffer + 6236) [0x20990385c]
+                                  1   ??? (IOKit + 6408) [0x1f0d30908]
+                                    1   ??? (IOKit + 13112) [0x1f0d32338]
+                                      1   ??? (libsystem_kernel.dylib + 5344) [0x21b67b4e0]
+                                        1   <Kernel mode>
+                        1   ??? (QuartzCore + 88912) [0x1e7867b50]
+                          1   ??? (QuartzCore + 94664) [0x1e78691c8]
+                            1   ??? (QuartzCore + 2513844) [0x1e7ab7bb4]
+                              1   ??? (libdyld.dylib + 50220) [0x1e386f42c]
+                      1   ??? (libsystem_kernel.dylib + 5764) [0x21b67b684]
+                        1   <Kernel mode>
+        1   ??? (QuartzCore + 225384) [0x1e7889068]
+          1   ??? (QuartzCore + 2760696) [0x1e7af3ff8]
+            1   ??? (QuartzCore + 2003144) [0x1e7a3b0c8]
+              1   ??? (QuartzCore + 149768) [0x1e7876908]
+                1   ??? (QuartzCore + 2517948) [0x1e7ab8bbc]
+                  1   ??? (QuartzCore + 2669348) [0x1e7addb24]
+                    1   ??? (QuartzCore + 2430184) [0x1e7aa34e8]
+                      1   ??? (RunningBoardServices + 66736) [0x1eed0c4b0]
+                        1   ??? (RunningBoardServices + 112876) [0x1eed178ec]
+                          1   ??? (RunningBoardServices + 85468) [0x1eed10ddc]
+                            1   ??? (RunningBoardServices + 27320) [0x1eed02ab8]
+                              1   ??? (RunningBoardServices + 17288) [0x1eed00388]
+                                1   ??? (RunningBoardServices + 16080) [0x1eecffed0]
+                                  1   ??? (RunningBoardServices + 108664) [0x1eed16878]
+                                    1   ??? (RunningBoardServices + 20052) [0x1eed00e54]
+                                      1   ??? (RunningBoardServices + 33476) [0x1eed042c4]
+                                        1   ??? (RunningBoardServices + 39780) [0x1eed05b64]
+                                          1   ??? (RunningBoardServices + 44772) [0x1eed06ee4]
+                                            1   ??? (RunningBoardServices + 20052) [0x1eed00e54]
+                                              1   ??? (RunningBoardServices + 33476) [0x1eed042c4]
+                                                1   ??? (RunningBoardServices + 39780) [0x1eed05b64]
+                                                  1   ??? (RunningBoardServices + 44772) [0x1eed06ee4]
+                                                    1   ??? (RunningBoardServices + 131400) [0x1eed1c148]
+                                                      1   ??? (RunningBoardServices + 20052) [0x1eed00e54]
+                                                        1   ??? (RunningBoardServices + 33476) [0x1eed042c4]
+                                                          1   ??? (RunningBoardServices + 39780) [0x1eed05b64]
+                                                            1   ??? (RunningBoardServices + 44808) [0x1eed06f08]
+                                                              1   ??? (RunningBoardServices + 36152) [0x1eed04d38]
+                                                                1   ??? (CoreFoundation + 276688) [0x1e3b638d0]
+                                                                  1   ??? (Foundation + 114340) [0x1e5329ea4]
+                                                                    1   ??? (Foundation + 116624) [0x1e532a790]
+        1   ??? (QuartzCore + 225032) [0x1e7888f08]
+          1   ??? (libdispatch.dylib + 172624) [0x1e3847250]
+            1   ??? (libdispatch.dylib + 168952) [0x1e38463f8]
+              1   ??? (libdispatch.dylib + 167072) [0x1e3845ca0]
+                1   ??? (libsystem_kernel.dylib + 5200) [0x21b67b450]
+                  1   <Kernel mode>
+  4   ??? (libsystem_pthread.dylib + 3676) [0x2552e9e5c]
+    4   ??? (libsystem_pthread.dylib + 4284) [0x2552ea0bc]
+      4   ??? (libdispatch.dylib + 91392) [0x1e3833500]
+        3   ??? (libdispatch.dylib + 53120) [0x1e3829f80]
+          3   ??? (libdispatch.dylib + 48308) [0x1e3828cb4]
+            3   ??? (libdispatch.dylib + 45056) [0x1e3828000]
+              3   ??? (libdispatch.dylib + 48308) [0x1e3828cb4]
+                3   ??? (libdispatch.dylib + 45056) [0x1e3828000]
+                  3   ??? (libdispatch.dylib + 133196) [0x1e383d84c]
+                    3   ??? (libdispatch.dylib + 45056) [0x1e3828000]
+                      2   ??? (libdispatch.dylib + 129836) [0x1e383cb2c]
+                        2   ??? (libdispatch.dylib + 15084) [0x1e3820aec]
+                          2   ??? (IOGPU + 11000) [0x244a45af8]
+                            2   ??? (Metal + 77004) [0x1fe4f8ccc]
+                              2   ??? (IOGPU + 11656) [0x244a45d88]
+                                1   ??? (IOGPU + 19996) [0x244a47e1c]
+                                  1   ??? (IOGPU + 23068) [0x244a48a1c]
+                                    1   ??? (libsystem_malloc.dylib + 31732) [0x1f5dc3bf4]
+                                      1   ??? (libsystem_malloc.dylib + 30052) [0x1f5dc3564]
+                                1   ??? (IOGPU + 19864) [0x244a47d98]
+                                  1   ??? (IOGPU + 24272) [0x244a48ed0]
+                                    1   ??? (libobjc.A.dylib + 12600) [0x1fc80b138]
+                      1   ??? (libdispatch.dylib + 130012) [0x1e383cbdc]
+                        1   ??? (libdispatch.dylib + 25188) [0x1e3823264]
+                          1   ??? (libdispatch.dylib + 24748) [0x1e38230ac]
+                            1   ??? (libdispatch.dylib + 154600) [0x1e3842be8]
+                              1   ??? (libdispatch.dylib + 154924) [0x1e3842d2c]
+                                1   ??? (libsystem_kernel.dylib + 7132) [0x21b67bbdc]
+                                  1   <Kernel mode>
+        1   ??? (libdispatch.dylib + 48256) [0x1e3828c80]
+          1   ??? (libdispatch.dylib + 45348) [0x1e3828124]
+            1   ??? (libdispatch.dylib + 14892) [0x1e3820a2c]
+              1   ??? (libdispatch.dylib + 7784) [0x1e381ee68]
+                1   ??? (backboardd + 425480) [0x10479fe08]
+                  1   ??? (BaseBoard + 45300) [0x1e91150f4]
+                    1   ??? (BaseBoard + 17496) [0x1e910e458]
+                      1   ??? (libsystem_blocks.dylib + 6164) [0x255266814]
+                        1   ??? (libobjc.A.dylib + 20820) [0x1fc80d154]
+                          1   ??? (libsystem_malloc.dylib + 7444) [0x1f5dbdd14]
+                            1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+  1   ??? (libsystem_pthread.dylib + 3668) [0x2552e9e54]
+    1   <Kernel mode>
+
+  Binary Images:
+           0x104738000 -                ???  backboardd              <EB995133-C6FB-3D2E-8121-B205C835F9F7>  /usr/libexec/backboardd
+           0x1e381d000 -        0x1e3862fff  libdispatch.dylib       <69DAC9C7-DDAF-318E-B068-BE596D142A2F>  /usr/lib/system/libdispatch.dylib
+           0x1e3863000 -        0x1e386ffff  libdyld.dylib           <A7A6A7A9-36D8-3C89-934F-19C0F44AD18C>  /usr/lib/system/libdyld.dylib
+           0x1e3b20000 -        0x1e3f75fff  CoreFoundation          <D2716F2F-688B-3D51-BA8B-17E6553B209E>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1e530e000 -        0x1e5616fff  Foundation              <FEEEF9B1-B0E6-3561-ADFA-3EF0302D23F8>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1e7852000 -        0x1e7b61fff  QuartzCore              <A491AE8B-354B-35C1-AB22-AF42A96B6704>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1e910a000 -        0x1e91c6fff  BaseBoard               <8D1C07B8-DF20-3209-9076-5CCB314F90C9>  /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
+           0x1eecfc000 -        0x1eed53fff  RunningBoardServices    <BA7B3BDA-F8E0-35FF-9AED-23B7D40873EB>  /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
+           0x1f0d2f000 -        0x1f0de5fff  IOKit                   <E7BA650F-99CF-3C01-B400-B021E902AF6C>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1f5dbc000 -        0x1f5dddfff  libsystem_malloc.dylib  <8D3A22BF-4E71-3B9E-B689-F09A4A3AA8A1>  /usr/lib/system/libsystem_malloc.dylib
+           0x1fc808000 -        0x1fc844fff  libobjc.A.dylib         <A196A0F6-CADB-325B-BC1F-5965E670F9B6>  /usr/lib/libobjc.A.dylib
+           0x1fe4e6000 -        0x1fe61afff  Metal                   <0DD464CF-7FDE-39AB-8A77-A14EEDDC6905>  /System/Library/Frameworks/Metal.framework/Metal
+           0x209902000 -        0x20990dfff  IOMobileFramebuffer     <1D133010-70C1-39BB-8B12-981396EC7342>  /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer
+           0x21b67a000 -        0x21b6affff  libsystem_kernel.dylib  <C2FCC058-7480-3C14-B479-0064A3F843E3>  /usr/lib/system/libsystem_kernel.dylib
+           0x244a43000 -        0x244a6dfff  IOGPU                   <1F00098A-088B-32D2-9723-40C383C474BF>  /System/Library/PrivateFrameworks/IOGPU.framework/IOGPU
+           0x255265000 -        0x255266fff  libsystem_blocks.dylib  <27390A60-41E6-3C20-9C23-CEE812F4C8BF>  /usr/lib/system/libsystem_blocks.dylib
+           0x2552e9000 -        0x2552f4fff  libsystem_pthread.dylib <B48EFCBE-D4F7-308B-A3FA-172E0EA78E33>  /usr/lib/system/libsystem_pthread.dylib
