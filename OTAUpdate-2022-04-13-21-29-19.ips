@@ -1,0 +1,63 @@
+{"restore_payload_version":"Unknown","restore_type":"OTAUpdate","os_version":"19E241","itunes_version":"19E241","bug_type":"183","restore_error":"806","name":"iPhoneRestore"}
+6faeb000 : The secure object length value is: 1285
+6faeb000 : Caller has pased in downloadOptions: MADownloadOptions allowsCellular: 1 resourceTimeout: -1 canUseCacheServer: 0 discretionary: 0 sessionId: (null) additionalServerParams:{ } allowsExpensiveAccess:1 requiresPowerPluggedIn: 0 prefersInfraWiFi: 1 liveServerOnly: 1  + MAMsuDownloadOptions reqProdVersion: (null) delayPeriod: 0 managedDevice: 0 allowSameVersion: 0 prereqBuild: (null) prereqVersion: (null) prereqReleaseType: (default) downloadAuthorizationHeader: not present liveAssetAudienceUUID: (null) purpose: (null)
+6faeb000 : The attributes are: {
+    ActualMinimumSystemPartition = 7046;
+    AssetType = "com.apple.MobileAsset.SoftwareUpdate";
+    AutoUpdate = 1;
+    Build = 19E258;
+    InstallationSize = "269561036.8";
+    "InstallationSize-Snapshot" = 3035426075;
+    MinimumSystemPartition = 0;
+    OSVersion = "15.4.1";
+    PrerequisiteBuild = 19E241;
+    PrerequisiteOSVersion = "15.4";
+    RSEPDigest = {length = 48, bytes = 0xd505b372 60269ba9 c826108b a1d115a3 ... f328ee44 b3005f28 };
+    RSEPTBMDigests = "JqZYJm1BWOcCH1VB3WQv/tmycGtbnqJxVRMDHc5GC5aIHx9L/1PokmHj4dx7jxWv\n/6oYsu9MXIFqfdbnR5HmYe8K2oyoI0gQiVyll/Z0s2mmwBuhFbmO26YD0VMEtf3z\nF9gcltXpGkIpi0LXka9avMmqXuKUGr4PCjHVSHB7NPDNeE+9cPrLEatK9fzsXY5R\nGa1GPdMGTPvxmd8AmYrJwxnE2OTQ4sSUy4m2PET9HY3uI41dcicdViZ3RaDkpVMW\nN33KRkAZidqt/1J+9sRcHadQTlFb9mfNt2UlFXvlfNlOD3M92SMiIyrWKiSv5fVz";
+    Ramp = 0;
+    RescueMinimumSystemPartition = 7466;
+    SEPDigest = {length = 48, bytes = 0x7f8601a7 f5e689d1 01e531b8 d1eb2d91 ... ece77bb5 e8360842 };
+    SEPTBMDigests = "IoC6rGnB70Si80o1bydKbWo9OkaZY9b/4nCMsYPbwWiqXtXCYjp5F7HUajMHJ9gy\n6pv7sxMw5EsI4ZtfBX1VdwwNBUjPcZq8Gll2kxpIMSTmzF9u/LLgCDhKE0TrYekP\nldb4d2KTu2fIyIJe4nETBWbTnZAKF1oEywBWY2iYq3hvT3wcluHuHvqQQlwuEsQe\nt3NBsR8KiyicfLb3fikYA6rM+9U1wSfhF1T5TYHwleh2MAzb6cPBsiZuhsuRoTVR\nAzZB/jdELPxBSIq3RhqfJw3enVho07og8Uj6+qFnIbXt+x3F4xOlwEkDuzhuyrU7";
+    SUConvReqd = 1;
+    SUDocumentationID = iPadOS1541Short;
+    SUInstallTonightEnabled = 1;
+    SUMultiPassEnabled = 1;
+    SUProductSystemName = iOS;
+    SUPublisher = "Apple Inc.";
+    SupportedDeviceModels =     (
+        J308AP
+    );
+    SupportedDevices =     (
+        "iPad13,2"
+    );
+    SystemPartitionPadding =     {
+        1024 = 1280;
+        128 = 1280;
+        16 = 160;
+        256 = 1280;
+        32 = 320;
+        512 = 1280;
+        64 = 640;
+        768 = 1280;
+        8 = 80;
+    };
+    SystemVolumeSealingOverhead = 179;
+    "_CompressionAlgorithm" = zip;
+    "_DownloadSize" = 223536164;
+    "_EventRecordingServiceURL" = "https://xp.apple.com/report";
+    "_IsZipStreamable" = 1;
+    "_Measurement" = {length = 20, bytes = 0x<<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>};
+    "_MeasurementAlgorithm" = "SHA-1";
+    "_UnarchivedSize" = 316339200;
+    "__AssetDefaultGarbageCollectionBehavior" = NeverCollected;
+    "__BaseURL" = "https://updates.cdn-apple.com/2022FCSWinter/patches/002-81912/65C6C573-0EA2-431A-A110XXXX>>>>>73BD/";
+    "__CanUseLocalCacheServer" = 1;
+    "__HideInstallAlert" = 0;
+    "__QueuingServiceURL" = "https://ns.itunes.apple.com/nowserving";
+    "__RelativePath" = "com_apple_MobileAsset_SoftwareUpdate/<<<<<<<<<<<<<<<<<<UDID>>>>>>>>>>>>>>>>>>.zip";
+}
+6faeb000 : Purge update service connection handler: <dictionary: 0x2074af990> { count = 1, transaction: 0, voucher = 0x0, contents =
+	"XPCErrorDescription" => <string: 0x2074afb80> { length = 22, contents = "Connection interrupted" }
+}
+6faeb000 : MobileSoftwareUpdateErrorDomain error 806 - Failed to download update brain asset, MADownLoadResult:MADownloadXpcError
+6faeb000 : Failed to install update brain: Error Domain=MobileSoftwareUpdateErrorDomain Code=806 "Failed to download update brain asset, MADownLoadResult:MADownloadXpcError" UserInfo={NSLocalizedDescription=Failed to download update brain asset, MADownLoadResult:MADownloadXpcError}
