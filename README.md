@@ -14,7 +14,7 @@ Surace Laptop Go - Registry
 
 ***5/21: It appears the devices are being administered via Intune within the Microsoft EMS framework... looking for ways to unenroll***
 
-***5/22: I'm still learning but I believe the following are in play (for iOS):
+***5/22: I'm still learning but I believe the following are in play (for iOS):***
 - Wakeup logs indicate kernel attacks; Crash the kernel by blowing through factory gates, gain system control
 - Intune enrollment allows for withholding diagnostic data from Apple and also lets you customize apps / the App Store
 - Then Xcode and SwiftUI allow you to make changes to the private libraries and see what shows in real time
