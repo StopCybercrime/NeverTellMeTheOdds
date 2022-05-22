@@ -18,5 +18,5 @@ Surace Laptop Go - Registry
 - Wakeup logs indicate kernel attacks; Crash the kernel by blowing through factory gates, gain system control
 - Intune enrollment allows for withholding diagnostic data from Apple and also lets you customize apps / the App Store
 - Xcode and SwiftUI allow you to make changes to the private apps/libraries and view the display in real time
-- Moreover, newer versions of that developer software allow for programmatic utilization of accessibility features, including the Rotor API; that's where natural language processing and AI would dovetail with the monitoring/control
+- Moreover, newer versions of that developer software allow for programmatic utilization of accessibility features, including the Rotor API; that's where natural language processing and AI would dovetail with monitoring/control
 - Still trying to get a sense for where the webkit enters the fray... (perhaps as an entry vector)
