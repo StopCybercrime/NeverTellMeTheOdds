@@ -1,0 +1,1204 @@
+{"app_name":"BackgroundShortcutRunner","timestamp":"2022-05-23 18:26:01.00 -0400","app_version":"5.0","slice_uuid":"5F070462-DA6F-3DFA-9454-9C8452388B94","adam_id":0,"build_version":"1146.14","bundleID":"com.apple.WorkflowKit.BackgroundShortcutRunner","share_with_app_devs":0,"is_first_party":1,"bug_type":"202","os_version":"iPhone OS 15.5 (19F77)","incident_id":"4DBDF0B6-AA04-4385-8617-7E3B6EC23BAD","name":"BackgroundShortcutRunner"}
+Date/Time:        2022-05-23 18:23:25.109 -0400
+End time:         2022-05-23 18:26:00.628 -0400
+OS Version:       iPhone OS 15.5 (Build 19F77)
+Architecture:     arm64e
+Report Version:   35.1
+Incident Identifier: 4DBDF0B6-AA04-4385-8617-7E3B6EC23BAD
+
+Data Source:      Microstackshots
+Shared Cache:     D3BF9328-5873-39B5-86EB-DDA04C31F0D3 slid base address 0x1a0660000, slide 0x20660000
+
+Command:          BackgroundShortcutRunner
+Path:             /System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/BackgroundShortcutRunner
+Identifier:       com.apple.WorkflowKit.BackgroundShortcutRunner
+Version:          5.0 (1146.14)
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              54064
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 156 seconds (58% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     156s
+Duration:         155.52s
+Duration Sampled: 153.29s
+Steps:            130
+
+Hardware model:   iPhone14,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 1, User -> 3, ThermalPressure -> 0, Combined -> 1
+Free disk space:  87.99 GB/119.09 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+
+Heaviest stack for the target process:
+  44  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+  44  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+  44  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+  36  ??? (libdispatch.dylib + 48308) [0x1a06bccb4]
+  36  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+  36  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+  36  ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+  36  ??? (WorkflowKit + 1827956) [0x1d8faa474]
+  36  ??? (WorkflowKit + 1868192) [0x1d8fb41a0]
+  36  ??? (WorkflowKit + 1828296) [0x1d8faa5c8]
+  36  ??? (WorkflowKit + 3361628) [0x1d9120b5c]
+  36  ??? (ActionKit + 4006512) [0x1e1aab270]
+  35  ??? (IntentsFoundation + 24316) [0x201b3aefc]
+  35  ??? (ActionKit + 4006976) [0x1e1aab440]
+  35  ??? (ContentKit + 1080240) [0x1dbe37bb0]
+  35  ??? (ContentKit + 1095736) [0x1dbe3b838]
+  35  ??? (ContentKit + 1095348) [0x1dbe3b6b4]
+  35  ??? (ContentKit + 1092592) [0x1dbe3abf0]
+  35  ??? (ContentKit + 1092272) [0x1dbe3aab0]
+  26  ??? (ContentKit + 242384) [0x1dbd6b2d0]
+  26  ??? (ImageIO + 39184) [0x1a24bc910]
+  26  ??? (ImageIO + 203856) [0x1a24e4c50]
+  26  ??? (ImageIO + 1894380) [0x1a26817ec]
+  26  ??? (ImageIO + 27004) [0x1a24b997c]
+  25  ??? (ImageIO + 1514704) [0x1a2624cd0]
+  16  ??? (CoreGraphics + 105608) [0x1a288dc88]
+  8   ??? (CoreGraphics + 215952) [0x1a28a8b90]
+  8   ??? (ImageIO + 39184) [0x1a24bc910]
+  7   ??? (ImageIO + 203712) [0x1a24e4bc0]
+  7   ??? (ImageIO + 1699040) [0x1a2651ce0]
+  7   ??? (ImageIO + 1849436) [0x1a267685c]
+  7   ??? (CMPhoto + 431320) [0x217c574d8]
+  7   ??? (CMPhoto + 357668) [0x217c45524]
+  4   ??? (CMPhoto + 478548) [0x217c62d54]
+  4   ??? (CMPhoto + 370592) [0x217c487a0]
+  2   ??? (CMPhoto + 167848) [0x217c16fa8]
+  2   ??? (CMPhoto + 109936) [0x217c08d70]
+  1   ??? (CMPhoto + 86104) [0x217c03058]
+  1   ??? (VideoToolbox + 34892) [0x1b665f84c]
+  1   ??? (VideoToolbox + 299976) [0x1b66a03c8]
+  1   ??? (VideoToolbox + 1882560) [0x1b68229c0]
+  1   ??? (VideoToolbox + 43248) [0x1b66618f0]
+  1   ??? (IOSurface + 7056) [0x1ca6d9b90]
+  1   ??? (IOSurfaceAccelerator + 2824) [0x201a30b08]
+  1   ??? (IOKit + 13532) [0x1adcf64dc]
+  1   ??? (IOKit + 13720) [0x1adcf6598]
+  1   ??? (IOKit + 16940) [0x1adcf722c]
+  1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+
+
+Powerstats for:   BackgroundShortcutRunner [54064]
+UUID:             5F070462-DA6F-3DFA-9454-9C8452388B94
+Path:             /System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/BackgroundShortcutRunner
+Identifier:       com.apple.WorkflowKit.BackgroundShortcutRunner
+Version:          5.0 (1146.14)
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        104.16 MB -> 13.83 MB (-90.33 MB) (max 109.50 MB )
+Pageins:          22828 pages
+Start time:       2022-05-23 18:23:27.134 -0400
+End time:         2022-05-23 18:26:00.427 -0400
+Num samples:      44 (34%)
+Primary state:    19 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 44 samples Active
+Power Source:     44 samples on Battery, 0 samples on AC
+  44  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    44  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      44  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        36  ??? (libdispatch.dylib + 48308) [0x1a06bccb4]
+          36  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            36  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              36  ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+                36  ??? (WorkflowKit + 1827956) [0x1d8faa474]
+                  36  ??? (WorkflowKit + 1868192) [0x1d8fb41a0]
+                    36  ??? (WorkflowKit + 1828296) [0x1d8faa5c8]
+                      36  ??? (WorkflowKit + 3361628) [0x1d9120b5c]
+                        36  ??? (ActionKit + 4006512) [0x1e1aab270]
+                          35  ??? (IntentsFoundation + 24316) [0x201b3aefc]
+                            35  ??? (ActionKit + 4006976) [0x1e1aab440]
+                              35  ??? (ContentKit + 1080240) [0x1dbe37bb0]
+                                35  ??? (ContentKit + 1095736) [0x1dbe3b838]
+                                  35  ??? (ContentKit + 1095348) [0x1dbe3b6b4]
+                                    35  ??? (ContentKit + 1092592) [0x1dbe3abf0]
+                                      35  ??? (ContentKit + 1092272) [0x1dbe3aab0]
+                                        26  ??? (ContentKit + 242384) [0x1dbd6b2d0]
+                                          26  ??? (ImageIO + 39184) [0x1a24bc910]
+                                            26  ??? (ImageIO + 203856) [0x1a24e4c50]
+                                              26  ??? (ImageIO + 1894380) [0x1a26817ec]
+                                                26  ??? (ImageIO + 27004) [0x1a24b997c]
+                                                  25  ??? (ImageIO + 1514704) [0x1a2624cd0]
+                                                    16  ??? (CoreGraphics + 105608) [0x1a288dc88]
+                                                      8   ??? (CoreGraphics + 215952) [0x1a28a8b90]
+                                                        8   ??? (ImageIO + 39184) [0x1a24bc910]
+                                                          7   ??? (ImageIO + 203712) [0x1a24e4bc0]
+                                                            7   ??? (ImageIO + 1699040) [0x1a2651ce0]
+                                                              7   ??? (ImageIO + 1849436) [0x1a267685c]
+                                                                7   ??? (CMPhoto + 431320) [0x217c574d8]
+                                                                  7   ??? (CMPhoto + 357668) [0x217c45524]
+                                                                    4   ??? (CMPhoto + 478548) [0x217c62d54]
+                                                                      4   ??? (CMPhoto + 370592) [0x217c487a0]
+                                                                        2   ??? (CMPhoto + 167848) [0x217c16fa8]
+                                                                          2   ??? (CMPhoto + 109936) [0x217c08d70]
+                                                                            1   ??? (CMPhoto + 86104) [0x217c03058]
+                                                                              1   ??? (VideoToolbox + 34892) [0x1b665f84c]
+                                                                                1   ??? (VideoToolbox + 299976) [0x1b66a03c8]
+                                                                                  1   ??? (VideoToolbox + 1882560) [0x1b68229c0]
+                                                                                    1   ??? (VideoToolbox + 43248) [0x1b66618f0]
+                                                                                      1   ??? (IOSurface + 7056) [0x1ca6d9b90]
+                                                                                        1   ??? (IOSurfaceAccelerator + 2824) [0x201a30b08]
+                                                                                          1   ??? (IOKit + 13532) [0x1adcf64dc]
+                                                                                            1   ??? (IOKit + 13720) [0x1adcf6598]
+                                                                                              1   ??? (IOKit + 16940) [0x1adcf722c]
+                                                                                                1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                                                                  1   <Kernel mode>
+                                                                            1   ??? (CMPhoto + 85152) [0x217c02ca0]
+                                                                              1   ??? (VideoToolbox + 45372) [0x1b666213c]
+                                                                                1   ??? (VideoToolbox + 139004) [0x1b6678efc]
+                                                                                  1   ??? (CoreFoundation + 164736) [0x1a09dc380]
+                                                                        2   ??? (CMPhoto + 167352) [0x217c16db8]
+                                                                          2   ??? (CMPhoto + 45124) [0x217bf9044]
+                                                                            2   ??? (CMPhoto + 101808) [0x217c06db0]
+                                                                              2   ??? (CMPhoto + 51076) [0x217bfa784]
+                                                                                2   ??? (CMPhoto + 92144) [0x217c047f0]
+                                                                                  2   ??? (VideoToolbox + 4099456) [0x1b6a3fd80]
+                                                                                    2   ??? (VideoToolbox + 4353348) [0x1b6a7dd44]
+                                                                                      2   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                                                        1   <Kernel mode>
+                                                                    1   ??? (CMPhoto + 480148) [0x217c63394]
+                                                                      1   ??? (CMPhoto + 214672) [0x217c22690]
+                                                                        1   ??? (ImageIO + 186172) [0x1a24e073c]
+                                                                          1   ??? (ImageIO + 445208) [0x1a251fb18]
+                                                                            1   ??? (ImageIO + 401336) [0x1a2514fb8]
+                                                                              1   ??? (CoreFoundation + 64216) [0x1a09c3ad8]
+                                                                                1   ??? (CMPhoto + 390192) [0x217c4d430]
+                                                                                  1   ??? (CoreMedia + 675404) [0x1ab60ee4c]
+                                                                                    1   ??? (libsystem_platform.dylib + 2728) [0x212307aa8]
+                                                                    1   ??? (CMPhoto + 478800) [0x217c62e50]
+                                                                      1   ??? (CMPhoto + 481276) [0x217c637fc]
+                                                                        1   ??? (CMPhoto + 510720) [0x217c6ab00]
+                                                                          1   ??? (CMPhoto + 11892) [0x217bf0e74]
+                                                                            1   ??? (CMPhoto + 56580) [0x217bfbd04]
+                                                                              1   ??? (CMPhoto + 116900) [0x217c0a8a4]
+                                                                                1   ??? (IOSurface + 9484) [0x1ca6da50c]
+                                                                                  1   ??? (IOKit + 57484) [0x1add0108c]
+                                                                                    1   ??? (IOKit + 14172) [0x1adcf675c]
+                                                                                      1   ??? (CoreFoundation + 52312) [0x1a09c0c58]
+                                                                                        1   ??? (IOKit + 178736) [0x1add1ea30]
+                                                                                          1   ??? (IOKit + 14896) [0x1adcf6a30]
+                                                                    1   ??? (CMPhoto + 478532) [0x217c62d44]
+                                                                      1   ??? (CoreFoundation + 81964) [0x1a09c802c]
+                                                                        1   ??? (CoreVideo + 11820) [0x1aad01e2c]
+                                                                          1   ??? (CoreVideo + 105552) [0x1aad18c50]
+                                                                            1   ??? (CoreFoundation + 51820) [0x1a09c0a6c]
+                                                                              1   ??? (CoreFoundation + 279812) [0x1a09f8504]
+                                                                                1   ??? (CoreFoundation + 81816) [0x1a09c7f98]
+                                                          1   ??? (ImageIO + 203856) [0x1a24e4c50]
+                                                            1   ??? (ImageIO + 454272) [0x1a2521e80]
+                                                              1   ??? (ImageIO + 566640) [0x1a253d570]
+                                                                1   ??? (ImageIO + 568804) [0x1a253dde4]
+                                                                  1   ??? (AppleJPEG + 27044) [0x1e475b9a4]
+                                                                    1   ??? (AppleJPEG + 33416) [0x1e475d288]
+                                                                      1   ??? (AppleJPEG + 99064) [0x1e476d2f8]
+                                                                        1   <Effective Thread QoS User Initiated>
+                                                      8   ??? (CoreGraphics + 216132) [0x1a28a8c44]
+                                                        6   ??? (CoreGraphics + 172052) [0x1a289e014]
+                                                          6   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                            6   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                              6   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                6   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                  6   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                    6   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                      6   ??? (ImageIO + 315820) [0x1a25001ac]
+                                                                        4   ??? (ImageIO + 1843432) [0x1a26750e8]
+                                                                          4   ??? (CMPhoto + 36992) [0x217bf7080]
+                                                                            4   ??? (CMPhoto + 347112) [0x217c42be8]
+                                                                              4   ??? (CMPhoto + 362472) [0x217c467e8]
+                                                                                4   ??? (CMPhoto + 167352) [0x217c16db8]
+                                                                                  4   ??? (CMPhoto + 45124) [0x217bf9044]
+                                                                                    2   ??? (CMPhoto + 101808) [0x217c06db0]
+                                                                                      1   ??? (CMPhoto + 51076) [0x217bfa784]
+                                                                                        1   ??? (CMPhoto + 91988) [0x217c04754]
+                                                                                          1   ??? (VideoToolbox + 4099580) [0x1b6a3fdfc]
+                                                                                            1   ??? (CoreMedia + 246332) [0x1ab5a623c]
+                                                                                              1   ??? (libsystem_kernel.dylib + 5136) [0x1d85dc410]
+                                                                                      1   ??? (CMPhoto + 50172) [0x217bfa3fc]
+                                                                                        1   ??? (CMPhoto + 97452) [0x217c05cac]
+                                                                                          1   ??? (CMPhoto + 142656) [0x217c10d40]
+                                                                                            1   ??? (CMPhoto + 80392) [0x217c01a08]
+                                                                                              1   ??? (CMPhoto + 35180) [0x217bf696c]
+                                                                                                1   ??? (CoreVideo + 10172) [0x1aad017bc]
+                                                                                                  1   ??? (IOSurface + 7612) [0x1ca6d9dbc]
+                                                                                                    1   ??? (IOKit + 11756) [0x1adcf5dec]
+                                                                                                      1   ??? (CoreFoundation + 142992) [0x1a09d6e90]
+                                                                                                        1   ??? (CoreFoundation + 69904) [0x1a09c5110]
+                                                                                    1   ??? (CMPhoto + 102596) [0x217c070c4]
+                                                                                      1   ??? (CMPhoto + 173736) [0x217c186a8]
+                                                                                        1   ??? (CMPhoto + 169284) [0x217c17544]
+                                                                                          1   ??? (CMPhoto + 181420) [0x217c1a4ac]
+                                                                                            1   ??? (VideoToolbox + 4094356) [0x1b6a3e994]
+                                                                                              1   ??? (libsystem_kernel.dylib + 9512) [0x1d85dd528]
+                                                                                                1   <Effective Thread QoS User Initiated>
+                                                                                    1   ??? (CMPhoto + 101316) [0x217c06bc4]
+                                                                                      1   ??? (CMPhoto + 175992) [0x217c18f78]
+                                                                                        1   ??? (CMPhoto + 184572) [0x217c1b0fc]
+                                                                                          1   ??? (CMPhoto + 165736) [0x217c16768]
+                                                                                            1   ??? (CMPhoto + 153200) [0x217c13670]
+                                                                                              1   ??? (VideoToolbox + 4093064) [0x1b6a3e488]
+                                                                                                1   ??? (CoreMedia + 406112) [0x1ab5cd260]
+                                                                                                  1   ??? (CoreFoundation + 436684) [0x1a0a1e9cc]
+                                                                                                    1   ??? (CoreFoundation + 426864) [0x1a0a1c370]
+                                                                                                      1   ??? (CoreFoundation + 68440) [0x1a09c4b58]
+                                                                                                        1   ??? (CoreFoundation + 113028) [0x1a09cf984]
+                                                                                                          1   ??? (CoreFoundation + 113828) [0x1a09cfca4]
+                                                                                                            1   ??? (CoreFoundation + 188124) [0x1a09e1edc]
+                                                                                                              1   ??? (CoreFoundation + 161848) [0x1a09db838]
+                                                                                                                1   ??? (CoreFoundation + 177704) [0x1a09df628]
+                                                                                                                  1   ??? (libsystem_malloc.dylib + 24436) [0x1b2ce0f74]
+                                                                        1   ??? (libsystem_platform.dylib + 2784) [0x212307ae0]
+                                                                          1   <Kernel mode>
+                                                                        1   ??? (ImageIO + 1844696) [0x1a26755d8]
+                                                                          1   ??? (CMPhoto + 117444) [0x217c0aac4]
+                                                                            1   ??? (CMPhoto + 131616) [0x217c0e220]
+                                                                              1   ??? (CMPhoto + 191028) [0x217c1ca34]
+                                                                                1   ??? (CMPhoto + 116436) [0x217c0a6d4]
+                                                                                  1   ??? (IOSurface + 8152) [0x1ca6d9fd8]
+                                                                                    1   ??? (IOSurface + 15144) [0x1ca6dbb28]
+                                                                                      1   ??? (IOSurface + 10064) [0x1ca6da750]
+                                                                                        1   ??? (IOKit + 13720) [0x1adcf6598]
+                                                                                          1   ??? (IOKit + 16940) [0x1adcf722c]
+                                                                                            1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                                                              1   <Kernel mode, Effective Thread QoS User Initiated>
+                                                        2   ??? (CoreGraphics + 172164) [0x1a289e084]
+                                                          2   ??? (CoreGraphics + 253300) [0x1a28b1d74]
+                                                            2   ??? (CoreGraphics + 330004) [0x1a28c4914]
+                                                              2   ??? (libsystem_platform.dylib + 2820) [0x212307b04]
+                                                    9   ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                      9   ??? (CoreGraphics + 506872) [0x1a28efbf8]
+                                                        9   ??? (CoreGraphics + 827328) [0x1a293dfc0]
+                                                          9   ??? (CoreGraphics + 588908) [0x1a2903c6c]
+                                                            9   ??? (ImageIO + 1320560) [0x1a25f5670]
+                                                              5   ??? (ImageIO + 2065520) [0x1a26ab470]
+                                                                5   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                                  5   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                    5   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                      5   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                        5   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                          5   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                            5   ??? (ImageIO + 249104) [0x1a24efd10]
+                                                                              4   ??? (ImageIO + 140368) [0x1a24d5450]
+                                                                                2   ??? (libsystem_platform.dylib + 2820) [0x212307b04]
+                                                                                  1   <Kernel mode>
+                                                                                  1   <Effective Thread QoS User Initiated>
+                                                                                1   ??? (vImage + 141240) [0x1c30737b8]
+                                                                                1   ??? (vImage + 141208) [0x1c3073798]
+                                                                              1   ??? (ImageIO + 140340) [0x1a24d5434]
+                                                                                1   ??? (ImageIO + 125860) [0x1a24d1ba4]
+                                                                                  1   ??? (CMPhoto + 36992) [0x217bf7080]
+                                                                                    1   ??? (CMPhoto + 35616) [0x217bf6b20]
+                                                                                      1   ??? (CMPhoto + 26344) [0x217bf46e8]
+                                                                                        1   ??? (CMPhoto + 39256) [0x217bf7958]
+                                                                                          1   ??? (CMPhoto + 43984) [0x217bf8bd0]
+                                                                                            1   ??? (CMPhoto + 54556) [0x217bfb51c]
+                                                                                              1   ??? (IOKit + 13532) [0x1adcf64dc]
+                                                                                                1   ??? (IOKit + 13780) [0x1adcf65d4]
+                                                                                                  1   ??? (IOKit + 16940) [0x1adcf722c]
+                                                                                                    1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                              2   ??? (ImageIO + 2065664) [0x1a26ab500]
+                                                                2   ??? (CoreGraphics + 253300) [0x1a28b1d74]
+                                                                  2   ??? (CoreGraphics + 330004) [0x1a28c4914]
+                                                                    2   ??? (libsystem_platform.dylib + 2820) [0x212307b04]
+                                                                      1   <Effective Thread QoS User Initiated>
+                                                              2   ??? (ImageIO + 2065644) [0x1a26ab4ec]
+                                                                1   ??? (ImageIO + 1931496) [0x1a268a8e8]
+                                                                1   ??? (ImageIO + 1931460) [0x1a268a8c4]
+                                                  1   ??? (ImageIO + 1514764) [0x1a2624d0c]
+                                                    1   ??? (CoreGraphics + 592736) [0x1a2904b60]
+                                                      1   ??? (CoreGraphics + 1894860) [0x1a2a429cc]
+                                                        1   ??? (CoreGraphics + 830768) [0x1a293ed30]
+                                                          1   ??? (CoreGraphics + 832820) [0x1a293f534]
+                                                            1   ??? (CoreFoundation + 52312) [0x1a09c0c58]
+                                                              1   ??? (CoreGraphics + 530448) [0x1a28f5810]
+                                                                1   ??? (CoreGraphics + 487860) [0x1a28eb1b4]
+                                                                  1   ??? (CoreGraphics + 916368) [0x1a2953b90]
+                                                                    1   ??? (ImageIO + 192992) [0x1a24e21e0]
+                                                                      1   ??? (libsystem_c.dylib + 64704) [0x1abb42cc0]
+                                                                        1   ??? (libsystem_c.dylib + 40940) [0x1abb3cfec]
+                                                                          1   ??? (libsystem_c.dylib + 35940) [0x1abb3bc64]
+                                                                            1   ??? (libsystem_kernel.dylib + 13592) [0x1d85de518]
+                                                                              1   <Kernel mode>
+                                        9   ??? (ContentKit + 242368) [0x1dbd6b2c0]
+                                          9   ??? (ImageIO + 1700460) [0x1a265226c]
+                                            8   ??? (ImageIO + 1694216) [0x1a2650a08]
+                                              8   ??? (ImageIO + 34792) [0x1a24bb7e8]
+                                                8   ??? (ImageIO + 1691228) [0x1a264fe5c]
+                                                  7   ??? (ImageIO + 215932) [0x1a24e7b7c]
+                                                    7   ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                      6   ??? (CoreGraphics + 297524) [0x1a28bca34]
+                                                        6   ??? (CoreGraphics + 349388) [0x1a28c94cc]
+                                                          6   ??? (CoreGraphics + 261708) [0x1a28b3e4c]
+                                                            6   ??? (CoreGraphics + 863956) [0x1a2946ed4]
+                                                              2   ??? (CoreGraphics + 3547756) [0x1a2bd626c]
+                                                                2   <Effective Thread QoS User Initiated>
+                                                              1   ??? (CoreGraphics + 3547736) [0x1a2bd6258]
+                                                              1   ??? (CoreGraphics + 3547672) [0x1a2bd6218]
+                                                                1   <Effective Thread QoS User Initiated>
+                                                              1   ??? (CoreGraphics + 3547580) [0x1a2bd61bc]
+                                                                1   <Effective Thread QoS User Initiated>
+                                                              1   ??? (CoreGraphics + 3547556) [0x1a2bd61a4]
+                                                                1   <Effective Thread QoS User Initiated>
+                                                      1   ??? (CoreGraphics + 297440) [0x1a28bc9e0]
+                                                        1   ??? (CoreGraphics + 167580) [0x1a289ce9c]
+                                                          1   ??? (CoreGraphics + 371292) [0x1a28cea5c]
+                                                            1   ??? (CoreGraphics + 53860) [0x1a2881264]
+                                                              1   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                                1   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                  1   ??? (CoreGraphics + 571268) [0x1a28ff784]
+                                                                    1   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                      1   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                        1   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                          1   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                            1   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                              1   ??? (ImageIO + 315820) [0x1a25001ac]
+                                                                                1   ??? (ImageIO + 1843432) [0x1a26750e8]
+                                                                                  1   ??? (CMPhoto + 36992) [0x217bf7080]
+                                                                                    1   ??? (CMPhoto + 347112) [0x217c42be8]
+                                                                                      1   ??? (CMPhoto + 362472) [0x217c467e8]
+                                                                                        1   ??? (CMPhoto + 167352) [0x217c16db8]
+                                                                                          1   ??? (CMPhoto + 45124) [0x217bf9044]
+                                                                                            1   ??? (CMPhoto + 99920) [0x217c06650]
+                                                                                              1   ??? (CMPhoto + 216932) [0x217c22f64]
+                                                                                                1   ??? (CMPhoto + 170904) [0x217c17b98]
+                                                                                                  1   ??? (CoreGraphics + 443984) [0x1a28e0650]
+                                                                                                    1   ??? (ColorSync + 12344) [0x1aac3c038]
+                                                                                                      1   ??? (ColorSync + 4960) [0x1aac3a360]
+                                                                                                        1   ??? (CoreFoundation + 296304) [0x1a09fc570]
+                                                                                                          1   ??? (CoreFoundation + 147596) [0x1a09d808c]
+                                                                                                            1   <Effective Thread QoS User Initiated>
+                                                  1   ??? (ImageIO + 215792) [0x1a24e7af0]
+                                                    1   ??? (CoreGraphics + 301872) [0x1a28bdb30]
+                                                      1   ??? (CoreGraphics + 315448) [0x1a28c1038]
+                                                        1   ??? (CoreGraphics + 135864) [0x1a28952b8]
+                                                          1   ??? (CoreGraphics + 342888) [0x1a28c7b68]
+                                                            1   ??? (CoreGraphics + 112228) [0x1a288f664]
+                                                              1   ??? (CoreGraphics + 316576) [0x1a28c14a0]
+                                                                1   ??? (CoreGraphics + 49492) [0x1a2880154]
+                                                                  1   ??? (libsystem_platform.dylib + 3424) [0x212307d60]
+                                                                    1   <Effective Thread QoS User Initiated>
+                                            1   ??? (ImageIO + 1694000) [0x1a2650930]
+                                              1   ??? (ImageIO + 1693628) [0x1a26507bc]
+                                                1   ??? (ImageIO + 370464) [0x1a250d720]
+                                                  1   ??? (ImageIO + 374332) [0x1a250e63c]
+                                                    1   ??? (ImageIO + 244040) [0x1a24ee948]
+                                                      1   ??? (ImageIO + 166316) [0x1a24db9ac]
+                                                        1   ??? (ImageIO + 252388) [0x1a24f09e4]
+                                                          1   ??? (ImageIO + 224336) [0x1a24e9c50]
+                                                            1   ??? (ImageIO + 572996) [0x1a253ee44]
+                                                              1   ??? (ImageIO + 514772) [0x1a2530ad4]
+                                                                1   ??? (ImageIO + 157496) [0x1a24d9738]
+                                                                  1   ??? (ImageIO + 508312) [0x1a252f198]
+                                                                    1   ??? (ImageIO + 107060) [0x1a24cd234]
+                                                                      1   ??? (ImageIO + 439088) [0x1a251e330]
+                                                                        1   ??? (ImageIO + 496880) [0x1a252c4f0]
+                                                                          1   ??? (libsystem_platform.dylib + 3736) [0x212307e98]
+                          1   ??? (IntentsFoundation + 24544) [0x201b3afe0]
+                            1   ??? (IntentsFoundation + 24844) [0x201b3b10c]
+                              1   ??? (ActionKit + 4007420) [0x1e1aab5fc]
+                                1   ??? (ActionKit + 4009344) [0x1e1aabd80]
+                                  1   ??? (ActionKit + 4009600) [0x1e1aabe80]
+                                    1   ??? (SoftLinking + 3144) [0x208de3c48]
+                                      1   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 40180) [0x100ff5cf4]
+                                        1   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 17096) [0x100ff02c8]
+                                          1   ??? (libobjc.A.dylib + 55208) [0x1b973e7a8]
+                                            1   ??? (libobjc.A.dylib + 52372) [0x1b973dc94]
+                                              1   ??? (libobjc.A.dylib + 48028) [0x1b973cb9c]
+                                                1   ??? (libobjc.A.dylib + 69112) [0x1b9741df8]
+                                                  1   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 21016) [0x100ff1218]
+                                                    1   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 5976) [0x100fed758]
+                                                      1   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 9500) [0x100fee51c]
+        8   ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+          6   ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            6   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              6   ??? (libdispatch.dylib + 75824) [0x1a06c3830]
+                6   ??? (CMPhoto + 195644) [0x217c1dc3c]
+                  6   ??? (CMPhoto + 81312) [0x217c01da0]
+                    6   ??? (CMPhoto + 36088) [0x217bf6cf8]
+                      5   ??? (CMPhoto + 86104) [0x217c03058]
+                        4   ??? (VideoToolbox + 34892) [0x1b665f84c]
+                          3   ??? (VideoToolbox + 299976) [0x1b66a03c8]
+                            3   ??? (VideoToolbox + 1882560) [0x1b68229c0]
+                              2   ??? (VideoToolbox + 42736) [0x1b66616f0]
+                                2   ??? (IOSurfaceAccelerator + 3240) [0x201a30ca8]
+                                  2   ??? (IOSurfaceAccelerator + 2804) [0x201a30af4]
+                                    2   ??? (IOSurfaceAccelerator + 5616) [0x201a315f0]
+                                      2   ??? (IOSurface + 17372) [0x1ca6dc3dc]
+                                        1   ??? (IOSurface + 7696) [0x1ca6d9e10]
+                                          1   ??? (IOSurface + 13104) [0x1ca6db330]
+                                            1   ??? (CoreFoundation + 228248) [0x1a09ebb98]
+                                              1   ??? (IOSurface + 11200) [0x1ca6dabc0]
+                                                1   ??? (IOSurface + 13104) [0x1ca6db330]
+                                                  1   ??? (CoreFoundation + 228248) [0x1a09ebb98]
+                                                    1   ??? (IOSurface + 11220) [0x1ca6dabd4]
+                                                      1   ??? (CoreFoundation + 27440) [0x1a09bab30]
+                                                        1   ??? (CoreFoundation + 61072) [0x1a09c2e90]
+                                                          1   ??? (libsystem_platform.dylib + 3736) [0x212307e98]
+                                                            1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                        1   ??? (IOSurface + 7504) [0x1ca6d9d50]
+                                          1   ??? (IOKit + 13780) [0x1adcf65d4]
+                                            1   ??? (IOKit + 16940) [0x1adcf722c]
+                                              1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                1   <Kernel mode, Requested Thread QoS Default>
+                              1   ??? (VideoToolbox + 43248) [0x1b66618f0]
+                                1   ??? (IOSurface + 7056) [0x1ca6d9b90]
+                                  1   ??? (IOSurfaceAccelerator + 2824) [0x201a30b08]
+                                    1   ??? (IOKit + 13532) [0x1adcf64dc]
+                                      1   ??? (IOKit + 13720) [0x1adcf6598]
+                                        1   ??? (IOKit + 16940) [0x1adcf722c]
+                                          1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                            1   <Kernel mode, Requested Thread QoS Default>
+                          1   ??? (VideoToolbox + 299604) [0x1b66a0254]
+                            1   ??? (VideoToolbox + 32924) [0x1b665f09c]
+                              1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                        1   ??? (VideoToolbox + 36548) [0x1b665fec4]
+                          1   ??? (libsystem_malloc.dylib + 6808) [0x1b2cdca98]
+                            1   <Requested Thread QoS Default>
+                      1   ??? (CMPhoto + 84600) [0x217c02a78]
+                        1   ??? (VideoToolbox + 25672) [0x1b665d448]
+                          1   ??? (libsystem_platform.dylib + 3596) [0x212307e0c]
+                            1   <Requested Thread QoS Default>
+          1   ??? (libdispatch.dylib + 45656) [0x1a06bc258]
+            1   ??? (libdispatch.dylib + 25192) [0x1a06b7268]
+              1   ??? (libdispatch.dylib + 24772) [0x1a06b70c4]
+                1   ??? (libsystem_kernel.dylib + 7564) [0x1d85dcd8c]
+                  1   <Kernel mode, Requested Thread QoS Default>
+          1   ??? (libdispatch.dylib + 45056) [0x1a06bc000]
+            1   ??? (libdispatch.dylib + 106812) [0x1a06cb13c]
+              1   ??? (libdispatch.dylib + 28396) [0x1a06b7eec]
+                1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                  1   ??? (libdispatch.dylib + 136416) [0x1a06d24e0]
+                    1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                      1   <Kernel mode, Requested Thread QoS Default>
+
+  Binary Images:
+           0x100c20000 -                ???  com.apple.WorkflowKit.BackgroundShortcutRunner 5.0 (1146.14) <5F070462-DA6F-3DFA-9454-9C8452388B94>  /System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/BackgroundShortcutRunner
+           0x100fec000 -                ???  ???                                                          <7C9C7851-8237-38A7-B1EB-9CD2DEB4B746>
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib                                            <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation                                               <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a24b3000 -        0x1a285afff  ImageIO                                                      <B1A4DB99-B391-3844-A94E-0476429934A9>  /System/Library/Frameworks/ImageIO.framework/ImageIO
+           0x1a2874000 -        0x1a2e2dfff  CoreGraphics                                                 <847F423B-5D75-39DA-8462-3A0B411FF216>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x1aac39000 -        0x1aacfefff  ColorSync                                                    <B6F430E6-8247-3B3B-AEFF-084209E9AA60>  /System/Library/PrivateFrameworks/ColorSync.framework/ColorSync
+           0x1aacff000 -        0x1aad41fff  CoreVideo                                                    <6E5EEB24-09A3-3AE0-A7F9-96AA099AC599>  /System/Library/Frameworks/CoreVideo.framework/CoreVideo
+           0x1ab56a000 -        0x1ab68afff  CoreMedia                                                    <7A16874C-AFE1-399B-A195-167F832C5925>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1abb33000 -        0x1abbb2fff  libsystem_c.dylib                                            <9BD1E199-40A3-3E4A-8A78-271281C0CF0D>  /usr/lib/system/libsystem_c.dylib
+           0x1adcf3000 -        0x1addaafff  IOKit                                                        <B119D6AF-E9B4-3B0E-B879-372B596B857A>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b2cdb000 -        0x1b2cfcfff  libsystem_malloc.dylib                                       <7B60C468-D3ED-3719-BE47-054CFCEC0007>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b6657000 -        0x1b6a9bfff  VideoToolbox                                                 <F19B4634-F553-3B53-B872-5F96B53461EE>  /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
+           0x1b9731000 -        0x1b976dfff  libobjc.A.dylib                                              <B1FC4376-8314-31DA-BFC2-95E703398D4E>  /usr/lib/libobjc.A.dylib
+           0x1c3051000 -        0x1c334efff  vImage                                                       <5CEDA429-FCA5-33A0-859E-B79A2AD3C459>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+           0x1ca6d8000 -        0x1ca6ebfff  IOSurface                                                    <7D48CDF9-22F4-39B9-BA0D-44F8C46094FA>  /System/Library/Frameworks/IOSurface.framework/IOSurface
+           0x1d85db000 -        0x1d8610fff  libsystem_kernel.dylib                                       <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
+           0x1d8dec000 -        0x1d9394fff  WorkflowKit                                                  <ED59BE6A-51CA-3866-9D11-48DDEC7FC2D8>  /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
+           0x1dbd30000 -        0x1dbeacfff  ContentKit                                                   <F41B28EB-9C6D-3C08-B674-0A948320E242>  /System/Library/PrivateFrameworks/ContentKit.framework/ContentKit
+           0x1e16d9000 -        0x1e1cabfff  ActionKit                                                    <4911BAA6-A7EC-3F2A-A174-6201FC042DFE>  /System/Library/PrivateFrameworks/ActionKit.framework/ActionKit
+           0x1e4755000 -        0x1e479bfff  AppleJPEG                                                    <E5EC9E8B-B9FE-3AA8-8E6A-9C5FA8FCAF45>  /System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG
+           0x201a30000 -        0x201a32fff  IOSurfaceAccelerator                                         <165C6F86-1F7B-32EA-B9C0-03329F400BC4>  /System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
+           0x201b35000 -        0x201b44fff  IntentsFoundation                                            <8EE7505C-EDB3-365D-9583-08778CC5DF59>  /System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation
+           0x208de3000 -        0x208de3fff  SoftLinking                                                  <45DE97D1-50B1-30F0-B1CD-EE636257EDA4>  /System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
+           0x212307000 -        0x21230dfff  libsystem_platform.dylib                                     <68A13C2E-80DD-3754-B166-C0A5992A7417>  /usr/lib/system/libsystem_platform.dylib
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib                                      <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
+           0x217bee000 -        0x217ca5fff  CMPhoto                                                      <F4E3FA84-15D4-36D4-9698-D7C154D23447>  /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
+
+
+Powerstats for:   mediaserverd
+UUID:             9CD5A11F-B6B5-32E7-9BF8-202A77EBA87A
+Path:             /usr/sbin/mediaserverd
+Architecture:     arm64e
+Start time:       2022-05-23 18:23:37.287 -0400
+End time:         2022-05-23 18:25:57.419 -0400
+Num samples:      21 (16%)
+Primary state:    12 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 21 samples Active
+Power Source:     21 samples on Battery, 0 samples on AC
+  20  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    20  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      20  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        20  ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+          11  ??? (libdispatch.dylib + 45056) [0x1a06bc000]
+            11  ??? (libdispatch.dylib + 106812) [0x1a06cb13c]
+              11  ??? (libdispatch.dylib + 28396) [0x1a06b7eec]
+                11  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                  7   ??? (libdispatch.dylib + 136552) [0x1a06d2568]
+                    7   ??? (VideoToolbox + 4358080) [0x1b6a7efc0]
+                      4   ??? (VideoToolbox + 4357744) [0x1b6a7ee70]
+                        2   ??? (VideoToolbox + 4236676) [0x1b6a61584]
+                          1   ??? (libdispatch.dylib + 153500) [0x1a06d679c]
+                            1   ??? (libsystem_kernel.dylib + 7068) [0x1d85dcb9c]
+                              1   <User mode>
+                          1   ??? (libdispatch.dylib + 20488) [0x1a06b6008]
+                            1   ??? (libdispatch.dylib + 7728) [0x1a06b2e30]
+                              1   ??? (libsystem_blocks.dylib + 5680) [0x21228c630]
+                                1   ??? (libsystem_malloc.dylib + 24592) [0x1b2ce1010]
+                        2   ??? (VideoToolbox + 4236468) [0x1b6a614b4]
+                          1   ??? (CoreMedia + 908364) [0x1ab647c4c]
+                            1   ??? (CoreMedia + 908736) [0x1ab647dc0]
+                              1   ??? (CoreVideo + 10172) [0x1aad017bc]
+                                1   ??? (IOSurface + 7504) [0x1ca6d9d50]
+                                  1   ??? (IOKit + 13780) [0x1adcf65d4]
+                                    1   ??? (IOKit + 16940) [0x1adcf722c]
+                                      1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                          1   ??? (CoreMedia + 908264) [0x1ab647be8]
+                            1   ??? (IOSurface + 18592) [0x1ca6dc8a0]
+                              1   ??? (IOSurface + 16664) [0x1ca6dc118]
+                                1   ??? (IOKit + 13780) [0x1adcf65d4]
+                                  1   ??? (IOKit + 16940) [0x1adcf722c]
+                                    1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                      3   ??? (VideoToolbox + 4354852) [0x1b6a7e324]
+                        2   ??? (VideoToolbox + 4232500) [0x1b6a60534]
+                          2   ??? (CoreMedia + 405900) [0x1ab5cd18c]
+                            2   ??? (CoreFoundation + 271268) [0x1a09f63a4]
+                              1   ??? (CoreFoundation + 69452) [0x1a09c4f4c]
+                                1   ??? (CoreFoundation + 76528) [0x1a09c6af0]
+                                  1   ??? (CoreFoundation + 82896) [0x1a09c83d0]
+                                    1   ??? (libsystem_malloc.dylib + 20684) [0x1b2ce00cc]
+                                      1   ??? (libsystem_malloc.dylib + 17312) [0x1b2cdf3a0]
+                                        1   <User mode>
+                              1   ??? (CoreFoundation + 69340) [0x1a09c4edc]
+                                1   ??? (CoreFoundation + 116060) [0x1a09d055c]
+                                  1   ??? (CoreFoundation + 228248) [0x1a09ebb98]
+                                    1   ??? (CoreFoundation + 190908) [0x1a09e29bc]
+                                      1   ??? (CoreFoundation + 115560) [0x1a09d0368]
+                                        1   ??? (CoreFoundation + 27000) [0x1a09ba978]
+                                          1   ??? (CoreFoundation + 47824) [0x1a09bfad0]
+                                            1   <User mode>
+                        1   ??? (libsystem_platform.dylib + 2808) [0x212307af8]
+                          1   <User mode>
+                  3   ??? (libdispatch.dylib + 136416) [0x1a06d24e0]
+                    3   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                      2   <User mode>
+                  1   ??? (libdispatch.dylib + 136504) [0x1a06d2538]
+                    1   ??? (libdispatch.dylib + 24752) [0x1a06b70b0]
+                      1   ??? (libdispatch.dylib + 154600) [0x1a06d6be8]
+                        1   ??? (libdispatch.dylib + 154924) [0x1a06d6d2c]
+                          1   ??? (libsystem_kernel.dylib + 7068) [0x1d85dcb9c]
+                            1   <User mode>
+          9   ??? (libdispatch.dylib + 45572) [0x1a06bc204]
+            9   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              9   ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+                8   ??? (VideoToolbox + 4237020) [0x1b6a616dc]
+                  8   ??? (VideoToolbox + 4244772) [0x1b6a63524]
+                    8   ??? (AVD.videodecoder + 7364) [0x221ad5cc4]
+                      8   ??? (AVD.videodecoder + 9568) [0x221ad6560]
+                        8   ??? (AVD.videodecoder + 11128) [0x221ad6b78]
+                          8   ??? (IOKit + 13532) [0x1adcf64dc]
+                            8   ??? (IOKit + 13780) [0x1adcf65d4]
+                              8   ??? (IOKit + 16940) [0x1adcf722c]
+                                8   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                1   ??? (VideoToolbox + 4237140) [0x1b6a61754]
+                  1   ??? (CoreFoundation + 81964) [0x1a09c802c]
+                    1   ??? (CoreMedia + 39788) [0x1ab573b6c]
+                      1   ??? (CoreFoundation + 82896) [0x1a09c83d0]
+                        1   ??? (libsystem_malloc.dylib + 20684) [0x1b2ce00cc]
+                          1   ??? (libsystem_malloc.dylib + 17636) [0x1b2cdf4e4]
+                            1   <User mode>
+  1   ??? (libsystem_pthread.dylib + 3688) [0x21230fe68]
+    1   ??? (libsystem_pthread.dylib + 6572) [0x2123109ac]
+      1   ??? (AVD.videodecoder + 32744) [0x221adbfe8]
+        1   ??? (CoreFoundation + 654760) [0x1a0a53da8]
+          1   ??? (CoreFoundation + 125896) [0x1a09d2bc8]
+            1   ??? (CoreFoundation + 45500) [0x1a09bf1bc]
+              1   ??? (CoreFoundation + 27952) [0x1a09bad30]
+                1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x104264000 -                ???  mediaserverd             <9CD5A11F-B6B5-32E7-9BF8-202A77EBA87A>  /usr/sbin/mediaserverd
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib        <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation           <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1aacff000 -        0x1aad41fff  CoreVideo                <6E5EEB24-09A3-3AE0-A7F9-96AA099AC599>  /System/Library/Frameworks/CoreVideo.framework/CoreVideo
+           0x1ab56a000 -        0x1ab68afff  CoreMedia                <7A16874C-AFE1-399B-A195-167F832C5925>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1adcf3000 -        0x1addaafff  IOKit                    <B119D6AF-E9B4-3B0E-B879-372B596B857A>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b2cdb000 -        0x1b2cfcfff  libsystem_malloc.dylib   <7B60C468-D3ED-3719-BE47-054CFCEC0007>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b6657000 -        0x1b6a9bfff  VideoToolbox             <F19B4634-F553-3B53-B872-5F96B53461EE>  /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
+           0x1ca6d8000 -        0x1ca6ebfff  IOSurface                <7D48CDF9-22F4-39B9-BA0D-44F8C46094FA>  /System/Library/Frameworks/IOSurface.framework/IOSurface
+           0x1d85db000 -        0x1d8610fff  libsystem_kernel.dylib   <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
+           0x21228b000 -        0x21228cfff  libsystem_blocks.dylib   <6E77B112-4CE7-3CF3-AA02-40826400792C>  /usr/lib/system/libsystem_blocks.dylib
+           0x212307000 -        0x21230dfff  libsystem_platform.dylib <68A13C2E-80DD-3754-B166-C0A5992A7417>  /usr/lib/system/libsystem_platform.dylib
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib  <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
+           0x221ad4000 -        0x221b02fff  AVD.videodecoder         <31108758-4844-3A19-B671-5408A0861548>  /System/Library/VideoDecoders/AVD.videodecoder
+
+
+Powerstats for:   BackgroundShortcutRunner (BackgroundShortcutRunner) (other tasks)
+UUID:             5F070462-DA6F-3DFA-9454-9C8452388B94
+Path:             /System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/BackgroundShortcutRunner
+Identifier:       com.apple.WorkflowKit.BackgroundShortcutRunner
+Version:          5.0 (1146.14)
+Architecture:     arm64
+Start time:       2022-05-23 18:23:27.493 -0400
+End time:         2022-05-23 18:24:45.188 -0400
+Num samples:      15 (12%)
+Primary state:    8 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 15 samples Active
+Power Source:     15 samples on Battery, 0 samples on AC
+  15  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    15  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      15  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        15  ??? (libdispatch.dylib + 48308) [0x1a06bccb4]
+          15  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            15  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              15  ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+                15  ??? (WorkflowKit + 1827956) [0x1d8faa474]
+                  15  ??? (WorkflowKit + 1868192) [0x1d8fb41a0]
+                    15  ??? (WorkflowKit + 1828296) [0x1d8faa5c8]
+                      15  ??? (WorkflowKit + 3361628) [0x1d9120b5c]
+                        15  ??? (ActionKit + 4006512) [0x1e1aab270]
+                          12  ??? (IntentsFoundation + 24544) [0x201b3afe0]
+                            12  ??? (IntentsFoundation + 24844) [0x201b3b10c]
+                              12  ??? (ActionKit + 4008968) [0x1e1aabc08]
+                                12  ??? (PDFKit + 550288) [0x1df909590]
+                                  11  ??? (PDFKit + 528572) [0x1df9040bc]
+                                    11  ??? (PDFKit + 617668) [0x1df919cc4]
+                                      11  ??? (PDFKit + 618284) [0x1df919f2c]
+                                        11  ??? (CoreGraphics + 1036216) [0x1a2970fb8]
+                                          11  ??? (CoreGraphics + 872316) [0x1a2948f7c]
+                                            11  ??? (CoreGraphics + 441836) [0x1a28dfdec]
+                                              11  ??? (CoreGraphics + 791356) [0x1a293533c]
+                                                11  ??? (CoreGraphics + 752732) [0x1a292bc5c]
+                                                  11  ??? (CoreGraphics + 1494076) [0x1a29e0c3c]
+                                                    11  ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                      11  ??? (CoreGraphics + 506872) [0x1a28efbf8]
+                                                        11  ??? (CoreGraphics + 827328) [0x1a293dfc0]
+                                                          11  ??? (CoreGraphics + 588908) [0x1a2903c6c]
+                                                            11  ??? (ImageIO + 1320560) [0x1a25f5670]
+                                                              6   ??? (ImageIO + 2065520) [0x1a26ab470]
+                                                                6   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                                  6   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                    5   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                      5   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                        5   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                          5   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                            5   ??? (ImageIO + 249104) [0x1a24efd10]
+                                                                              3   ??? (ImageIO + 140368) [0x1a24d5450]
+                                                                                1   ??? (libsystem_platform.dylib + 2828) [0x212307b0c]
+                                                                                  1   <Kernel mode>
+                                                                                1   ??? (vImage + 141240) [0x1c30737b8]
+                                                                                1   ??? (vImage + 141208) [0x1c3073798]
+                                                                              2   ??? (ImageIO + 140340) [0x1a24d5434]
+                                                                                1   ??? (ImageIO + 126272) [0x1a24d1d40]
+                                                                                  1   ??? (CoreFoundation + 81964) [0x1a09c802c]
+                                                                                    1   ??? (CMPhoto + 143072) [0x217c10ee0]
+                                                                                      1   ??? (IOKit + 65452) [0x1add02fac]
+                                                                                        1   ??? (IOKit + 77768) [0x1add05fc8]
+                                                                                          1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                                                            1   <Kernel mode>
+                                                                                1   ??? (ImageIO + 125860) [0x1a24d1ba4]
+                                                                                  1   ??? (CMPhoto + 36992) [0x217bf7080]
+                                                                                    1   ??? (CMPhoto + 35616) [0x217bf6b20]
+                                                                                      1   ??? (CMPhoto + 26344) [0x217bf46e8]
+                                                                                        1   ??? (CMPhoto + 39256) [0x217bf7958]
+                                                                                          1   ??? (CMPhoto + 43984) [0x217bf8bd0]
+                                                                                            1   ??? (CMPhoto + 54556) [0x217bfb51c]
+                                                                                              1   ??? (IOKit + 13532) [0x1adcf64dc]
+                                                                                                1   ??? (IOKit + 13780) [0x1adcf65d4]
+                                                                                                  1   ??? (IOKit + 16940) [0x1adcf722c]
+                                                                                                    1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                                                                                      1   <Kernel mode>
+                                                                    1   ??? (CoreGraphics + 301048) [0x1a28bd7f8]
+                                                                      1   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                        1   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                          1   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                            1   ??? (ImageIO + 250092) [0x1a24f00ec]
+                                                                              1   ??? (AppleJPEG + 24484) [0x1e475afa4]
+                                                                                1   ??? (AppleJPEG + 102688) [0x1e476e120]
+                                                                                  1   ??? (AppleJPEG + 48548) [0x1e4760da4]
+                                                                                    1   ??? (AppleJPEG + 21020) [0x1e475a21c]
+                                                                                      1   ??? (AppleJPEG + 35368) [0x1e475da28]
+                                                                                        1   ??? (AppleJPEG + 19532) [0x1e4759c4c]
+                                                              4   ??? (ImageIO + 2065644) [0x1a26ab4ec]
+                                                                3   ??? (ImageIO + 1931460) [0x1a268a8c4]
+                                                                1   ??? (ImageIO + 1931496) [0x1a268a8e8]
+                                                              1   ??? (ImageIO + 2065664) [0x1a26ab500]
+                                                                1   ??? (CoreGraphics + 253300) [0x1a28b1d74]
+                                                                  1   ??? (CoreGraphics + 330004) [0x1a28c4914]
+                                                                    1   ??? (libsystem_platform.dylib + 2820) [0x212307b04]
+                                  1   ??? (PDFKit + 528956) [0x1df90423c]
+                                    1   ??? (CoreGraphics + 592736) [0x1a2904b60]
+                                      1   ??? (CoreGraphics + 1894860) [0x1a2a429cc]
+                                        1   ??? (CoreGraphics + 830768) [0x1a293ed30]
+                                          1   ??? (CoreGraphics + 832820) [0x1a293f534]
+                                            1   ??? (CoreFoundation + 52312) [0x1a09c0c58]
+                                              1   ??? (CoreGraphics + 530448) [0x1a28f5810]
+                                                1   ??? (CoreGraphics + 487860) [0x1a28eb1b4]
+                                                  1   ??? (CoreGraphics + 916368) [0x1a2953b90]
+                                                    1   ??? (libsystem_c.dylib + 64704) [0x1abb42cc0]
+                                                      1   ??? (libsystem_c.dylib + 40940) [0x1abb3cfec]
+                                                        1   ??? (libsystem_c.dylib + 35940) [0x1abb3bc64]
+                                                          1   ??? (libsystem_kernel.dylib + 13592) [0x1d85de518]
+                                                            1   <Kernel mode>
+                          3   ??? (IntentsFoundation + 24316) [0x201b3aefc]
+                            3   ??? (ActionKit + 4006976) [0x1e1aab440]
+                              3   ??? (ContentKit + 1080240) [0x1dbe37bb0]
+                                3   ??? (ContentKit + 1095736) [0x1dbe3b838]
+                                  3   ??? (ContentKit + 1095348) [0x1dbe3b6b4]
+                                    3   ??? (ContentKit + 1092592) [0x1dbe3abf0]
+                                      3   ??? (ContentKit + 1092272) [0x1dbe3aab0]
+                                        2   ??? (ContentKit + 242384) [0x1dbd6b2d0]
+                                          2   ??? (ImageIO + 39184) [0x1a24bc910]
+                                            2   ??? (ImageIO + 203856) [0x1a24e4c50]
+                                              2   ??? (ImageIO + 1894380) [0x1a26817ec]
+                                                2   ??? (ImageIO + 27004) [0x1a24b997c]
+                                                  2   ??? (ImageIO + 1514704) [0x1a2624cd0]
+                                                    2   ??? (CoreGraphics + 105608) [0x1a288dc88]
+                                                      1   ??? (CoreGraphics + 216132) [0x1a28a8c44]
+                                                        1   ??? (CoreGraphics + 172052) [0x1a289e014]
+                                                          1   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                            1   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                              1   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                1   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                  1   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                    1   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                      1   ??? (ImageIO + 315820) [0x1a25001ac]
+                                                                        1   ??? (ImageIO + 1843432) [0x1a26750e8]
+                                                                          1   ??? (CMPhoto + 36992) [0x217bf7080]
+                                                                            1   ??? (CMPhoto + 347112) [0x217c42be8]
+                                                                              1   ??? (CMPhoto + 362472) [0x217c467e8]
+                                                                                1   ??? (CMPhoto + 167352) [0x217c16db8]
+                                                                                  1   ??? (CMPhoto + 45124) [0x217bf9044]
+                                                                                    1   ??? (CMPhoto + 101316) [0x217c06bc4]
+                                                                                      1   ??? (CMPhoto + 176012) [0x217c18f8c]
+                                                                                        1   ??? (CMPhoto + 178232) [0x217c19838]
+                                                                                          1   ??? (CMPhoto + 166076) [0x217c168bc]
+                                                                                            1   ??? (VideoToolbox + 4093836) [0x1b6a3e78c]
+                                                                                              1   ??? (CoreMedia + 406112) [0x1ab5cd260]
+                                                                                                1   ??? (CoreFoundation + 436684) [0x1a0a1e9cc]
+                                                                                                  1   ??? (CoreFoundation + 426864) [0x1a0a1c370]
+                                                                                                    1   ??? (CoreFoundation + 68440) [0x1a09c4b58]
+                                                                                                      1   ??? (CoreFoundation + 113028) [0x1a09cf984]
+                                                                                                        1   ??? (CoreFoundation + 113936) [0x1a09cfd10]
+                                                                                                          1   ??? (CoreFoundation + 399220) [0x1a0a15774]
+                                                                                                            1   ??? (CoreFoundation + 131880) [0x1a09d4328]
+                                                                                                              1   <Effective Thread QoS User Initiated>
+                                                      1   ??? (CoreGraphics + 215952) [0x1a28a8b90]
+                                                        1   ??? (ImageIO + 39184) [0x1a24bc910]
+                                                          1   ??? (ImageIO + 203712) [0x1a24e4bc0]
+                                                            1   ??? (ImageIO + 1699040) [0x1a2651ce0]
+                                                              1   ??? (ImageIO + 1849436) [0x1a267685c]
+                                                                1   ??? (CMPhoto + 431320) [0x217c574d8]
+                                                                  1   ??? (CMPhoto + 356132) [0x217c44f24]
+                                                                    1   ??? (CMPhoto + 427808) [0x217c56720]
+                                                                      1   ??? (CMPhoto + 337392) [0x217c405f0]
+                                                                        1   ??? (ImageIO + 2005460) [0x1a269c9d4]
+                                                                          1   ??? (ImageIO + 572996) [0x1a253ee44]
+                                                                            1   ??? (ImageIO + 514772) [0x1a2530ad4]
+                                                                              1   ??? (ImageIO + 157496) [0x1a24d9738]
+                                                                                1   ??? (ImageIO + 509512) [0x1a252f648]
+                                                                                  1   ??? (ImageIO + 471112) [0x1a2526048]
+                                                                                    1   ??? (ImageIO + 439008) [0x1a251e2e0]
+                                                                                      1   <Effective Thread QoS User Initiated>
+                                        1   ??? (ContentKit + 242368) [0x1dbd6b2c0]
+                                          1   ??? (ImageIO + 1700460) [0x1a265226c]
+                                            1   ??? (ImageIO + 1694216) [0x1a2650a08]
+                                              1   ??? (ImageIO + 34792) [0x1a24bb7e8]
+                                                1   ??? (ImageIO + 1691228) [0x1a264fe5c]
+                                                  1   ??? (ImageIO + 215932) [0x1a24e7b7c]
+                                                    1   ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                      1   ??? (CoreGraphics + 297524) [0x1a28bca34]
+                                                        1   ??? (CoreGraphics + 349388) [0x1a28c94cc]
+                                                          1   ??? (CoreGraphics + 261708) [0x1a28b3e4c]
+                                                            1   ??? (CoreGraphics + 863956) [0x1a2946ed4]
+                                                              1   ??? (CoreGraphics + 3547580) [0x1a2bd61bc]
+                                                                1   <Effective Thread QoS User Initiated>
+
+  Binary Images:
+           0x104cd8000 -                ???  com.apple.WorkflowKit.BackgroundShortcutRunner 5.0 (1146.14) <5F070462-DA6F-3DFA-9454-9C8452388B94>  /System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/BackgroundShortcutRunner
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib                                            <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation                                               <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a24b3000 -        0x1a285afff  ImageIO                                                      <B1A4DB99-B391-3844-A94E-0476429934A9>  /System/Library/Frameworks/ImageIO.framework/ImageIO
+           0x1a2874000 -        0x1a2e2dfff  CoreGraphics                                                 <847F423B-5D75-39DA-8462-3A0B411FF216>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x1ab56a000 -        0x1ab68afff  CoreMedia                                                    <7A16874C-AFE1-399B-A195-167F832C5925>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1abb33000 -        0x1abbb2fff  libsystem_c.dylib                                            <9BD1E199-40A3-3E4A-8A78-271281C0CF0D>  /usr/lib/system/libsystem_c.dylib
+           0x1adcf3000 -        0x1addaafff  IOKit                                                        <B119D6AF-E9B4-3B0E-B879-372B596B857A>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1b6657000 -        0x1b6a9bfff  VideoToolbox                                                 <F19B4634-F553-3B53-B872-5F96B53461EE>  /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
+           0x1c3051000 -        0x1c334efff  vImage                                                       <5CEDA429-FCA5-33A0-859E-B79A2AD3C459>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+           0x1d85db000 -        0x1d8610fff  libsystem_kernel.dylib                                       <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
+           0x1d8dec000 -        0x1d9394fff  WorkflowKit                                                  <ED59BE6A-51CA-3866-9D11-48DDEC7FC2D8>  /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
+           0x1dbd30000 -        0x1dbeacfff  ContentKit                                                   <F41B28EB-9C6D-3C08-B674-0A948320E242>  /System/Library/PrivateFrameworks/ContentKit.framework/ContentKit
+           0x1df883000 -        0x1df96bfff  PDFKit                                                       <EFD56248-01B7-39B8-9F31-70A1B47E3953>  /System/Library/Frameworks/PDFKit.framework/PDFKit
+           0x1e16d9000 -        0x1e1cabfff  ActionKit                                                    <4911BAA6-A7EC-3F2A-A174-6201FC042DFE>  /System/Library/PrivateFrameworks/ActionKit.framework/ActionKit
+           0x1e4755000 -        0x1e479bfff  AppleJPEG                                                    <E5EC9E8B-B9FE-3AA8-8E6A-9C5FA8FCAF45>  /System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG
+           0x201b35000 -        0x201b44fff  IntentsFoundation                                            <8EE7505C-EDB3-365D-9583-08778CC5DF59>  /System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation
+           0x212307000 -        0x21230dfff  libsystem_platform.dylib                                     <68A13C2E-80DD-3754-B166-C0A5992A7417>  /usr/lib/system/libsystem_platform.dylib
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib                                      <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
+           0x217bee000 -        0x217ca5fff  CMPhoto                                                      <F4E3FA84-15D4-36D4-9698-D7C154D23447>  /System/Library/PrivateFrameworks/CMPhoto.framework/CMPhoto
+
+
+Powerstats for:   assetsd
+UUID:             972D97D0-A84C-3A3D-A9FC-704144CB52C0
+Path:             /System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd
+Architecture:     arm64e
+Start time:       2022-05-23 18:25:01.490 -0400
+End time:         2022-05-23 18:25:56.806 -0400
+Num samples:      10 (8%)
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 10 samples Active
+Power Source:     10 samples on Battery, 0 samples on AC
+  10  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    9   ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      9   ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        9   ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+          9   ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            9   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              8   ??? (CoreData + 131708) [0x1a81c227c]
+                5   ??? (PhotoLibraryServices + 254564) [0x1b4a88264]
+                  5   ??? (PhotoLibraryServices + 5238212) [0x1b4f48dc4]
+                    5   ??? (PhotoLibraryServices + 2954204) [0x1b4d1b3dc]
+                      5   ??? (PhotoLibraryServices + 246208) [0x1b4a861c0]
+                        5   ??? (PhotoLibraryServices + 2029340) [0x1b4c3971c]
+                          5   ??? (CoreData + 417776) [0x1a8207ff0]
+                            5   ??? (libdispatch.dylib + 76944) [0x1a06c3c90]
+                              5   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                                5   ??? (CoreData + 131708) [0x1a81c227c]
+                                  5   ??? (PhotoLibraryServices + 2029472) [0x1b4c397a0]
+                                    5   ??? (PhotoLibraryServices + 2953436) [0x1b4d1b0dc]
+                                      4   ??? (Photos + 617836) [0x1b4823d6c]
+                                        4   ??? (CoreFoundation + 310800) [0x1a09ffe10]
+                                          4   ??? (CoreFoundation + 54628) [0x1a09c1564]
+                                            4   ??? (Photos + 621416) [0x1b4824b68]
+                                              4   ??? (Photos + 1016780) [0x1b48853cc]
+                                                4   ??? (Photos + 1040564) [0x1b488b0b4]
+                                                  4   ??? (PhotoLibraryServicesCore + 52348) [0x21cd22c7c]
+                                                    4   ??? (Photos + 1040960) [0x1b488b240]
+                                                      2   ??? (Photos + 1038348) [0x1b488a80c]
+                                                        2   ??? (PhotoLibraryServices + 139720) [0x1b4a6c1c8]
+                                                          2   ??? (PhotoLibraryServices + 159660) [0x1b4a70fac]
+                                                            2   ??? (PhotoLibraryServices + 433876) [0x1b4ab3ed4]
+                                                              2   ??? (ImageIO + 54316) [0x1a24c042c]
+                                                                2   ??? (ImageIO + 139576) [0x1a24d5138]
+                                                                  2   ??? (ImageIO + 215932) [0x1a24e7b7c]
+                                                                    2   ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                                      2   ??? (CoreGraphics + 297440) [0x1a28bc9e0]
+                                                                        2   ??? (CoreGraphics + 167580) [0x1a289ce9c]
+                                                                          2   ??? (CoreGraphics + 371292) [0x1a28cea5c]
+                                                                            2   ??? (CoreGraphics + 60352) [0x1a2882bc0]
+                                                                              2   ??? (CoreGraphics + 365632) [0x1a28cd440]
+                                                                                2   ??? (CoreGraphics + 447272) [0x1a28e1328]
+                                                                                  2   ??? (CoreGraphics + 266092) [0x1a28b4f6c]
+                                                                                    2   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                                                      2   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                                        2   ??? (CoreGraphics + 571268) [0x1a28ff784]
+                                                                                          2   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                                            2   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                                              2   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                                                2   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                                                  2   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                                                    2   ??? (ImageIO + 422340) [0x1a251a1c4]
+                                                                                                      2   ??? (ImageIO + 131352) [0x1a24d3118]
+                                                                                                        2   ??? (ImageIO + 127808) [0x1a24d2340]
+                                                                                                          2   ??? (ImageIO + 373156) [0x1a250e1a4]
+                                                                                                            2   ??? (ImageIO + 193880) [0x1a24e2558]
+                                                                                                              2   ??? (ImageIO + 213288) [0x1a24e7128]
+                                                                                                                1   ??? (libz.1.dylib + 22368) [0x211e35760]
+                                                                                                                1   ??? (libz.1.dylib + 21768) [0x211e35508]
+                                                      2   ??? (Photos + 1034296) [0x1b4889838]
+                                                        2   ??? (Photos + 1049568) [0x1b488d3e0]
+                                                          2   ??? (PhotoLibraryServicesCore + 182752) [0x21cd429e0]
+                                                            2   ??? (PhotoLibraryServicesCore + 182144) [0x21cd42780]
+                                                              2   ??? (PhotoLibraryServicesCore + 162480) [0x21cd3dab0]
+                                                                2   ??? (PhotoLibraryServicesCore + 160892) [0x21cd3d47c]
+                                                                  2   ??? (PhotoLibraryServicesCore + 161512) [0x21cd3d6e8]
+                                                                    2   ??? (CoreGraphics + 106600) [0x1a288e068]
+                                                                      2   ??? (CoreGraphics + 297440) [0x1a28bc9e0]
+                                                                        2   ??? (CoreGraphics + 167580) [0x1a289ce9c]
+                                                                          2   ??? (CoreGraphics + 371292) [0x1a28cea5c]
+                                                                            2   ??? (CoreGraphics + 60352) [0x1a2882bc0]
+                                                                              2   ??? (CoreGraphics + 365632) [0x1a28cd440]
+                                                                                2   ??? (CoreGraphics + 447272) [0x1a28e1328]
+                                                                                  2   ??? (CoreGraphics + 266092) [0x1a28b4f6c]
+                                                                                    2   ??? (CoreGraphics + 288080) [0x1a28ba550]
+                                                                                      2   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                                        2   ??? (CoreGraphics + 571268) [0x1a28ff784]
+                                                                                          2   ??? (CoreGraphics + 441332) [0x1a28dfbf4]
+                                                                                            2   ??? (CoreGraphics + 301012) [0x1a28bd7d4]
+                                                                                              2   ??? (ImageIO + 122796) [0x1a24d0fac]
+                                                                                                2   ??? (ImageIO + 89620) [0x1a24c8e14]
+                                                                                                  2   ??? (ImageIO + 107596) [0x1a24cd44c]
+                                                                                                    2   ??? (ImageIO + 422340) [0x1a251a1c4]
+                                                                                                      2   ??? (ImageIO + 131352) [0x1a24d3118]
+                                                                                                        2   ??? (ImageIO + 127808) [0x1a24d2340]
+                                                                                                          2   ??? (ImageIO + 373156) [0x1a250e1a4]
+                                                                                                            2   ??? (ImageIO + 193880) [0x1a24e2558]
+                                                                                                              2   ??? (ImageIO + 213288) [0x1a24e7128]
+                                                                                                                1   ??? (libz.1.dylib + 21768) [0x211e35508]
+                                                                                                                1   ??? (libz.1.dylib + 21756) [0x211e354fc]
+                                      1   ??? (Photos + 618216) [0x1b4823ee8]
+                                        1   ??? (CoreFoundation + 310800) [0x1a09ffe10]
+                                          1   ??? (CoreFoundation + 54628) [0x1a09c1564]
+                                            1   ??? (Photos + 621800) [0x1b4824ce8]
+                                              1   ??? (Photos + 1016184) [0x1b4885178]
+                                                1   ??? (Photos + 372868) [0x1b47e8084]
+                3   ??? (PhotoLibraryServices + 2029472) [0x1b4c397a0]
+                  2   ??? (PhotoLibraryServices + 2953436) [0x1b4d1b0dc]
+                    2   ??? (PhotoLibraryServices + 89924) [0x1b4a5ff44]
+                      2   ??? (PhotoLibraryServices + 120260) [0x1b4a675c4]
+                        2   ??? (PhotoLibraryServices + 712076) [0x1b4af7d8c]
+                          2   ??? (PhotoLibraryServices + 109616) [0x1b4a64c30]
+                            2   ??? (PhotoLibraryServices + 124620) [0x1b4a686cc]
+                              2   ??? (PhotoLibraryServices + 72308) [0x1b4a5ba74]
+                                2   ??? (PhotoLibraryServices + 178360) [0x1b4a758b8]
+                                  1   ??? (PhotoLibraryServices + 128560) [0x1b4a69630]
+                                    1   ??? (PhotoLibraryServices + 220780) [0x1b4a7fe6c]
+                                      1   ??? (PhotoLibraryServices + 222936) [0x1b4a806d8]
+                                        1   ??? (PhotoLibraryServices + 206332) [0x1b4a7c5fc]
+                                          1   ??? (PhotoLibraryServices + 52724) [0x1b4a56df4]
+                                            1   ??? (PhotoLibraryServices + 73228) [0x1b4a5be0c]
+                                              1   ??? (libobjc.A.dylib + 8100) [0x1b9732fa4]
+                                  1   ??? (PhotoLibraryServices + 128512) [0x1b4a69600]
+                                    1   ??? (PhotoLibraryServices + 693680) [0x1b4af35b0]
+                                      1   ??? (PhotoLibraryServices + 206784) [0x1b4a7c7c0]
+                                        1   ??? (PhotoLibraryServices + 436308) [0x1b4ab4854]
+                                          1   ??? (PhotoLibraryServices + 52416) [0x1b4a56cc0]
+                                            1   ??? (Foundation + 744196) [0x1a225db04]
+                  1   ??? (PhotoLibraryServices + 2953580) [0x1b4d1b16c]
+                    1   ??? (PhotoLibraryServices + 277936) [0x1b4a8ddb0]
+                      1   ??? (CoreData + 190620) [0x1a81d089c]
+                        1   ??? (CoreData + 378252) [0x1a81fe58c]
+                          1   ??? (CoreData + 176792) [0x1a81cd298]
+                            1   ??? (CoreData + 1876424) [0x1a836c1c8]
+                              1   ??? (CoreData + 144632) [0x1a81c54f8]
+                                1   ??? (CoreData + 222508) [0x1a81d852c]
+                                  1   ??? (CoreData + 263352) [0x1a81e24b8]
+                                    1   ??? (CoreData + 186672) [0x1a81cf930]
+                                      1   ??? (CoreData + 133496) [0x1a81c2978]
+                                        1   ??? (libdispatch.dylib + 76944) [0x1a06c3c90]
+                                          1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                                            1   ??? (CoreData + 141432) [0x1a81c4878]
+                                              1   ??? (CoreData + 330404) [0x1a81f2aa4]
+                                                1   ??? (CoreData + 985684) [0x1a8292a54]
+                                                  1   ??? (CoreData + 358324) [0x1a81f97b4]
+                                                    1   ??? (CoreData + 230364) [0x1a81da3dc]
+                                                      1   ??? (CoreData + 555736) [0x1a8229ad8]
+                                                        1   ??? (CoreData + 206544) [0x1a81d46d0]
+                                                          1   ??? (libsqlite3.dylib + 42212) [0x1bf8da4e4]
+                                                            1   ??? (libsqlite3.dylib + 43360) [0x1bf8da960]
+                                                              1   ??? (libsqlite3.dylib + 45704) [0x1bf8db288]
+                                                                1   ??? (libsqlite3.dylib + 74804) [0x1bf8e2434]
+                                                                  1   ??? (libsqlite3.dylib + 504060) [0x1bf94b0fc]
+              1   ??? (CoreData + 245520) [0x1a81ddf10]
+                1   ??? (CoreData + 686508) [0x1a82499ac]
+                  1   ??? (CoreData + 872868) [0x1a82771a4]
+                    1   ??? (CoreData + 755276) [0x1a825a64c]
+                      1   ??? (CoreFoundation + 284808) [0x1a09f9888]
+                        1   ??? (CoreFoundation + 57216) [0x1a09c1f80]
+                          1   ??? (CoreFoundation + 60388) [0x1a09c2be4]
+    1   ??? (libsystem_pthread.dylib + 4224) [0x212310080]
+      1   ??? (libdispatch.dylib + 88428) [0x1a06c696c]
+        1   ??? (libdispatch.dylib + 86372) [0x1a06c6164]
+          1   ??? (libdispatch.dylib + 25944) [0x1a06b7558]
+            1   ??? (libdispatch.dylib + 28396) [0x1a06b7eec]
+              1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                1   ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+                  1   ??? (Foundation + 388624) [0x1a2206e10]
+                    1   ??? (Foundation + 330856) [0x1a21f8c68]
+                      1   ??? (Foundation + 316892) [0x1a21f55dc]
+                        1   ??? (Foundation + 246292) [0x1a21e4214]
+                          1   ??? (Foundation + 409492) [0x1a220bf94]
+                            1   ??? (Foundation + 334876) [0x1a21f9c1c]
+                              1   ??? (CoreFoundation + 815060) [0x1a0a7afd4]
+                                1   ??? (CoreFoundation + 174132) [0x1a09de834]
+                                  1   ??? (Foundation + 218548) [0x1a21dd5b4]
+                                    1   ??? (PhotoLibraryServices + 301844) [0x1b4a93b14]
+                                      1   ??? (PhotoLibraryServices + 264448) [0x1b4a8a900]
+                                        1   ??? (PhotoLibraryServices + 271496) [0x1b4a8c488]
+                                          1   ??? (PhotoLibraryServices + 621212) [0x1b4ae1a9c]
+                                            1   ??? (PhotoLibraryServices + 201688) [0x1b4a7b3d8]
+                                              1   ??? (PhotoLibraryServices + 403428) [0x1b4aac7e4]
+                                                1   ??? (PhotoLibraryServices + 511496) [0x1b4ac6e08]
+                                                  1   ??? (PhotoLibraryServices + 221904) [0x1b4a802d0]
+                                                    1   ??? (PhotoLibraryServices + 5238276) [0x1b4f48e04]
+                                                      1   ??? (CoreData + 132316) [0x1a81c24dc]
+                                                        1   ??? (libdispatch.dylib + 76944) [0x1a06c3c90]
+                                                          1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                                                            1   ??? (CoreData + 131708) [0x1a81c227c]
+                                                              1   ??? (PhotoLibraryServices + 2954204) [0x1b4d1b3dc]
+                                                                1   ??? (PhotoLibraryServices + 246208) [0x1b4a861c0]
+                                                                  1   ??? (PhotoLibraryServices + 2029340) [0x1b4c3971c]
+                                                                    1   ??? (CoreData + 417776) [0x1a8207ff0]
+                                                                      1   ??? (libdispatch.dylib + 76944) [0x1a06c3c90]
+                                                                        1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                                                                          1   ??? (CoreData + 131708) [0x1a81c227c]
+                                                                            1   ??? (PhotoLibraryServices + 2029472) [0x1b4c397a0]
+                                                                              1   ??? (PhotoLibraryServices + 2953436) [0x1b4d1b0dc]
+                                                                                1   ??? (PhotoLibraryServices + 374140) [0x1b4aa557c]
+                                                                                  1   ??? (PhotoLibraryServices + 163556) [0x1b4a71ee4]
+                                                                                    1   ??? (CoreData + 786644) [0x1a82620d4]
+                                                                                      1   ??? (CoreData + 319156) [0x1a81efeb4]
+                                                                                        1   ??? (CoreData + 258316) [0x1a81e110c]
+                                                                                          1   ??? (CoreData + 378252) [0x1a81fe58c]
+                                                                                            1   ??? (CoreData + 176792) [0x1a81cd298]
+                                                                                              1   ??? (CoreData + 1870584) [0x1a836aaf8]
+                                                                                                1   ??? (CoreData + 142764) [0x1a81c4dac]
+                                                                                                  1   ??? (CoreData + 222508) [0x1a81d852c]
+                                                                                                    1   ??? (CoreData + 263352) [0x1a81e24b8]
+                                                                                                      1   ??? (CoreData + 186672) [0x1a81cf930]
+                                                                                                        1   ??? (CoreData + 133496) [0x1a81c2978]
+                                                                                                          1   ??? (libdispatch.dylib + 76944) [0x1a06c3c90]
+                                                                                                            1   ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+                                                                                                              1   ??? (CoreData + 141432) [0x1a81c4878]
+                                                                                                                1   ??? (CoreData + 330404) [0x1a81f2aa4]
+                                                                                                                  1   ??? (CoreData + 985684) [0x1a8292a54]
+                                                                                                                    1   ??? (CoreData + 693812) [0x1a824b634]
+                                                                                                                      1   ??? (CoreData + 326908) [0x1a81f1cfc]
+                                                                                                                        1   ??? (CoreData + 134784) [0x1a81c2e80]
+                                                                                                                          1   ??? (CoreData + 326572) [0x1a81f1bac]
+                                                                                                                            1   ??? (CoreData + 134256) [0x1a81c2c70]
+                                                                                                                              1   ??? (CoreData + 343892) [0x1a81f5f54]
+                                                                                                                                1   ??? (CoreData + 965668) [0x1a828dc24]
+                                                                                                                                  1   ??? (CoreData + 466660) [0x1a8213ee4]
+                                                                                                                                    1   ??? (CoreData + 150440) [0x1a81c6ba8]
+                                                                                                                                      1   ??? (CoreData + 150564) [0x1a81c6c24]
+                                                                                                                                        1   ??? (CoreData + 150712) [0x1a81c6cb8]
+                                                                                                                                          1   ??? (CoreData + 159944) [0x1a81c90c8]
+                                                                                                                                            1   ??? (CoreData + 420152) [0x1a8208938]
+                                                                                                                                              1   ??? (CoreFoundation + 82896) [0x1a09c83d0]
+                                                                                                                                                1   ??? (libsystem_malloc.dylib + 20684) [0x1b2ce00cc]
+                                                                                                                                                  1   ??? (libsystem_malloc.dylib + 18692) [0x1b2cdf904]
+                                                                                                                                                    1   <Effective Thread QoS Background, Requested Thread QoS Background>
+
+  Binary Images:
+           0x1027fc000 -                ???  assetsd                  <972D97D0-A84C-3A3D-A9FC-704144CB52C0>  /System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib        <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation           <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a21a8000 -        0x1a24b2fff  Foundation               <AC6AD2F3-C7B1-38AA-8588-57036A663180>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1a24b3000 -        0x1a285afff  ImageIO                  <B1A4DB99-B391-3844-A94E-0476429934A9>  /System/Library/Frameworks/ImageIO.framework/ImageIO
+           0x1a2874000 -        0x1a2e2dfff  CoreGraphics             <847F423B-5D75-39DA-8462-3A0B411FF216>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x1a81a2000 -        0x1a852efff  CoreData                 <1EB3C1A3-9E64-3D27-B680-4751A4171465>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x1b2cdb000 -        0x1b2cfcfff  libsystem_malloc.dylib   <7B60C468-D3ED-3719-BE47-054CFCEC0007>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b478d000 -        0x1b4a49fff  Photos                   <93F8E8F9-71FE-3AAB-ACB1-B3E48F33DC3A>  /System/Library/Frameworks/Photos.framework/Photos
+           0x1b4a4a000 -        0x1b51dffff  PhotoLibraryServices     <85473AA9-1D1F-32EB-8B07-982D35876158>  /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
+           0x1b9731000 -        0x1b976dfff  libobjc.A.dylib          <B1FC4376-8314-31DA-BFC2-95E703398D4E>  /usr/lib/libobjc.A.dylib
+           0x1bf8d0000 -        0x1bfa68fff  libsqlite3.dylib         <3AB8BB52-9CB7-36DB-B2C7-26F16E3319D4>  /usr/lib/libsqlite3.dylib
+           0x211e30000 -        0x211e41fff  libz.1.dylib             <1608F069-98F8-3947-9CA6-5C8222E019E2>  /usr/lib/libz.1.dylib
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib  <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
+           0x21cd16000 -        0x21ce04fff  PhotoLibraryServicesCore <FDEA947F-3511-322D-A164-5CE42675BBBD>  /System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore
+
+
+Powerstats for:   SpringBoard
+UUID:             D86CBB99-4B87-3833-985A-81B99803795A
+Path:             /System/Library/CoreServices/SpringBoard.app/SpringBoard
+Identifier:       com.apple.springboard
+Version:          1.0 (50)
+Beta Identifier:  431D9DBF-E5F2-459A-ABBF-E9B6C9BDA5D7
+Architecture:     arm64e
+Start time:       2022-05-23 18:24:55.072 -0400
+End time:         2022-05-23 18:25:59.422 -0400
+Num samples:      9 (7%)
+Primary state:    8 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     9 samples on Battery, 0 samples on AC
+  8  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    7  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      7  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        7  ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+          7  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            7  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              7  ??? (libdispatch.dylib + 7788) [0x1a06b2e6c]
+                7  ??? (Photos + 203900) [0x1b47bec7c]
+                  7  ??? (ScreenshotServices + 42392) [0x20639a598]
+                    7  ??? (Photos + 1089776) [0x1b48970f0]
+                      4  ??? (Photos + 1089684) [0x1b4897094]
+                        4  ??? (PhotoLibraryServices + 1766992) [0x1b4bf9650]
+                          4  ??? (PhotoLibraryServices + 1767268) [0x1b4bf9764]
+                            4  ??? (ImageIO + 39184) [0x1a24bc910]
+                              4  ??? (ImageIO + 203856) [0x1a24e4c50]
+                                4  ??? (ImageIO + 314956) [0x1a24ffe4c]
+                                  4  ??? (ImageIO + 49960) [0x1a24bf328]
+                                    4  ??? (ImageIO + 87140) [0x1a24c8464]
+                                      4  ??? (ImageIO + 136696) [0x1a24d45f8]
+                                        4  ??? (ImageIO + 115044) [0x1a24cf164]
+                                          4  ??? (ImageIO + 102272) [0x1a24cbf80]
+                                            4  ??? (libz.1.dylib + 6756) [0x211e31a64]
+                                              2  ??? (libz.1.dylib + 17536) [0x211e34480]
+                                                2  ??? (libz.1.dylib + 20340) [0x211e34f74]
+                                              1  ??? (libz.1.dylib + 17340) [0x211e343bc]
+                                              1  ??? (libz.1.dylib + 16912) [0x211e34210]
+                      3  ??? (Photos + 1089596) [0x1b489703c]
+                        3  ??? (PhotoLibraryServicesCore + 167376) [0x21cd3edd0]
+                          3  ??? (UIKitCore + 2444316) [0x1a3082c1c]
+                            3  ??? (ImageIO + 39184) [0x1a24bc910]
+                              3  ??? (ImageIO + 203856) [0x1a24e4c50]
+                                3  ??? (ImageIO + 314956) [0x1a24ffe4c]
+                                  3  ??? (ImageIO + 49960) [0x1a24bf328]
+                                    2  ??? (ImageIO + 86360) [0x1a24c8158]
+                                      2  ??? (ImageIO + 136696) [0x1a24d45f8]
+                                        2  ??? (ImageIO + 115044) [0x1a24cf164]
+                                          2  ??? (ImageIO + 102272) [0x1a24cbf80]
+                                            2  ??? (libz.1.dylib + 6756) [0x211e31a64]
+                                              1  ??? (libz.1.dylib + 17536) [0x211e34480]
+                                                1  ??? (libz.1.dylib + 18164) [0x211e346f4]
+                                                  1  ??? (libz.1.dylib + 24484) [0x211e35fa4]
+                                              1  ??? (libz.1.dylib + 16860) [0x211e341dc]
+                                                1  ??? (libz.1.dylib + 20780) [0x211e3512c]
+                                    1  ??? (ImageIO + 86340) [0x1a24c8144]
+                                      1  ??? (ImageIO + 28336) [0x1a24b9eb0]
+                                        1  ??? (ImageIO + 88180) [0x1a24c8874]
+                                          1  ??? (ImageIO + 153716) [0x1a24d8874]
+                                            1  ??? (ImageIO + 167060) [0x1a24dbc94]
+                                              1  ??? (ImageIO + 255440) [0x1a24f15d0]
+                                                1  ??? (ImageIO + 161704) [0x1a24da7a8]
+                                                  1  ??? (ImageIO + 57864) [0x1a24c1208]
+                                                    1  ??? (vImage + 6896) [0x1c3052af0]
+                                                      1  ??? (vImage + 9144) [0x1c30533b8]
+                                                        1  ??? (vImage + 107428) [0x1c306b3a4]
+                                                          1  ??? (vImage + 115752) [0x1c306d428]
+                                                            1  ??? (vImage + 114260) [0x1c306ce54]
+    1  ??? (libsystem_pthread.dylib + 4224) [0x212310080]
+      1  ??? (libdispatch.dylib + 88428) [0x1a06c696c]
+        1  ??? (libdispatch.dylib + 86656) [0x1a06c6280]
+          1  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+            1  ??? (libdispatch.dylib + 94652) [0x1a06c81bc]
+              1  ??? (libdispatch.dylib + 14960) [0x1a06b4a70]
+                1  ??? (ImageIO + 150568) [0x1a24d7c28]
+                  1  ??? (ImageIO + 193880) [0x1a24e2558]
+                    1  ??? (ImageIO + 213288) [0x1a24e7128]
+                      1  ??? (libz.1.dylib + 21768) [0x211e35508]
+  1  ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 105700) [0x10281dce4]
+    1  ??? (SpringBoard + 913544) [0x1ce6bf088]
+      1  ??? (UIKitCore + 2710928) [0x1a30c3d90]
+        1  ??? (UIKitCore + 5326408) [0x1a3342648]
+          1  ??? (GraphicsServices + 4980) [0x1bcb06374]
+            1  ??? (CoreFoundation + 125896) [0x1a09d2bc8]
+              1  ??? (CoreFoundation + 45148) [0x1a09bf05c]
+                1  ??? (CoreFoundation + 22164) [0x1a09b9694]
+                  1  ??? (CoreFoundation + 836000) [0x1a0a801a0]
+                    1  ??? (CoreFoundation + 766996) [0x1a0a6f414]
+                      1  ??? (UIKitCore + 15066128) [0x1a3c8c410]
+                        1  ??? (UIKitCore + 15068232) [0x1a3c8cc48]
+                          1  ??? (UIKitCore + 8227196) [0x1a360697c]
+                            1  ??? (UIKitCore + 16495328) [0x1a3de92e0]
+                              1  ??? (UIKitCore + 1486504) [0x1a2f98ea8]
+                                1  ??? (UIKitCore + 1532240) [0x1a2fa4150]
+                                  1  ??? (UIKitCore + 3474056) [0x1a317e288]
+                                    1  ??? (UIKitCore + 1713344) [0x1a2fd04c0]
+                                      1  ??? (UIKitCore + 1660308) [0x1a2fc3594]
+                                        1  ??? (UIKitCore + 1450468) [0x1a2f901e4]
+                                          1  ??? (UIKitCore + 1741868) [0x1a2fd742c]
+                                            1  ??? (CoreFoundation + 394560) [0x1a0a14540]
+                                              1  <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x102590000 -                ???  com.apple.springboard 1.0 (50) <D86CBB99-4B87-3833-985A-81B99803795A>  /System/Library/CoreServices/SpringBoard.app/SpringBoard
+           0x102804000 -                ???  ???                            <7C9C7851-8237-38A7-B1EB-9CD2DEB4B746>
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib              <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation                 <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a24b3000 -        0x1a285afff  ImageIO                        <B1A4DB99-B391-3844-A94E-0476429934A9>  /System/Library/Frameworks/ImageIO.framework/ImageIO
+           0x1a2e2e000 -        0x1a46c9fff  UIKitCore                      <3ED35565-456D-33CB-B554-6C567FA81585>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1b478d000 -        0x1b4a49fff  Photos                         <93F8E8F9-71FE-3AAB-ACB1-B3E48F33DC3A>  /System/Library/Frameworks/Photos.framework/Photos
+           0x1b4a4a000 -        0x1b51dffff  PhotoLibraryServices           <85473AA9-1D1F-32EB-8B07-982D35876158>  /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
+           0x1bcb05000 -        0x1bcb0dfff  GraphicsServices               <260F066E-C5DE-3844-967E-483985448F21>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1c3051000 -        0x1c334efff  vImage                         <5CEDA429-FCA5-33A0-859E-B79A2AD3C459>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+           0x1ce5e0000 -        0x1cf00cfff  SpringBoard                    <4DA76E7E-0D83-381B-BEB8-97D0767B31E4>  /System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard
+           0x206390000 -        0x2063bcfff  ScreenshotServices             <2960874F-816C-3D39-9456-1F5B401F8629>  /System/Library/PrivateFrameworks/ScreenshotServices.framework/ScreenshotServices
+           0x211e30000 -        0x211e41fff  libz.1.dylib                   <1608F069-98F8-3947-9CA6-5C8222E019E2>  /usr/lib/libz.1.dylib
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib        <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
+           0x21cd16000 -        0x21ce04fff  PhotoLibraryServicesCore       <FDEA947F-3511-322D-A164-5CE42675BBBD>  /System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore
