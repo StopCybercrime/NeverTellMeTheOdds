@@ -14,6 +14,8 @@ iPhone 13 Pro Max - Analytics
 
 Surace Laptop Go - Registry
 
+Galaxy S22 Ultra - Android recovery log images
+
 ***5/21: It appears the devices are being administered via Intune within the Microsoft EMS framework... looking for ways to unenroll***
 
 ***5/22: I'm still learning but I believe the following are in play (for iOS):***
