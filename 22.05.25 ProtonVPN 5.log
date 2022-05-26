@@ -1,0 +1,40 @@
+2022-05-25T21:15:46.938Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"MaintenanceServerRefreshIntereval","value":"10"}
+2022-05-25T21:15:46.939Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-25T21:15:46.941Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-25T21:15:46.941Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-26 20:52:48 +0000) | 
+2022-05-25T21:15:47.461Z | DEBUG | CORE | URL: https://api.protonvpn.ch/payments/v4/plans?Currency=USD&Cycle=12, status code: 200 | 
+2022-05-25T21:15:47.471Z | DEBUG | CORE | {
+  "Code" : 1000,
+  "Plans" : [
+
+  ]
+} | 
+2022-05-25T21:15:47.922Z | DEBUG | CORE | URL: https://api.protonvpn.ch/payments/v4/plans/default, status code: 200 | 
+2022-05-25T21:15:47.931Z | DEBUG | CORE | {
+  "Code" : 1000,
+  "Plans" : {
+    "Amount" : 0,
+    "Name" : "free",
+    "MaxAddresses" : 1,
+    "MaxMembers" : 1,
+    "MaxCalendars" : 1,
+    "MaxDomains" : 0,
+    "MaxSpace" : 524288000,
+    "Services" : null,
+    "Cycle" : null,
+    "Type" : 1,
+    "Title" : "Proton Free",
+    "MaxRewardSpace" : 1073741824,
+    "MaxVPN" : 1,
+    "Features" : 0,
+    "Currency" : null,
+    "Quantity" : 1
+  }
+} | 
+2022-05-25T21:15:48.714Z | DEBUG | APP | Server list saved (count: 1731) | 
+2022-05-25T21:16:13.969Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-25T21:16:14.944Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-25T21:16:43.968Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-25T21:16:44.817Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-25T21:17:13.968Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-25T21:17:15.097Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}

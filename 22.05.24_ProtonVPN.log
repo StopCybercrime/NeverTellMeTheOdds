@@ -1,0 +1,409 @@
+2022-05-24T02:33:27.605Z | INFO  | CONN.CONNECT | Stop preparing connection | 
+2022-05-24T02:33:27.612Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/sessioncount","method":"GET"}
+2022-05-24T02:33:27.612Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T02:33:27.613Z | INFO  | CONN.DISCONNECT | VPN disconnect started | 
+2022-05-24T02:33:27.613Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"IntentionallyDisconnected","value":"true"}
+2022-05-24T02:33:27.613Z | INFO  | CONN.DISCONNECT | Closing VPN tunnel | 
+2022-05-24T02:33:27.689Z | INFO  | CONN.CONNECT | On Demand set: Off for vpncore.OpenVpnProtocolFactory | 
+2022-05-24T02:33:28.156Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Disconnected | 
+2022-05-24T02:33:37.721Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T02:33:37.723Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653359617.721198"}
+2022-05-24T02:33:40.919Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T02:33:40.921Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:33:40.927Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T02:33:40.929Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Invalid | 
+2022-05-24T02:33:40.929Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:33:40.930Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T02:33:40.932Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T02:33:50.058Z | DEBUG | CONN.CONNECT:TRIGGER | Connect requested by clicking on Country item | 
+2022-05-24T02:33:50.060Z | DEBUG | CONN.CONNECT:TRIGGER | Will connect to country: AT serverType: secureCore | 
+2022-05-24T02:33:50.085Z | DEBUG | CONN.CONNECT | Server selected: IS-AT#1 (is-at-01.protonvpn.net, load: 16) | 
+2022-05-24T02:33:50.135Z | INFO  | CONN.CONNECT | Selected 185.159.158.164 as server ip for is-at-01.protonvpn.net | 
+2022-05-24T02:33:50.135Z | INFO  | CONN.CONNECT | Connecting with openVpn(vpncore.VpnProtocol.OpenVpnTransport.tcp) to IS-AT#1 via 185.159.158.164:[8443, 443, 5995] | 
+2022-05-24T02:33:50.137Z | INFO  | CONN.CONNECT | VPN connect started | {"authenticationType":"credentials","protocol":"openVpn(vpncore.VpnProtocol.OpenVpnTransport.tcp)"}
+2022-05-24T02:33:50.140Z | INFO  | CONN.DISCONNECT | Closing VPN tunnel | 
+2022-05-24T02:33:50.188Z | INFO  | CONN.CONNECT | On Demand set: Off for vpncore.IkeProtocolFactory | 
+2022-05-24T02:33:50.190Z | ERROR | CONN | VPN error: Error Domain=NEVPNErrorDomain Code=1 "Missing protocol or protocol has invalid type" UserInfo={NSLocalizedDescription=Missing protocol or protocol has invalid type} | 
+2022-05-24T02:33:50.190Z | INFO  | CONN.CONNECT | About to start connection process | 
+2022-05-24T02:33:50.410Z | INFO  | CONN.CONNECT | Creating connection configuration | 
+2022-05-24T02:33:50.412Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Disconnected | 
+2022-05-24T02:33:50.421Z | INFO  | CONN.CONNECT | Configuring connection | 
+2022-05-24T02:33:50.445Z | INFO  | CONN.CONNECT | Loading connection configuration | 
+2022-05-24T02:33:50.446Z | INFO  | CONN.CONNECT | Starting VPN tunnel | 
+2022-05-24T02:33:50.462Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connecting to: 185.159.158.164 | 
+2022-05-24T02:33:51.115Z | ERROR | NET:RESPONSE | Request failed | {"error":"ResponseError(httpCode: nil, responseCode: nil, userFacingMessage: nil, underlyingError: Optional(Error Domain=NSURLErrorDomain Code=-1009 \"The Internet connection appears to be offline.\" UserInfo={_kCFStreamErrorCodeKey=50, NSUnderlyingError=0x28000bab0 {Error Domain=kCFErrorDomainCFNetwork Code=-1009 \"(null)\" UserInfo={_NSURLErrorNWPathKey=unsatisfied (Path was denied by NECP policy), interface: pdp_ip0[lte], ipv6, _kCFStreamErrorCodeKey=50, _kCFStreamErrorDomainKey=1}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <D2189CFF-1CF6-4B21-8DEB-5C1C1FA5553B>.<24>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <D2189CFF-1CF6-4B21-8DEB-5C1C1FA5553B>.<24>\"\n), NSLocalizedDescription=The Internet connection appears to be offline., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/vpn\/sessioncount, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/vpn\/sessioncount, _kCFStreamErrorDomainKey=1}))","url":"https:\/\/api.protonvpn.ch\/vpn\/sessioncount","method":"GET"}
+2022-05-24T02:33:51.119Z | ERROR | NET:RESPONSE | Request failed | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET","error":"Error Domain=NSURLErrorDomain Code=-1009 \"The Internet connection appears to be offline.\" UserInfo={_kCFStreamErrorCodeKey=50, NSUnderlyingError=0x280009da0 {Error Domain=kCFErrorDomainCFNetwork Code=-1009 \"(null)\" UserInfo={_NSURLErrorNWPathKey=unsatisfied (Path was denied by NECP policy), interface: pdp_ip0[lte], ipv6, _kCFStreamErrorCodeKey=50, _kCFStreamErrorDomainKey=1}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <A2ACEFFB-19E4-4287-AB1D-50D586810DE3>.<25>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <A2ACEFFB-19E4-4287-AB1D-50D586810DE3>.<25>\"\n), NSLocalizedDescription=The Internet connection appears to be offline., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/vpn, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/vpn, _kCFStreamErrorDomainKey=1}"}
+2022-05-24T02:33:54.753Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connected to: 185.159.158.164 | 
+2022-05-24T02:33:54.756Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"false","key":"IntentionallyDisconnected"}
+2022-05-24T02:33:54.757Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:33:54.778Z | DEBUG | API | Disabling DoH while connected to VPN | 
+2022-05-24T02:33:54.778Z | DEBUG | REVIEW | Saving new active connection timestamp and incrementing successful connections count | 
+2022-05-24T02:33:54.780Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653359633.964505"}
+2022-05-24T02:33:56.709Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:33:58.913Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T02:33:58.914Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653359638.9131541"}
+2022-05-24T02:33:59.331Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T02:33:59.334Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:33:59.342Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T02:33:59.346Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T02:33:59.348Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T02:34:01.691Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T02:34:01.692Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653359641.691009"}
+2022-05-24T02:35:03.812Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:35:04.131Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T02:35:04.133Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:35:04.141Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T02:35:04.144Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T02:35:04.148Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T02:35:04.567Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:35:07.262Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T02:35:07.263Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"1653359707.2622252","key":"LastTimeForeground"}
+2022-05-24T02:42:02.814Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T02:42:02.814Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:42:02.815Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T02:42:03.131Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T02:42:03.135Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:42:03.142Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T02:42:03.145Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T02:42:03.147Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T02:42:04.392Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T02:42:05.548Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T02:42:06.071Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T02:42:10.027Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T02:42:10.027Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T02:42:10.033Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T02:42:10.036Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T02:42:10.037Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T03:31:17.736Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T03:31:17.742Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connected to: 185.159.158.164 | 
+2022-05-24T03:31:17.901Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"false","key":"IntentionallyDisconnected"}
+2022-05-24T03:31:17.902Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T03:31:17.904Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"true","key":"ConnectOnDemand"}
+2022-05-24T03:31:17.905Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"IntentionallyDisconnected","value":"true"}
+2022-05-24T03:31:17.905Z | DEBUG | APP | Data refresh timer started | {"interval":"10800.0"}
+2022-05-24T03:31:17.905Z | DEBUG | APP | Server loads refresh timer started | {"interval":"900.0"}
+2022-05-24T03:31:17.905Z | DEBUG | APP | Account refresh timer started | {"interval":"180.0"}
+2022-05-24T03:31:17.906Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-24T03:31:17.906Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T03:31:17.906Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T03:31:17.907Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T03:31:17.917Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653360737.2577004"}
+2022-05-24T03:31:18.022Z | DEBUG | API | Disabling DoH while connected to VPN | 
+2022-05-24T03:31:18.024Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T03:31:18.024Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"null","key":"LastTimeForeground"}
+2022-05-24T03:31:18.030Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T03:31:18.030Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T03:31:18.032Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T03:31:18.033Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T03:31:18.041Z | INFO  | CONN.CONNECT | On Demand set: On for vpncore.OpenVpnProtocolFactory | 
+2022-05-24T03:31:20.009Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T03:31:20.477Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T03:31:20.478Z | DEBUG | APP | Dynamic bug report config downloaded and saved | 
+2022-05-24T03:31:20.483Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T03:31:20.522Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T03:31:20.544Z | DEBUG | CORE | URL: https://api.protonvpn.ch/vpn/countries/count, status code: 200 | 
+2022-05-24T03:31:20.561Z | DEBUG | CORE | {
+  "Counts" : [
+    {
+      "MaxTier" : 0,
+      "Count" : 3
+    },
+    {
+      "MaxTier" : 1,
+      "Count" : 43
+    },
+    {
+      "MaxTier" : 2,
+      "Count" : 63
+    }
+  ],
+  "Code" : 1000
+} | 
+2022-05-24T03:31:20.570Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T03:31:20.684Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T03:31:22.015Z | ERROR | CORE | Some IAP identifiers are reported as invalid by the AppStore: ["iosvpn_bundle2022_12_usd_non_renewing", "iosvpn_vpn2022_12_usd_non_renewing"] | 
+2022-05-24T03:31:22.041Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-24T03:31:22.101Z | DEBUG | REVIEW | Review user plan updated to visionary | 
+2022-05-24T03:31:22.102Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"streamingResourcesUrl","value":"https:\/\/protonvpn.com\/download\/resources\/"}
+2022-05-24T03:31:22.103Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"UserIp","value":"95.174.65.5"}
+2022-05-24T03:31:22.103Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"MaintenanceServerRefreshIntereval","value":"10"}
+2022-05-24T03:31:22.106Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T03:31:22.107Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T03:31:22.108Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T03:31:22.428Z | DEBUG | CORE | URL: https://api.protonvpn.ch/payments/v4/status, status code: 200 | 
+2022-05-24T03:31:22.433Z | DEBUG | CORE | {
+  "Stripe" : true,
+  "Bitcoin" : true,
+  "Paypal" : true,
+  "Apple" : true,
+  "Code" : 1000,
+  "Card" : true,
+  "Blockchain.info" : true,
+  "Paymentwall" : false
+} | 
+2022-05-24T03:31:22.438Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"true","key":"paymentsBackendStatusAcceptsIAP"}
+2022-05-24T03:31:22.994Z | DEBUG | CORE | URL: https://api.protonvpn.ch/payments/v4/plans?Currency=USD&Cycle=12, status code: 200 | 
+2022-05-24T03:31:22.998Z | DEBUG | CORE | {
+  "Plans" : [
+    {
+      "Amount" : 4800,
+      "Name" : "vpnbasic",
+      "ID" : "cjGMPrkCYMsx5VTzPkfOLwbrShoj9NnLt3518AH-DQLYcvsJwwjGOkS8u3AcnX4mVSP6DX2c6Uco99USShaigQ==",
+      "MaxAddresses" : 0,
+      "MaxMembers" : 0,
+      "MaxTier" : 1,
+      "MaxCalendars" : 20,
+      "Pricing" : {
+        "1" : 500,
+        "12" : 4800,
+        "24" : 7900
+      },
+      "MaxDomains" : 0,
+      "MaxSpace" : 0,
+      "Services" : 4,
+      "Cycle" : 12,
+      "Type" : 1,
+      "Title" : "ProtonVPN Basic",
+      "ParentMetaPlanID" : "hUcV0_EeNwUmXA6EoyNrtO-ZTD8H8F6LvNaSjMaPxB5ecFkA7y-5kc3q38cGumJENGHjtSoUndkYFUx0_xlJeg==",
+      "MaxVPN" : 2,
+      "Features" : 0,
+      "Currency" : "USD",
+      "Quantity" : 1
+    },
+    {
+      "Amount" : 9600,
+      "Name" : "vpnplus",
+      "ID" : "S6oNe_lxq3GNMIMFQdAwOOk5wNYpZwGjBHFr5mTNp9aoMUaCRNsefrQt35mIg55iefE3fTq8BnyM4znqoVrAyA==",
+      "MaxAddresses" : 0,
+      "MaxMembers" : 0,
+      "MaxTier" : 2,
+      "MaxCalendars" : 20,
+      "Pricing" : {
+        "1" : 1000,
+        "12" : 9600,
+        "24" : 15900
+      },
+      "MaxDomains" : 0,
+      "MaxSpace" : 0,
+      "Services" : 4,
+      "Cycle" : 12,
+      "Type" : 1,
+      "Title" : "ProtonVPN Plus",
+      "ParentMetaPlanID" : "hUcV0_EeNwUmXA6EoyNrtO-ZTD8H8F6LvNaSjMaPxB5ecFkA7y-5kc3q38cGumJENGHjtSoUndkYFUx0_xlJeg==",
+      "MaxVPN" : 10,
+      "Features" : 0,
+      "Currency" : "USD",
+      "Quantity" : 1
+    }
+  ],
+  "Code" : 1000
+} | 
+2022-05-24T03:31:23.637Z | DEBUG | CORE | URL: https://api.protonvpn.ch/payments/v4/plans/default, status code: 200 | 
+2022-05-24T03:31:23.641Z | DEBUG | CORE | {
+  "Plans" : {
+    "Amount" : 0,
+    "Name" : "free",
+    "MaxAddresses" : 1,
+    "MaxMembers" : 1,
+    "MaxCalendars" : 1,
+    "MaxDomains" : 0,
+    "MaxSpace" : 524288000,
+    "Services" : null,
+    "Cycle" : null,
+    "Type" : 1,
+    "Title" : "Proton Free",
+    "MaxRewardSpace" : 1073741824,
+    "MaxVPN" : 1,
+    "Features" : 0,
+    "Currency" : null,
+    "Quantity" : 1
+  },
+  "Code" : 1000
+} | 
+2022-05-24T03:31:23.879Z | DEBUG | APP | Server list saved (count: 1730) | 
+2022-05-24T05:14:55.786Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T05:14:55.792Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connected to: 185.159.158.164 | 
+2022-05-24T05:14:55.958Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"false","key":"IntentionallyDisconnected"}
+2022-05-24T05:14:55.959Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T05:14:55.961Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"ConnectOnDemand","value":"true"}
+2022-05-24T05:14:55.962Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"IntentionallyDisconnected","value":"true"}
+2022-05-24T05:14:55.962Z | DEBUG | APP | Data refresh timer started | {"interval":"10800.0"}
+2022-05-24T05:14:55.962Z | DEBUG | APP | Server loads refresh timer started | {"interval":"900.0"}
+2022-05-24T05:14:55.962Z | DEBUG | APP | Account refresh timer started | {"interval":"180.0"}
+2022-05-24T05:14:55.963Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-24T05:14:55.963Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T05:14:55.963Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T05:14:55.964Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T05:14:55.974Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"1653362637.9703526","key":"LastConnectedTimeStamp"}
+2022-05-24T05:14:56.084Z | DEBUG | API | Disabling DoH while connected to VPN | 
+2022-05-24T05:14:56.086Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T05:14:56.086Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T05:14:56.088Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T05:14:56.088Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T05:14:56.090Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T05:14:56.092Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T05:14:56.097Z | INFO  | CONN.CONNECT | On Demand set: On for vpncore.OpenVpnProtocolFactory | 
+2022-05-24T05:14:57.733Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T05:14:58.023Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T05:14:58.024Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T05:14:58.053Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T05:14:58.055Z | DEBUG | APP | Dynamic bug report config downloaded and saved | 
+2022-05-24T05:14:58.061Z | DEBUG | CORE | URL: https://api.protonvpn.ch/vpn/countries/count, status code: 200 | 
+2022-05-24T05:14:58.075Z | DEBUG | CORE | {
+  "Counts" : [
+    {
+      "MaxTier" : 0,
+      "Count" : 3
+    },
+    {
+      "MaxTier" : 1,
+      "Count" : 43
+    },
+    {
+      "MaxTier" : 2,
+      "Count" : 63
+    }
+  ],
+  "Code" : 1000
+} | 
+2022-05-24T05:14:58.082Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T05:14:58.233Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T05:14:58.891Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T05:14:58.892Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653369298.891518"}
+2022-05-24T05:14:59.836Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-24T05:14:59.958Z | ERROR | CORE | Some IAP identifiers are reported as invalid by the AppStore: ["iosvpn_bundle2022_12_usd_non_renewing", "iosvpn_vpn2022_12_usd_non_renewing"] | 
+2022-05-24T05:15:00.067Z | DEBUG | REVIEW | Review user plan updated to visionary | 
+2022-05-24T05:15:00.072Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"streamingResourcesUrl","value":"https:\/\/protonvpn.com\/download\/resources\/"}
+2022-05-24T05:15:00.072Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"UserIp","value":"95.174.65.5"}
+2022-05-24T05:15:00.074Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"MaintenanceServerRefreshIntereval","value":"10"}
+2022-05-24T07:25:05.335Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T07:25:05.345Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T07:25:05.346Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T07:25:05.347Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T07:25:05.347Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T07:25:05.347Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/loads","method":"GET"}
+2022-05-24T07:25:05.348Z | DEBUG | CORE | Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x2815c4d80 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 "(null)" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <9C482BD8-5A12-4E51-AF3A-4FABDF6AF3A4>.<8>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <9C482BD8-5A12-4E51-AF3A-4FABDF6AF3A4>.<8>"
+), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https://api.protonvpn.ch/payments/v4/status, NSErrorFailingURLKey=https://api.protonvpn.ch/payments/v4/status, _kCFStreamErrorDomainKey=4} | 
+2022-05-24T07:25:05.354Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T07:25:05.357Z | ERROR | APP | Failed to refresh vpn credentials | {"error":"ResponseError(httpCode: nil, responseCode: nil, userFacingMessage: nil, underlyingError: Optional(Error Domain=NSURLErrorDomain Code=-1001 \"The request timed out.\" UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x2815c4d80 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 \"(null)\" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <9C482BD8-5A12-4E51-AF3A-4FABDF6AF3A4>.<8>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <9C482BD8-5A12-4E51-AF3A-4FABDF6AF3A4>.<8>\"\n), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/payments\/v4\/status, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/payments\/v4\/status, _kCFStreamErrorDomainKey=4}))"}
+2022-05-24T07:25:05.642Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T07:25:05.643Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T07:25:05.648Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T07:25:05.649Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T07:25:05.650Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T07:25:07.113Z | DEBUG | APP | Server list saved (count: 1730) | 
+2022-05-24T07:25:07.293Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T07:25:08.314Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T07:25:08.466Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T07:25:09.413Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/loads","method":"GET"}
+2022-05-24T07:25:11.213Z | DEBUG | APP | Server list saved (count: 1730) | 
+2022-05-24T07:25:19.907Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T07:25:19.909Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653377119.907546"}
+2022-05-24T08:40:44.416Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T08:40:44.416Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T08:40:44.416Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T08:40:44.417Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/loads","method":"GET"}
+2022-05-24T08:40:44.727Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T08:40:44.731Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"null","key":"LastTimeForeground"}
+2022-05-24T08:40:44.739Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T08:40:44.742Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T08:40:44.744Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-24 18:00:28 +0000) | 
+2022-05-24T08:40:46.715Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T08:40:47.569Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T08:40:47.654Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T08:40:48.916Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/loads","method":"GET"}
+2022-05-24T08:40:49.865Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T08:40:49.866Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653381649.865349"}
+2022-05-24T17:09:43.987Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T17:09:43.993Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connected to: 185.159.158.164 | 
+2022-05-24T17:09:44.153Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"IntentionallyDisconnected","value":"false"}
+2022-05-24T17:09:44.153Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:09:44.156Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"true","key":"ConnectOnDemand"}
+2022-05-24T17:09:44.156Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"true","key":"IntentionallyDisconnected"}
+2022-05-24T17:09:44.157Z | DEBUG | APP | Data refresh timer started | {"interval":"10800.0"}
+2022-05-24T17:09:44.157Z | DEBUG | APP | Server loads refresh timer started | {"interval":"900.0"}
+2022-05-24T17:09:44.157Z | DEBUG | APP | Account refresh timer started | {"interval":"180.0"}
+2022-05-24T17:09:44.158Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-24T17:09:44.158Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:09:44.158Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T17:09:44.159Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T17:09:44.169Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653388325.0254574"}
+2022-05-24T17:09:44.275Z | DEBUG | API | Disabling DoH while connected to VPN | 
+2022-05-24T17:09:44.277Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T17:09:44.278Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-24T17:09:44.279Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T17:09:44.280Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T17:09:44.281Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T17:09:44.283Z | DEBUG | USER_CERT:NEW_CERT | Asking backend API for new vpn authentication certificate | 
+2022-05-24T17:09:44.283Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v1\/certificate","method":"POST"}
+2022-05-24T17:09:44.291Z | INFO  | CONN.CONNECT | On Demand set: On for vpncore.OpenVpnProtocolFactory | 
+2022-05-24T17:09:45.931Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:09:46.517Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/featureconfig\/dynamic-bug-reports","method":"GET"}
+2022-05-24T17:09:46.518Z | DEBUG | APP | Dynamic bug report config downloaded and saved | 
+2022-05-24T17:09:46.527Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-24T17:09:46.567Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-24T17:09:46.590Z | DEBUG | CORE | URL: https://api.protonvpn.ch/vpn/countries/count, status code: 200 | 
+2022-05-24T17:09:46.607Z | DEBUG | CORE | {
+  "Counts" : [
+    {
+      "MaxTier" : 0,
+      "Count" : 3
+    },
+    {
+      "MaxTier" : 1,
+      "Count" : 43
+    },
+    {
+      "MaxTier" : 2,
+      "Count" : 63
+    }
+  ],
+  "Code" : 1000
+} | 
+2022-05-24T17:09:46.616Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/core\/v4\/notifications","method":"GET"}
+2022-05-24T17:09:46.623Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:09:46.760Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-24T17:09:46.761Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"1653412186.760172","key":"LastTimeForeground"}
+2022-05-24T17:09:46.842Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v1\/certificate","method":"POST"}
+2022-05-24T17:09:46.842Z | DEBUG | USER_CERT:NEW_CERT | Got new vpn authentication certificate valid until 2022-05-25 17:09:47 +0000 | 
+2022-05-24T17:09:46.850Z | DEBUG | USER_CERT | Cert with features saved: nil | 
+2022-05-24T17:09:49.017Z | ERROR | CORE | Some IAP identifiers are reported as invalid by the AppStore: ["iosvpn_vpn2022_12_usd_non_renewing", "iosvpn_bundle2022_12_usd_non_renewing"] | 
+2022-05-24T17:16:39.360Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:16:39.360Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:16:39.384Z | ERROR | NET:RESPONSE | Request failed | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET","error":"Error Domain=NSURLErrorDomain Code=-1001 \"The request timed out.\" UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x283473a80 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 \"(null)\" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <57DC6F77-8B4D-4FD5-BB83-D4CCE3A9B737>.<5>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <57DC6F77-8B4D-4FD5-BB83-D4CCE3A9B737>.<5>\"\n), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true, _kCFStreamErrorDomainKey=4}"}
+2022-05-24T17:16:39.384Z | DEBUG | CORE | Error Domain=NSURLErrorDomain Code=-1001 "The request timed out." UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x2834bff00 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 "(null)" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <6B029773-21D1-4257-A1B7-514DBB22589A>.<9>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <6B029773-21D1-4257-A1B7-514DBB22589A>.<9>"
+), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https://api.protonvpn.ch/payments/v4/status, NSErrorFailingURLKey=https://api.protonvpn.ch/payments/v4/status, _kCFStreamErrorDomainKey=4} | 
+2022-05-24T17:16:39.389Z | ERROR | APP | Failed to obtain user's VPN properties | {"error":"Error Domain=NSURLErrorDomain Code=-1001 \"The request timed out.\" UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x283473a80 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 \"(null)\" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <57DC6F77-8B4D-4FD5-BB83-D4CCE3A9B737>.<5>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <57DC6F77-8B4D-4FD5-BB83-D4CCE3A9B737>.<5>\"\n), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true, _kCFStreamErrorDomainKey=4}"}
+2022-05-24T17:16:39.391Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T17:16:39.392Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T17:16:39.393Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-25 17:09:47 +0000) | 
+2022-05-24T17:16:39.393Z | ERROR | APP | Failed to refresh vpn credentials | {"error":"ResponseError(httpCode: nil, responseCode: nil, userFacingMessage: nil, underlyingError: Optional(Error Domain=NSURLErrorDomain Code=-1001 \"The request timed out.\" UserInfo={_kCFStreamErrorCodeKey=-2102, NSUnderlyingError=0x2834bff00 {Error Domain=kCFErrorDomainCFNetwork Code=-1001 \"(null)\" UserInfo={_kCFStreamErrorCodeKey=-2102, _kCFStreamErrorDomainKey=4}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <6B029773-21D1-4257-A1B7-514DBB22589A>.<9>, _NSURLErrorRelatedURLSessionTaskErrorKey=(\n    \"LocalDataTask <6B029773-21D1-4257-A1B7-514DBB22589A>.<9>\"\n), NSLocalizedDescription=The request timed out., NSErrorFailingURLStringKey=https:\/\/api.protonvpn.ch\/payments\/v4\/status, NSErrorFailingURLKey=https:\/\/api.protonvpn.ch\/payments\/v4\/status, _kCFStreamErrorDomainKey=4}))"}
+2022-05-24T17:16:39.679Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-24T17:16:39.682Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"null","key":"LastTimeForeground"}
+2022-05-24T17:16:39.690Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-24T17:16:39.693Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-24T17:16:39.695Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-25 17:09:47 +0000) | 
+2022-05-24T17:16:40.870Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:16:41.714Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:16:43.935Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:16:45.310Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:17:13.934Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:17:15.897Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:17:43.933Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:17:44.948Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:18:13.932Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:18:15.401Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:18:43.931Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:18:43.933Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:18:45.597Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:18:47.405Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-24T17:19:13.930Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:19:15.114Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:19:43.754Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T17:19:43.929Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:19:44.757Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/servers\/12hKONvmZKeW7RAyUHu8SEzSVIvWARNtKcBFzyEtC2-nWiVeyowAt1EyEYKo6ksGcq-M_lSKKeinBKSHKU2eag==","method":"GET"}
+2022-05-24T17:19:46.994Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:20:13.928Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-24T17:20:15.491Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
