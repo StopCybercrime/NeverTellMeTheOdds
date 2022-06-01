@@ -1,0 +1,120 @@
+{"app_name":"WireGuardiOS Extension","timestamp":"2022-05-31 21:16:39.00 -0400","app_version":"3.1.3","slice_uuid":"41392181-7F0C-31E5-959F-1E294AA0C29C","adam_id":1437005085,"build_version":"2205050847","bundleID":"ch.protonmail.vpn.WireGuardiOS-Extension","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 15.5 (19F77)","incident_id":"4C37119E-2025-4B4F-ADA9-78B0F467A1AE","name":"WireGuardiOS Extension"}
+Date/Time:        2022-05-31 21:12:05.425 -0400
+End time:         2022-05-31 21:16:38.393 -0400
+OS Version:       iPhone OS 15.5 (Build 19F77)
+Architecture:     arm64e
+Report Version:   35.1
+Incident Identifier: 4C37119E-2025-4B4F-ADA9-78B0F467A1AE
+
+Data Source:      Microstackshots
+Shared Cache:     D3BF9328-5873-39B5-86EB-DDA04C31F0D3 slid base address 0x198ca4000, slide 0x18ca4000
+
+Command:          WireGuardiOS Extension
+Path:             /private/var/containers/Bundle/Application/41CA9787-A4D3-4044-8DE4-E0BD8320621F/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+Identifier:       ch.protonmail.vpn.WireGuardiOS-Extension
+Version:          3.1.3 (2205050847)
+Adam ID:          1437005085
+Is First Party:   No
+Beta Identifier:  EA5A9D7D-1B81-4D3A-A011-6941EC53ACC5
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              2565
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 273 seconds (165 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 273s
+Duration:         272.97s
+Duration Sampled: 51.82s
+Steps:            11
+
+Hardware model:   iPhone14,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  79.54 GB/119.09 GB, low space threshold 150 MB
+
+Heaviest stack for the target process:
+  4  ??? (WireGuardiOS Extension + 754692) [0x1023c0404]
+  3  ??? (WireGuardiOS Extension + 605624) [0x10239bdb8]
+  3  ??? (WireGuardiOS Extension + 604060) [0x10239b79c]
+  1  ??? (WireGuardiOS Extension + 599340) [0x10239a52c]
+  1  ??? (WireGuardiOS Extension + 622176) [0x10239fe60]
+
+
+Powerstats for:   WireGuardiOS Extension [2565]
+UUID:             41392181-7F0C-31E5-959F-1E294AA0C29C
+Path:             /private/var/containers/Bundle/Application/41CA9787-A4D3-4044-8DE4-E0BD8320621F/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+Identifier:       ch.protonmail.vpn.WireGuardiOS-Extension
+Version:          3.1.3 (2205050847)
+Adam ID:          1437005085
+Is First Party:   No
+Beta Identifier:  EA5A9D7D-1B81-4D3A-A011-6941EC53ACC5
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        10160 KB
+Start time:       2022-05-31 21:15:42.474 -0400
+End time:         2022-05-31 21:16:34.291 -0400
+Num samples:      11 (100%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 11 samples Active
+Power Source:     11 samples on Battery, 0 samples on AC
+  4   ??? (WireGuardiOS Extension + 754692) [0x1023c0404]
+    3   ??? (WireGuardiOS Extension + 605624) [0x10239bdb8]
+      3   ??? (WireGuardiOS Extension + 604060) [0x10239b79c]
+        1   ??? (WireGuardiOS Extension + 599340) [0x10239a52c]
+          1   ??? (WireGuardiOS Extension + 622176) [0x10239fe60]
+        1   ??? (WireGuardiOS Extension + 597656) [0x102399e98]
+          1   ??? (WireGuardiOS Extension + 393860) [0x102368284]
+        1   ??? (WireGuardiOS Extension + 597320) [0x102399d48]
+          1   ??? (WireGuardiOS Extension + 600240) [0x10239a8b0]
+    1   ??? (WireGuardiOS Extension + 605308) [0x10239bc7c]
+  2   ??? (<1397245B-D15C-3F2E-9E94-E473BB9C0B41> + 1805624488) [0x16e20e4a8]
+    2   ??? (WireGuardiOS Extension + 695076) [0x1023b1b24]
+      2   ??? (WireGuardiOS Extension + 763800) [0x1023c2798]
+        2   ??? (libsystem_kernel.dylib + 11800) [0x1d0c21e18]
+          2   <Kernel mode>
+  2   ??? (WireGuardiOS Extension + 764196) [0x1023c2924]
+    1   ??? (WireGuardiOS Extension + 1343452) [0x10244ffdc]
+      1   ??? (WireGuardiOS Extension + 1262140) [0x10243c23c]
+        1   ??? (WireGuardiOS Extension + 1263924) [0x10243c934]
+          1   ??? (WireGuardiOS Extension + 1259056) [0x10243b630]
+    1   ??? (WireGuardiOS Extension + 1343288) [0x10244ff38]
+      1   ??? (WireGuardiOS Extension + 374808) [0x102363818]
+        1   ??? (WireGuardiOS Extension + 376160) [0x102363d60]
+  1   ??? (libsystem_pthread.dylib + 3676) [0x20a953e5c]
+    1   ??? (libsystem_pthread.dylib + 4284) [0x20a9540bc]
+      1   ??? (libdispatch.dylib + 91392) [0x198d0b500]
+        1   ??? (libdispatch.dylib + 53120) [0x198d01f80]
+          1   ??? (libdispatch.dylib + 106812) [0x198d0f13c]
+            1   ??? (libdispatch.dylib + 28396) [0x198cfbeec]
+              1   ??? (libdispatch.dylib + 14896) [0x198cf8a30]
+                1   ??? (libnetwork.dylib + 1344164) [0x199e212a4]
+                  1   ??? (libnetwork.dylib + 746184) [0x199d8f2c8]
+                    1   ??? (libnetwork.dylib + 8419644) [0x19a4e093c]
+                      1   ??? (libnetwork.dylib + 1461760) [0x199e3de00]
+                        1   ??? (libnetwork.dylib + 861300) [0x199dab474]
+                          1   ??? (libsystem_c.dylib + 40368) [0x1a4180db0]
+  1   ??? (<1397245B-D15C-3F2E-9E94-E473BB9C0B41> + 1807344808) [0x16e3b24a8]
+    1   ??? (WireGuardiOS Extension + 695076) [0x1023b1b24]
+      1   ??? (WireGuardiOS Extension + 763800) [0x1023c2798]
+        1   ??? (libsystem_kernel.dylib + 11800) [0x1d0c21e18]
+          1   <Kernel mode>
+  1   ??? (WireGuardiOS Extension + 763724) [0x1023c274c]
+    1   ??? (libsystem_kernel.dylib + 23860) [0x1d0c24d34]
+      1   <Kernel mode>
+
+  Binary Images:
+           0x102308000 -                ???  ch.protonmail.vpn.WireGuardiOS-Extension 3.1.3 (2205050847) <41392181-7F0C-31E5-959F-1E294AA0C29C>  /private/var/containers/Bundle/Application/41CA9787-A4D3-4044-8DE4-E0BD8320621F/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+           0x102814000 -                ???  ???                                                         <1397245B-D15C-3F2E-9E94-E473BB9C0B41>
+           0x198cf5000 -        0x198d3afff  libdispatch.dylib                                           <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x199cd9000 -        0x19a76dfff  libnetwork.dylib                                            <99FA54D7-B1C3-3776-AD93-08BDDA19EFA1>  /usr/lib/libnetwork.dylib
+           0x1a4177000 -        0x1a41f6fff  libsystem_c.dylib                                           <9BD1E199-40A3-3E4A-8A78-271281C0CF0D>  /usr/lib/system/libsystem_c.dylib
+           0x1d0c1f000 -        0x1d0c54fff  libsystem_kernel.dylib                                      <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
+           0x20a953000 -        0x20a95efff  libsystem_pthread.dylib                                     <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib
