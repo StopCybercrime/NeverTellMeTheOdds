@@ -29,4 +29,4 @@ Ignore busyflytrap, trolls are easier to spot than malicious activity
 
 ***5/31: Uploaded a boatload of ProtonVPN logs, App Privacy Reports, and iPhone 13 Pro diagnostic files. Separately, Ultra S22s show Knox Enrollment and Work Profile (neither were set up or should be present), as well as Android GMS persistence.
 
-At this point, it would appear all devices are set up for MDM/Intune and roll up to Azure AD. First party reports disabled and private frameworks / Apigee Edge for mobile suggest a controller software environment as well
+At this point, it would appear all devices are set up for MDM/Intune and roll up to Azure AD. WireGuard and NordLynx appear exploitable. First party reports disabled and private frameworks / Apigee Edge for mobile suggest a controller software environment as well. Penetration vectors include phishing, Bluetooth/NFC buffer overflows, TLS/Trust Agent abuse (even Air Command)... and bears, oh my
