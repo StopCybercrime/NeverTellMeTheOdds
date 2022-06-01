@@ -1,0 +1,250 @@
+{"app_name":"Signal","timestamp":"2022-05-24 00:05:01.00 -0400","app_version":"5.37.2","slice_uuid":"D49A1A9C-192B-3957-AAC4-B56B52B3BE5D","adam_id":874139669,"build_version":"0","bundleID":"org.whispersystems.signal","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 15.5 (19F77)","incident_id":"8464B4B3-3DCA-4D7A-ABAD-86C597AA5B41","name":"Signal"}
+Date/Time:        2022-05-24 00:00:13.307 -0400
+End time:         2022-05-24 00:05:00.695 -0400
+OS Version:       iPhone OS 15.5 (Build 19F77)
+Architecture:     arm64e
+Report Version:   35.1
+Incident Identifier: 8464B4B3-3DCA-4D7A-ABAD-86C597AA5B41
+
+Data Source:      Microstackshots
+Shared Cache:     D3BF9328-5873-39B5-86EB-DDA04C31F0D3 slid base address 0x1a0660000, slide 0x20660000
+
+Command:          Signal
+Path:             /private/var/containers/Bundle/Application/CE18EDFE-6D88-4DD8-A464-22422440057A/Signal.app/Signal
+Identifier:       org.whispersystems.signal
+Version:          5.37.2 (0)
+Adam ID:          874139669
+Is First Party:   No
+Beta Identifier:  80057DFC-34AE-4A57-9EA8-95C4F8134F48
+Architecture:     arm64
+PID:              57061
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 287 seconds (157 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 287s
+Duration:         287.39s
+Duration Sampled: 78.08s
+Steps:            24
+
+Hardware model:   iPhone14,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  86.07 GB/119.09 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+
+Heaviest stack for the target process:
+  15  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+  15  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+  15  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+  15  ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+  15  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+  15  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+  13  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1789584) [0x104c18e90]
+  13  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2592172) [0x104cdcdac]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2601052) [0x104cdf05c]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1632116) [0x104bf2774]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3835564) [0x104e0c6ac]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3520212) [0x104dbf6d4]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3768172) [0x104dfbf6c]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3759556) [0x104df9dc4]
+  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3765292) [0x104dfb42c]
+  11  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3763976) [0x104dfaf08]
+  11  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3695028) [0x104dea1b4]
+  7   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3796356) [0x104e02d84]
+  7   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3657536) [0x104de0f40]
+  2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3662616) [0x104de2318]
+
+
+Powerstats for:   Signal [57061]
+UUID:             D49A1A9C-192B-3957-AAC4-B56B52B3BE5D
+Path:             /private/var/containers/Bundle/Application/CE18EDFE-6D88-4DD8-A464-22422440057A/Signal.app/Signal
+Identifier:       org.whispersystems.signal
+Version:          5.37.2 (0)
+Adam ID:          874139669
+Is First Party:   No
+Beta Identifier:  80057DFC-34AE-4A57-9EA8-95C4F8134F48
+Architecture:     arm64
+Footprint:        49.33 MB
+Start time:       2022-05-24 00:03:40.495 -0400
+End time:         2022-05-24 00:04:58.574 -0400
+Num samples:      24 (100%)
+Primary state:    12 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 24 samples Active
+Power Source:     24 samples on Battery, 0 samples on AC
+  15  ??? (libsystem_pthread.dylib + 3676) [0x21230fe5c]
+    15  ??? (libsystem_pthread.dylib + 4284) [0x2123100bc]
+      15  ??? (libdispatch.dylib + 91392) [0x1a06c7500]
+        15  ??? (libdispatch.dylib + 48256) [0x1a06bcc80]
+          15  ??? (libdispatch.dylib + 45348) [0x1a06bc124]
+            15  ??? (libdispatch.dylib + 14896) [0x1a06b4a30]
+              13  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1789584) [0x104c18e90]
+                13  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2592172) [0x104cdcdac]
+                  12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2601052) [0x104cdf05c]
+                    12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1632116) [0x104bf2774]
+                      12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3835564) [0x104e0c6ac]
+                        12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3520212) [0x104dbf6d4]
+                          12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3768172) [0x104dfbf6c]
+                            12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3759556) [0x104df9dc4]
+                              12  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3765292) [0x104dfb42c]
+                                11  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3763976) [0x104dfaf08]
+                                  11  ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3695028) [0x104dea1b4]
+                                    7   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3796356) [0x104e02d84]
+                                      7   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3657536) [0x104de0f40]
+                                        2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3662616) [0x104de2318]
+                                        2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3662544) [0x104de22d0]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3664028) [0x104de289c]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3662932) [0x104de2454]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3662436) [0x104de2264]
+                                    2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3795316) [0x104e02974]
+                                      2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3802356) [0x104e044f4]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3798772) [0x104e036f4]
+                                          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3641764) [0x104ddd1a4]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3798744) [0x104e036d8]
+                                          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3645708) [0x104dde10c]
+                                    2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3795256) [0x104e02938]
+                                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3801104) [0x104e04010]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3810736) [0x104e065b0]
+                                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3800824) [0x104e03ef8]
+                                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3641692) [0x104ddd15c]
+                                1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3762128) [0x104dfa7d0]
+                                  1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3566988) [0x104dcad8c]
+                                    1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3580872) [0x104dce3c8]
+                  1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2601448) [0x104cdf1e8]
+                    1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2590872) [0x104cdc898]
+                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2281352) [0x104c90f88]
+                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2276428) [0x104c8fc4c]
+                          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2590292) [0x104cdc654]
+                            1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2516608) [0x104cca680]
+                              1   ??? (libdispatch.dylib + 153500) [0x1a06d679c]
+                                1   ??? (libsystem_kernel.dylib + 7068) [0x1d85dcb9c]
+                                  1   <Kernel mode>
+              2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1789608) [0x104c18ea8]
+                2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2591840) [0x104cdcc60]
+                  2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2591816) [0x104cdcc48]
+                    2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1747484) [0x104c0ea1c]
+                      2   ??? (libsystem_malloc.dylib + 24272) [0x1b2ce0ed0]
+                        2   ??? (libsystem_kernel.dylib + 5076) [0x1d85dc3d4]
+                          2   <Kernel mode>
+  5   ??? (libsystem_pthread.dylib + 3688) [0x21230fe68]
+    5   ??? (libsystem_pthread.dylib + 6572) [0x2123109ac]
+      2   ??? (libEmbeddedSystemAUs.dylib + 12112) [0x1dd420f50]
+        2   ??? (libAudioToolboxUtility.dylib + 9116) [0x1ba0f539c]
+          2   ??? (libAudioToolboxUtility.dylib + 11348) [0x1ba0f5c54]
+            2   ??? (libEmbeddedSystemAUs.dylib + 50860) [0x1dd42a6ac]
+              2   ??? (libEmbeddedSystemAUs.dylib + 13860) [0x1dd421624]
+                2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1769852) [0x104c1417c]
+                  2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1763848) [0x104c12a08]
+                    2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1760956) [0x104c11ebc]
+                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2574428) [0x104cd885c]
+                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1827184) [0x104c22170]
+                          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1802612) [0x104c1c174]
+                            1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1799452) [0x104c1b51c]
+                              1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1824476) [0x104c216dc]
+                                1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1826956) [0x104c2208c]
+                                  1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 2574268) [0x104cd87bc]
+                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 622960) [0x104afc170]
+                          1   ??? (libsystem_malloc.dylib + 24612) [0x1b2ce1024]
+                            1   ??? (libsystem_malloc.dylib + 28336) [0x1b2ce1eb0]
+                              1   ??? (libsystem_malloc.dylib + 23136) [0x1b2ce0a60]
+                                1   ??? (libsystem_malloc.dylib + 34012) [0x1b2ce34dc]
+                                  1   ??? (libsystem_kernel.dylib + 5112) [0x1d85dc3f8]
+                                    1   <Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+      2   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1012544) [0x104b5b340]
+        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1007648) [0x104b5a020]
+          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1011420) [0x104b5aedc]
+            1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1013536) [0x104b5b720]
+              1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1584344) [0x104be6cd8]
+                1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1582048) [0x104be63e0]
+                  1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 107768) [0x104a7e4f8]
+                    1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 157692) [0x104a8a7fc]
+                      1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 165184) [0x104a8c540]
+                        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3331836) [0x104d916fc]
+                          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3299320) [0x104d897f8]
+                            1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3389684) [0x104d9f8f4]
+                              1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 3390320) [0x104d9fb70]
+                                1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 900628) [0x104b3fe14]
+                                  1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 997884) [0x104b579fc]
+                                    1   ??? (libsystem_kernel.dylib + 23860) [0x1d85e0d34]
+                                      1   <Kernel mode>
+        1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1007624) [0x104b5a008]
+          1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1010028) [0x104b5a96c]
+            1   ??? (<4C4C4440-5555-3144-A10B-5D60F34028A7> + 1001024) [0x104b58640]
+              1   ??? (libsystem_kernel.dylib + 8548) [0x1d85dd164]
+                1   <Kernel mode>
+      1   ??? (libEmbeddedSystemAUs.dylib + 12088) [0x1dd420f38]
+        1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+          1   <Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+  4   ??? (<7C9C7851-8237-38A7-B1EB-9CD2DEB4B746> + 105700) [0x101dcdce4]
+    4   ??? (Signal + 122712) [0x100f99f58]
+      4   ??? (UIKitCore + 2710928) [0x1a30c3d90]
+        4   ??? (UIKitCore + 5326408) [0x1a3342648]
+          4   ??? (GraphicsServices + 4980) [0x1bcb06374]
+            4   ??? (CoreFoundation + 125896) [0x1a09d2bc8]
+              3   ??? (CoreFoundation + 45148) [0x1a09bf05c]
+                3   ??? (CoreFoundation + 22164) [0x1a09b9694]
+                  3   ??? (CoreFoundation + 836000) [0x1a0a801a0]
+                    3   ??? (CoreFoundation + 766996) [0x1a0a6f414]
+                      3   ??? (UIKitCore + 15066128) [0x1a3c8c410]
+                        3   ??? (UIKitCore + 15068232) [0x1a3c8cc48]
+                          3   ??? (UIKitCore + 8227196) [0x1a360697c]
+                            2   ??? (QuartzCore + 1490016) [0x1a485bc60]
+                              2   ??? (QuartzCore + 68928) [0x1a4700d40]
+                                2   ??? (MetalKit + 77752) [0x1de0ebfb8]
+                                  1   ??? (MetalKit + 18368) [0x1de0dd7c0]
+                                    1   <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+                                  1   ??? (MetalKit + 18172) [0x1de0dd6fc]
+                                    1   ??? (libobjc.A.dylib + 14784) [0x1b97349c0]
+                                      1   <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+                            1   ??? (UIKitCore + 5497240) [0x1a336c198]
+                              1   ??? (QuartzCore + 206988) [0x1a472288c]
+                                1   ??? (QuartzCore + 330096) [0x1a4740970]
+                                  1   ??? (QuartzCore + 301772) [0x1a4739acc]
+                                    1   ??? (QuartzCore + 367112) [0x1a4749a08]
+                                      1   ??? (QuartzCore + 498544) [0x1a4769b70]
+                                        1   ??? (libsystem_kernel.dylib + 5280) [0x1d85dc4a0]
+                                          1   <Kernel mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+              1   ??? (CoreFoundation + 46256) [0x1a09bf4b0]
+                1   ??? (CoreFoundation + 183808) [0x1a09e0e00]
+                  1   ??? (CoreFoundation + 206420) [0x1a09e6654]
+                    1   ??? (CoreFoundation + 714360) [0x1a0a62678]
+                      1   ??? (Foundation + 209164) [0x1a21db10c]
+                        1   ??? (<B944C755-D833-39BA-827E-22474A6189AC> + 8606548) [0x1042cd354]
+                          1   ??? (Signal + 5181460) [0x10146d014]
+                            1   ??? (Signal + 5156920) [0x101467038]
+                              1   ??? (<AE1EE999-85C8-36C3-BDDC-9D413FFE0221> + 599988) [0x1051a67b4]
+                                1   ??? (libswiftFoundation.dylib + 19904) [0x1a510edc0]
+                                  1   ??? (Foundation + 179796) [0x1a21d3e54]
+                                    1   ??? (CoreFoundation + 329280) [0x1a0a04640]
+                                      1   ??? (CoreFoundation + 610260) [0x1a0a48fd4]
+                                        1   ??? (CoreFoundation + 395780) [0x1a0a14a04]
+                                          1   ??? (CoreFoundation + 287840) [0x1a09fa460]
+                                            1   <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x100f7c000 -                ???  org.whispersystems.signal 5.37.2 (0) <D49A1A9C-192B-3957-AAC4-B56B52B3BE5D>  /private/var/containers/Bundle/Application/CE18EDFE-6D88-4DD8-A464-22422440057A/Signal.app/Signal
+           0x101db4000 -                ???  ???                                  <7C9C7851-8237-38A7-B1EB-9CD2DEB4B746>
+           0x103a98000 -                ???  ???                                  <B944C755-D833-39BA-827E-22474A6189AC>
+           0x104a64000 -                ???  ???                                  <4C4C4440-5555-3144-A10B-5D60F34028A7>
+           0x105114000 -                ???  ???                                  <AE1EE999-85C8-36C3-BDDC-9D413FFE0221>
+           0x1a06b1000 -        0x1a06f6fff  libdispatch.dylib                    <355ACCF4-3917-3730-BC55-EF7003887ABE>  /usr/lib/system/libdispatch.dylib
+           0x1a09b4000 -        0x1a0e09fff  CoreFoundation                       <5198FB57-5645-3B34-A49F-F32B52256CF3>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a21a8000 -        0x1a24b2fff  Foundation                           <AC6AD2F3-C7B1-38AA-8588-57036A663180>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1a2e2e000 -        0x1a46c9fff  UIKitCore                            <3ED35565-456D-33CB-B554-6C567FA81585>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1a46f0000 -        0x1a49fffff  QuartzCore                           <AA75B503-9DA1-3696-A32F-7A600DED98A9>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1a510a000 -        0x1a547cfff  libswiftFoundation.dylib             <64D4CA49-54AE-3767-9305-B1E7C6AF4B24>  /usr/lib/swift/libswiftFoundation.dylib
+           0x1b2cdb000 -        0x1b2cfcfff  libsystem_malloc.dylib               <7B60C468-D3ED-3719-BE47-054CFCEC0007>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b9731000 -        0x1b976dfff  libobjc.A.dylib                      <B1FC4376-8314-31DA-BFC2-95E703398D4E>  /usr/lib/libobjc.A.dylib
+           0x1ba0f3000 -        0x1ba126fff  libAudioToolboxUtility.dylib         <342945C0-E685-3468-95AB-6C4C7DEBA59E>  /usr/lib/libAudioToolboxUtility.dylib
+           0x1bcb05000 -        0x1bcb0dfff  GraphicsServices                     <260F066E-C5DE-3844-967E-483985448F21>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1d85db000 -        0x1d8610fff  libsystem_kernel.dylib               <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
+           0x1dd41e000 -        0x1dd529fff  libEmbeddedSystemAUs.dylib           <20AD6436-A182-3FCF-B885-7A91A8CEDE18>  /System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib
+           0x1de0d9000 -        0x1de0f5fff  MetalKit                             <E84427A1-BF25-3DE1-BB1F-1208B5FFE2AB>  /System/Library/Frameworks/MetalKit.framework/MetalKit
+           0x21230f000 -        0x21231afff  libsystem_pthread.dylib              <1026E3A4-D3C0-3B0D-A552-F185D6772A29>  /usr/lib/system/libsystem_pthread.dylib

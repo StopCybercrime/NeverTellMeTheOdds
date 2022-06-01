@@ -1,0 +1,71 @@
+{"app_name":"WireGuardiOS Extension","timestamp":"2022-05-27 15:07:37.00 -0400","app_version":"3.1.3","slice_uuid":"41392181-7F0C-31E5-959F-1E294AA0C29C","adam_id":1437005085,"build_version":"2205050847","bundleID":"ch.protonmail.vpn.WireGuardiOS-Extension","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 15.5 (19F77)","incident_id":"67486BB3-7D97-4B34-9EB4-31A4B023C30A","name":"WireGuardiOS Extension"}
+Date/Time:        2022-05-27 15:02:49.879 -0400
+End time:         2022-05-27 15:07:37.311 -0400
+OS Version:       iPhone OS 15.5 (Build 19F77)
+Architecture:     arm64e
+Report Version:   35.1
+Incident Identifier: 67486BB3-7D97-4B34-9EB4-31A4B023C30A
+
+Data Source:      Microstackshots
+Shared Cache:     D3BF9328-5873-39B5-86EB-DDA04C31F0D3 slid base address 0x1a0660000, slide 0x20660000
+
+Command:          WireGuardiOS Extension
+Path:             /private/var/containers/Bundle/Application/85A6554F-2C7A-4274-9F79-997E5BA54F4D/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+Identifier:       ch.protonmail.vpn.WireGuardiOS-Extension
+Version:          3.1.3 (2205050847)
+Adam ID:          1437005085
+Is First Party:   No
+Beta Identifier:  EA5A9D7D-1B81-4D3A-A011-6941EC53ACC5
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              80015
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 287 seconds (157 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 287s
+Duration:         287.43s
+Duration Sampled: 0.00s
+Steps:            1
+
+Hardware model:   iPhone14,2
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  84.16 GB/119.09 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+
+Heaviest stack for the target process:
+  1  ??? (WireGuardiOS Extension + 763724) [0x10108274c]
+  1  ??? (libsystem_kernel.dylib + 23768) [0x1d85e0cd8]
+
+
+Powerstats for:   WireGuardiOS Extension [80015]
+UUID:             41392181-7F0C-31E5-959F-1E294AA0C29C
+Path:             /private/var/containers/Bundle/Application/85A6554F-2C7A-4274-9F79-997E5BA54F4D/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+Identifier:       ch.protonmail.vpn.WireGuardiOS-Extension
+Version:          3.1.3 (2205050847)
+Adam ID:          1437005085
+Is First Party:   No
+Beta Identifier:  EA5A9D7D-1B81-4D3A-A011-6941EC53ACC5
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        10128 KB
+Start time:       2022-05-27 15:06:11.854 -0400
+End time:         2022-05-27 15:06:11.854 -0400
+Num samples:      1 (100%)
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 1 samples Active
+Power Source:     1 samples on Battery, 0 samples on AC
+  1  ??? (WireGuardiOS Extension + 763724) [0x10108274c]
+    1  ??? (libsystem_kernel.dylib + 23768) [0x1d85e0cd8]
+
+  Binary Images:
+           0x100fc8000 -                ???  ch.protonmail.vpn.WireGuardiOS-Extension 3.1.3 (2205050847) <41392181-7F0C-31E5-959F-1E294AA0C29C>  /private/var/containers/Bundle/Application/85A6554F-2C7A-4274-9F79-997E5BA54F4D/ProtonVPN.app/PlugIns/WireGuardiOS Extension.appex/WireGuardiOS Extension
+           0x1d85db000 -        0x1d8610fff  libsystem_kernel.dylib                                      <1DB00C91-6AD8-3840-8503-0C6FBFFA8E0B>  /usr/lib/system/libsystem_kernel.dylib
