@@ -1,0 +1,495 @@
+2022-05-29T23:31:45.824-0400 INFO protocol OpenVPNTunnelProvider.startTunnel():231 - Starting tunnel...
+2022-05-29T23:31:45.831-0400 INFO protocol Configuration.print():559 - 	Protocols: [TCP:443, TCP:5995, TCP:8443]
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():560 - 	Cipher: AES-256-CBC
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():561 - 	Digest: HMAC-SHA512
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():562 - 	Compression framing: compress
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():566 - 	Compression algorithm: disabled
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():571 - 	Client verification: disabled
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():574 - 	TLS wrapping: auth
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():581 - 	TLS security level: default
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():586 - 	Keep-alive interval: never
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():591 - 	Keep-alive timeout: never
+2022-05-29T23:31:45.832-0400 INFO protocol Configuration.print():596 - 	Renegotiation: never
+2022-05-29T23:31:45.833-0400 INFO protocol Configuration.print():599 - 	Server EKU verification: enabled
+2022-05-29T23:31:45.833-0400 INFO protocol Configuration.print():604 - 	Host SAN verification: enabled (is-nl-01a.protonvpn.net)
+2022-05-29T23:31:45.833-0400 INFO protocol Configuration.print():614 - 	Gateway: not configured
+2022-05-29T23:31:45.833-0400 INFO protocol Configuration.print():635 - 	DNS: not configured
+2022-05-29T23:31:45.833-0400 INFO protocol Configuration.print():654 - 	MTU: 1250
+2022-05-29T23:31:45.833-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():306 - 	Debug: true
+2022-05-29T23:31:45.833-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():307 - 	Masks private data: true
+2022-05-29T23:31:45.833-0400 DEBUG protocol ConnectionStrategy.init():98 - Will use DNS resolution
+2022-05-29T23:31:45.836-0400 DEBUG protocol OpenVPNTunnelProvider.logCurrentSSID():893 - Current SSID: none (disconnected from WiFi)
+2022-05-29T23:31:45.836-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-29T23:31:45.836-0400 DEBUG protocol ConnectionStrategy.createSocket():167 - No endpoints available, will resort to DNS resolution
+2022-05-29T23:31:45.836-0400 DEBUG protocol ConnectionStrategy.createSocket():174 - DNS resolve hostname: <masked>
+2022-05-29T23:31:45.837-0400 DEBUG protocol ConnectionStrategy.createSocket():178 - DNS resolved addresses: <masked>
+2022-05-29T23:31:45.837-0400 DEBUG protocol ConnectionStrategy.unrolledEndpoints():125 - Unrolled endpoints: <masked>
+2022-05-29T23:31:45.837-0400 DEBUG protocol ConnectionStrategy.createSocket():193 - Pick current endpoint: <masked>
+2022-05-29T23:31:45.838-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:443
+2022-05-29T23:31:45.838-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-29T23:31:45.839-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-29T23:31:46.083-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-29T23:31:46.083-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-29T23:31:46.084-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-29T23:31:46.084-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-29T23:31:46.085-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-29T23:31:46.086-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: 02fe579badf107a6, pid: 0, [0 bytes]}
+2022-05-29T23:31:46.088-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 3802fe579badf107a675003b15948ecf86d2404396f58c466384b664c8eed045b8c22b899de1416ae58f6fa3d019b48c27791b2c0bb8fddede682ffa885a9753751d11b13bf606cb1a0000000162943aa10000000000
+2022-05-29T23:31:46.400-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code HARD_RESET_SERVER_V2 and key 0
+2022-05-29T23:31:46.401-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {HARD_RESET_SERVER_V2 | 0, sid: ead2c3b950d66f88, acks: {[0], 02fe579badf107a6}, pid: 0}
+2022-05-29T23:31:46.402-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 0
+2022-05-29T23:31:46.402-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[0], ead2c3b950d66f88}}
+2022-05-29T23:31:46.403-0400 DEBUG protocol ControlChannel.remoteSessionId():50 - Control: Remote sessionId is ead2c3b950d66f88
+2022-05-29T23:31:46.403-0400 DEBUG protocol OpenVPNSession.handleControlPacket():786 - Start TLS handshake
+2022-05-29T23:31:46.409-0400 DEBUG protocol OpenVPNSession.handleControlPacket():820 - TLS.connect: Pulled ciphertext (293 bytes)
+2022-05-29T23:31:46.410-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [1]
+2022-05-29T23:31:46.410-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 02fe579badf107a6, pid: 1, [293 bytes]}
+2022-05-29T23:31:46.415-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (379 bytes): 2002fe579badf107a625120221cabc47d25abc82a877389e9ea149bca739b92af4596f0769ff9d6ef145cd9902cc630de4ac2e825f940539d87899f4c7233128706066e07e6377837a0000000362943aa1000000000116030101200100011c030336e4e80b94cb8ed5236b8564bd78cae68c39c81aedce1edd83f492e9507af623202a14c1287b439cd0a159d354f3c10b8fde3b9b983802f91097379ff3b5034e3a003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000095000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d00020101003300260024001d002033628d6a18c74857b254899b1bab507e45074062d2bce063883e37ab7fd5595d
+2022-05-29T23:31:46.416-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 0
+2022-05-29T23:31:47.043-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:47.045-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, acks: {[1], 02fe579badf107a6}, pid: 1, [99 bytes]}
+2022-05-29T23:31:47.045-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 1
+2022-05-29T23:31:47.046-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[1], ead2c3b950d66f88}}
+2022-05-29T23:31:47.046-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (99 bytes)
+2022-05-29T23:31:47.058-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (400 bytes)
+2022-05-29T23:31:47.058-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [2]
+2022-05-29T23:31:47.058-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 02fe579badf107a6, pid: 2, [400 bytes]}
+2022-05-29T23:31:47.063-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (486 bytes): 2002fe579badf107a6ea22f7be096ac3c3cc9629143e8f62260e54a7af6c4bfe536fbdf25b750dc74c016f05869154fe6da1a21591ad08144b3338528cb14ac9c45cb97448f33411020000000562943aa10000000002140303000101160303018501000181030336e4e80b94cb8ed5236b8564bd78cae68c39c81aedce1edd83f492e9507af623202a14c1287b439cd0a159d354f3c10b8fde3b9b983802f91097379ff3b5034e3a003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff010000fa000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d000201010033008b00890019008504013cf2e4bada16e2c70dc0068b2b865e07b08dea51110c32eaff567cdd6b639491e38bde5da3338d29a18ab9c33f587c8fafc35f269b16abef85af9b293a9a6eded301b404278c6e7cfec7a007a637be580ef73548553e6e680fc753dcca9cb76e8e11578cd81c05b8f83e4d66af7948360898311a318752b5756a6dc2ac0e3c9dcd6679
+2022-05-29T23:31:47.064-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 1
+2022-05-29T23:31:47.690-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:47.690-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, acks: {[2], 02fe579badf107a6}, pid: 2, [1026 bytes]}
+2022-05-29T23:31:47.691-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 2
+2022-05-29T23:31:47.691-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[2], ead2c3b950d66f88}}
+2022-05-29T23:31:47.692-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:31:47.704-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:47.704-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 3, [1026 bytes]}
+2022-05-29T23:31:47.705-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 3
+2022-05-29T23:31:47.705-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[3], ead2c3b950d66f88}}
+2022-05-29T23:31:47.705-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:31:47.705-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:47.705-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 4, [1026 bytes]}
+2022-05-29T23:31:47.706-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 4
+2022-05-29T23:31:47.706-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[4], ead2c3b950d66f88}}
+2022-05-29T23:31:47.706-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:31:47.706-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:47.707-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 5, [1026 bytes]}
+2022-05-29T23:31:47.707-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 5
+2022-05-29T23:31:47.707-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[5], ead2c3b950d66f88}}
+2022-05-29T23:31:47.707-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:31:47.707-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 2
+2022-05-29T23:31:47.708-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 3
+2022-05-29T23:31:47.708-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 4
+2022-05-29T23:31:47.708-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 5
+2022-05-29T23:31:48.001-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:48.001-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 6, [1026 bytes]}
+2022-05-29T23:31:48.002-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 6
+2022-05-29T23:31:48.003-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[6], ead2c3b950d66f88}}
+2022-05-29T23:31:48.003-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:31:48.006-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 6
+2022-05-29T23:31:48.314-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:48.314-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 7, [402 bytes]}
+2022-05-29T23:31:48.315-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 7
+2022-05-29T23:31:48.315-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[7], ead2c3b950d66f88}}
+2022-05-29T23:31:48.316-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (402 bytes)
+2022-05-29T23:31:48.317-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (104 bytes)
+2022-05-29T23:31:48.318-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [3]
+2022-05-29T23:31:48.318-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 02fe579badf107a6, pid: 3, [104 bytes]}
+2022-05-29T23:31:48.322-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (190 bytes): 2002fe579badf107a6fcaa64747bce18c04c441a4de974fa4618b83d0554adaeb2be3c2ad960e5f1125b4eefafd622b346e2e2d2b0fcfbb29cce01360528cb03c5d26217e65190a5980000000c62943aa100000000031703030019c6ae4eb7656026bf6d1de704e5f05d5e5cc5a62ba2897ba38a1703030045ad43faaf02e29292f78e767d80fc3f3162877d92a3c30a2e5aa1c8340661dea3038ba317ff412133c1829817a91d78be8bec1b824c758bcdbabeb383b5bbc00ec7d12e4221
+2022-05-29T23:31:48.323-0400 DEBUG protocol OpenVPNSession.onTLSConnect():668 - TLS.connect: Handshake is complete
+2022-05-29T23:31:48.323-0400 DEBUG protocol Authenticator.putAuth():146 - TLS.auth: Local options: V4,dev-type tun,compress,keydir 1,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-client
+2022-05-29T23:31:48.327-0400 DEBUG protocol Authenticator.putAuth():168 - TLS.auth: Put plaintext (447 bytes)
+2022-05-29T23:31:48.327-0400 DEBUG protocol OpenVPNSession.onTLSConnect():694 - TLS.auth: Pulled ciphertext (469 bytes)
+2022-05-29T23:31:48.327-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [4]
+2022-05-29T23:31:48.329-0400 DEBUG protocol ControlChannel.writeOutboundPackets():169 - Control: Skip writing packet with packetId 3 (sent on 2022-05-30 03:31:48 +0000, 0.009165048599243164 seconds ago)
+2022-05-29T23:31:48.329-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 02fe579badf107a6, pid: 4, [469 bytes]}
+2022-05-29T23:31:48.335-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (555 bytes): 2002fe579badf107a69faf4d411a24f4c9930de3bc8eb1840041e9522b3a4cce97e97ad83c9b377ca95a75a297846f66ffc2be32a8cfd34affa6e4e03bac4c6a0bf3e3b32295102e570000000d62943aa1000000000417030301d0bb93b66f1d7818e01bbff9e1d722378c2ac7dc50881ce9346a6487d16ab53b1bdd93081022227f99e987c44b2950dd424eedd3b57ee883b78a2a817d2949a39eb3e2dff364d4773d10de32b2abb96cb804d930fe6686b5831a80f02bb6aee39bed1e8d849108f7486fcd539951a3994ba5f79ddd8aee369613f6a1e6a926f1945833012c1c3976a50de263f47566dbf2f9053ab59b66afd8d4c436bc9b723e342933c182e4811b3ce254d54c91d98f3852fa642386f9766194f27b3dd71ee4e887d3be3f70a451d829725e1bb660330c9e54c3928784a8301899c9e7ccfe75b9c3d5ed2496744daee60d0494ecbe675c585a3ecc2c4ecafbef86076bbf700a1ff058ea968b8bce3d51c89db65a2e0dea57f41441870c4748602c98fbb3c6911b120b000ba0b207958d161e591c17bdb7c41734f7dd14b9ae3c0e3e3af4a1455cd20b1b0c736417d16f0eab74609bf5026f32451f05b096bb3b47007d50cec2b8c24897c11548565612a9aa580d3a5d7b7122bae6a011958103ba5578f1384b1e3bc39f283a3d123e1585ee4d4cc3cb081eb62088b46f920e6463779964a8228a502c30ba54dcceb254e7538871f64f537b01311218a8bdacb86331fa31d0ada0ac264ae9162e88a12be2e11ce3ca7745
+2022-05-29T23:31:48.336-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 7
+2022-05-29T23:31:48.964-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:48.965-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, acks: {[3], 02fe579badf107a6}, pid: 8, [158 bytes]}
+2022-05-29T23:31:48.965-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 8
+2022-05-29T23:31:48.966-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[8], ead2c3b950d66f88}}
+2022-05-29T23:31:48.966-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (158 bytes)
+2022-05-29T23:31:48.967-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:48.968-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, acks: {[4], 02fe579badf107a6}, pid: 9, [255 bytes]}
+2022-05-29T23:31:48.968-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 9
+2022-05-29T23:31:48.969-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[9], ead2c3b950d66f88}}
+2022-05-29T23:31:48.969-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (255 bytes)
+2022-05-29T23:31:48.969-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (233 bytes)
+2022-05-29T23:31:48.969-0400 DEBUG protocol Authenticator.parseAuthReply():213 - TLS.auth: Parsed server random
+2022-05-29T23:31:48.970-0400 DEBUG protocol Authenticator.parseAuthReply():217 - TLS.auth: Parsed server options: "V4,dev-type tun,link-mtu 1636,tun-mtu 1532,proto TCPv4_SERVER,comp-lzo,keydir 0,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-server"
+2022-05-29T23:31:48.970-0400 DEBUG protocol OpenVPNSession.pushRequest():707 - TLS.ifconfig: Put plaintext (PUSH_REQUEST)
+2022-05-29T23:31:48.970-0400 DEBUG protocol OpenVPNSession.pushRequest():723 - TLS.ifconfig: Send pulled ciphertext (35 bytes)
+2022-05-29T23:31:48.970-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [5]
+2022-05-29T23:31:48.971-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 02fe579badf107a6, pid: 5, [35 bytes]}
+2022-05-29T23:31:48.973-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (121 bytes): 2002fe579badf107a6c3c2bf8379911e0efa46cf29cc881b93cb8bb2dcd802eae0470a1b2ab59db0f92d57fcb6f6f1d24f9e2bb07259ff3c5bda90b4223228e93558ce08541ac172c00000001062943aa10000000005170303001e0c886618bbf37d549ff8d3ee2306b37016a20637c8e3098b1528a85d5487
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.974-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:31:48.975-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 8
+2022-05-29T23:31:48.975-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 9
+2022-05-29T23:31:49.603-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code ACK_V1 and key 0
+2022-05-29T23:31:49.604-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {ACK_V1 | 0, sid: ead2c3b950d66f88, acks: {[5], 02fe579badf107a6}}
+2022-05-29T23:31:49.604-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:31:49.605-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: ead2c3b950d66f88, pid: 10, [263 bytes]}
+2022-05-29T23:31:49.605-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 10
+2022-05-29T23:31:49.606-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 02fe579badf107a6, acks: {[10], ead2c3b950d66f88}}
+2022-05-29T23:31:49.606-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (263 bytes)
+2022-05-29T23:31:49.606-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (241 bytes)
+2022-05-29T23:31:49.607-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (240 bytes)
+2022-05-29T23:31:49.615-0400 DEBUG protocol OpenVPNSession.handleControlMessage():957 - Received PUSH_REPLY: "<masked>"
+2022-05-29T23:31:49.615-0400 DEBUG protocol OpenVPNSession.setupEncryption():1091 - Set up encryption
+2022-05-29T23:31:49.615-0400 INFO protocol OpenVPNSession.setupEncryption():1096 - 	Negotiated cipher: AES-256-GCM
+2022-05-29T23:31:49.615-0400 INFO protocol OpenVPNSession.setupEncryption():1100 - 	Negotiated compression framing: comp-lzo
+2022-05-29T23:31:49.615-0400 INFO protocol OpenVPNSession.setupEncryption():1107 - 	Negotiated keep-alive interval: 10s
+2022-05-29T23:31:49.615-0400 INFO protocol OpenVPNSession.setupEncryption():1110 - 	Negotiated keep-alive timeout: 1m
+2022-05-29T23:31:49.616-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():538 - Session did start
+2022-05-29T23:31:49.616-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():540 - Returned ifconfig parameters:
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():541 - 	Remote: <masked>
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():542 - 	IPv4: addr <masked> netmask 255.255.0.0 gw <masked> routes []
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():543 - 	IPv6: not configured
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():545 - 	Gateway: ["IPv4"]
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():550 - 	DNS: ["<masked>"]
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():557 - 	Search domains: not configured
+2022-05-29T23:31:49.617-0400 INFO protocol OpenVPNTunnelProvider.bringNetworkUp():636 - Routing.IPv4: Setting default gateway to <masked>
+2022-05-29T23:31:49.618-0400 INFO protocol OpenVPNTunnelProvider.bringNetworkUp():737 - DNS: Using servers <masked>
+2022-05-29T23:31:49.619-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 10
+2022-05-29T23:31:49.941-0400 DEBUG protocol OpenVPNTunnelProvider.reasserting():143 - Reasserting flag cleared
+2022-05-29T23:31:49.941-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():589 - Tunnel interface is now UP
+2022-05-29T23:32:00.562-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:32:10.074-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:32:11.562-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:32:20.164-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:32:22.563-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:32:33.564-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:32:44.564-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:32:55.565-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:33:06.567-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:33:17.558-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:33:28.558-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:33:39.553-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:33:50.551-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:01.540-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:12.541-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:23.539-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:34.540-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:45.530-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:34:54.908-0400 INFO protocol OpenVPNTunnelProvider.stopTunnel():267 - Stopping tunnel...
+2022-05-29T23:34:54.910-0400 INFO protocol OpenVPNSession.doShutdown():1291 - Trigger shutdown on request
+2022-05-29T23:34:54.911-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStop():606 - Session did stop
+2022-05-29T23:34:54.914-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-29T23:34:54.915-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-29T23:34:54.915-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-29T23:34:54.916-0400 INFO protocol OpenVPNTunnelProvider.finishTunnelDisconnection():378 - Tunnel did stop on request
+2022-05-29T23:34:54.916-0400 DEBUG protocol OpenVPNTunnelProvider.flushLog():882 - Flushing log...
+
+--- EOF ---
+
+2022-05-29T23:34:56.355-0400 INFO protocol OpenVPNTunnelProvider.startTunnel():231 - Starting tunnel...
+2022-05-29T23:34:56.361-0400 INFO protocol Configuration.print():559 - 	Protocols: [TCP:443, TCP:5995, TCP:8443]
+2022-05-29T23:34:56.361-0400 INFO protocol Configuration.print():560 - 	Cipher: AES-256-CBC
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():561 - 	Digest: HMAC-SHA512
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():562 - 	Compression framing: compress
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():566 - 	Compression algorithm: disabled
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():571 - 	Client verification: disabled
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():574 - 	TLS wrapping: auth
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():581 - 	TLS security level: default
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():586 - 	Keep-alive interval: never
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():591 - 	Keep-alive timeout: never
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():596 - 	Renegotiation: never
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():599 - 	Server EKU verification: enabled
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():604 - 	Host SAN verification: enabled (ch-at-01e.protonvpn.net)
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():614 - 	Gateway: not configured
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():635 - 	DNS: not configured
+2022-05-29T23:34:56.362-0400 INFO protocol Configuration.print():654 - 	MTU: 1250
+2022-05-29T23:34:56.362-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():306 - 	Debug: true
+2022-05-29T23:34:56.362-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():307 - 	Masks private data: true
+2022-05-29T23:34:56.363-0400 DEBUG protocol ConnectionStrategy.init():98 - Will use DNS resolution
+2022-05-29T23:34:56.367-0400 DEBUG protocol OpenVPNTunnelProvider.logCurrentSSID():893 - Current SSID: none (disconnected from WiFi)
+2022-05-29T23:34:56.367-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-29T23:34:56.367-0400 DEBUG protocol ConnectionStrategy.createSocket():167 - No endpoints available, will resort to DNS resolution
+2022-05-29T23:34:56.367-0400 DEBUG protocol ConnectionStrategy.createSocket():174 - DNS resolve hostname: <masked>
+2022-05-29T23:34:56.369-0400 DEBUG protocol ConnectionStrategy.createSocket():178 - DNS resolved addresses: <masked>
+2022-05-29T23:34:56.369-0400 DEBUG protocol ConnectionStrategy.unrolledEndpoints():125 - Unrolled endpoints: <masked>
+2022-05-29T23:34:56.369-0400 DEBUG protocol ConnectionStrategy.createSocket():193 - Pick current endpoint: <masked>
+2022-05-29T23:34:56.370-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:443
+2022-05-29T23:34:56.370-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-29T23:34:56.370-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-29T23:34:56.668-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-29T23:34:56.668-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-29T23:34:56.669-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-29T23:34:56.669-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-29T23:34:56.670-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-29T23:34:56.670-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: 19f0e03eff5a08a4, pid: 0, [0 bytes]}
+2022-05-29T23:34:56.672-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 3819f0e03eff5a08a48d73959b791662cd7aa3bb7ce300f6e21ec68d33d1bac664f7a3c4fd4b81d827b92742bcd0cd8264fe71b75ba2f194175ce00ba4f000d13beda78df909e5ec340000000162943b600000000000
+2022-05-29T23:34:56.988-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code HARD_RESET_SERVER_V2 and key 0
+2022-05-29T23:34:56.989-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {HARD_RESET_SERVER_V2 | 0, sid: bce478409d33ce5e, acks: {[0], 19f0e03eff5a08a4}, pid: 0}
+2022-05-29T23:34:56.989-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 0
+2022-05-29T23:34:56.990-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[0], bce478409d33ce5e}}
+2022-05-29T23:34:56.990-0400 DEBUG protocol ControlChannel.remoteSessionId():50 - Control: Remote sessionId is bce478409d33ce5e
+2022-05-29T23:34:56.991-0400 DEBUG protocol OpenVPNSession.handleControlPacket():786 - Start TLS handshake
+2022-05-29T23:34:56.997-0400 DEBUG protocol OpenVPNSession.handleControlPacket():820 - TLS.connect: Pulled ciphertext (293 bytes)
+2022-05-29T23:34:56.997-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [1]
+2022-05-29T23:34:56.997-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 19f0e03eff5a08a4, pid: 1, [293 bytes]}
+2022-05-29T23:34:57.001-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (379 bytes): 2019f0e03eff5a08a4393db7d3da482466865823fc7e0b7e0c9a6dac5266d2d8142fd7a9dc0567615f0be501ffbe7c6b131094883c6128781788b39b7563e75707821a985f135446000000000362943b60000000000116030101200100011c030320c914ed6f5d189abb6e9206a952bde3a9d7d89a02261a37d2448d6579810c34206b65d5558520813d814e36544e08228be8134e6515180f203245e126184aac36003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000095000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d00020101003300260024001d002000ebe21efcd393f1154604f22f284e81595809b3d15980a8fd335df395065d12
+2022-05-29T23:34:57.003-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 0
+2022-05-29T23:34:57.786-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:57.787-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, acks: {[1], 19f0e03eff5a08a4}, pid: 1, [99 bytes]}
+2022-05-29T23:34:57.788-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 1
+2022-05-29T23:34:57.788-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[1], bce478409d33ce5e}}
+2022-05-29T23:34:57.789-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (99 bytes)
+2022-05-29T23:34:57.801-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (400 bytes)
+2022-05-29T23:34:57.801-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [2]
+2022-05-29T23:34:57.801-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 19f0e03eff5a08a4, pid: 2, [400 bytes]}
+2022-05-29T23:34:57.804-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (486 bytes): 2019f0e03eff5a08a4513994efabf6a7b549682ea6cd5a87b8a27af2b44e4170ad37fd1de68ce2ad8a0241e7c4bb2ea18956b20331938b230616940d80726c10e2961649697ff815390000000562943b600000000002140303000101160303018501000181030320c914ed6f5d189abb6e9206a952bde3a9d7d89a02261a37d2448d6579810c34206b65d5558520813d814e36544e08228be8134e6515180f203245e126184aac36003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff010000fa000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d000201010033008b008900190085040126d000839ac4d20a52ed8c56dfdf1cd440f7b73b3cde680ba6b81219744bc7cb5c8f8497d3d90c0166259e05c1118dc33c0fbee326cd4a76648e64c81b525a861f00c3c84a490f353587b3445d06a91599ff063985c4fa32d429254424a1707e08506be365794c50ad9021cfe070f77a218a14870c99fc6b98af1f359c4f443cf17828
+2022-05-29T23:34:57.806-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 1
+2022-05-29T23:34:58.427-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.427-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, acks: {[2], 19f0e03eff5a08a4}, pid: 2, [1026 bytes]}
+2022-05-29T23:34:58.428-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 2
+2022-05-29T23:34:58.429-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[2], bce478409d33ce5e}}
+2022-05-29T23:34:58.429-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:34:58.440-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.441-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 3, [1026 bytes]}
+2022-05-29T23:34:58.441-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 3
+2022-05-29T23:34:58.441-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[3], bce478409d33ce5e}}
+2022-05-29T23:34:58.441-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:34:58.442-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.442-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 4, [1026 bytes]}
+2022-05-29T23:34:58.442-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 4
+2022-05-29T23:34:58.442-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[4], bce478409d33ce5e}}
+2022-05-29T23:34:58.443-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:34:58.443-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.443-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 5, [1026 bytes]}
+2022-05-29T23:34:58.443-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 5
+2022-05-29T23:34:58.443-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[5], bce478409d33ce5e}}
+2022-05-29T23:34:58.444-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:34:58.444-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 2
+2022-05-29T23:34:58.444-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 3
+2022-05-29T23:34:58.444-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 4
+2022-05-29T23:34:58.444-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 5
+2022-05-29T23:34:58.737-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.737-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 6, [1026 bytes]}
+2022-05-29T23:34:58.737-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 6
+2022-05-29T23:34:58.737-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[6], bce478409d33ce5e}}
+2022-05-29T23:34:58.738-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-29T23:34:58.739-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 6
+2022-05-29T23:34:58.897-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:58.897-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 7, [402 bytes]}
+2022-05-29T23:34:58.897-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 7
+2022-05-29T23:34:58.898-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[7], bce478409d33ce5e}}
+2022-05-29T23:34:58.899-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (402 bytes)
+2022-05-29T23:34:58.900-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (104 bytes)
+2022-05-29T23:34:58.900-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [3]
+2022-05-29T23:34:58.901-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 19f0e03eff5a08a4, pid: 3, [104 bytes]}
+2022-05-29T23:34:58.903-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (190 bytes): 2019f0e03eff5a08a46fb8ce054c4dfdff798d999bc9b54d205ccd36c6d17b1c010058c2fd60af1705e85204a067d3c9f26ec4a7794b4f2e90b36b452af7c13593da129e6d5a21a6460000000c62943b6000000000031703030019e4cf225ead07672743697be515426d5bff3a1d8577d0f3e4c01703030045ff833c744953ef9ae925ac10e7e994501c39972a54b6cac3cf5d5219b86978f64b469795e4b5528707fef034a5f3dee529a8359ccad170a0a807f2799fdfe02b468e3a7c47
+2022-05-29T23:34:58.904-0400 DEBUG protocol OpenVPNSession.onTLSConnect():668 - TLS.connect: Handshake is complete
+2022-05-29T23:34:58.905-0400 DEBUG protocol Authenticator.putAuth():146 - TLS.auth: Local options: V4,dev-type tun,compress,keydir 1,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-client
+2022-05-29T23:34:58.908-0400 DEBUG protocol Authenticator.putAuth():168 - TLS.auth: Put plaintext (447 bytes)
+2022-05-29T23:34:58.908-0400 DEBUG protocol OpenVPNSession.onTLSConnect():694 - TLS.auth: Pulled ciphertext (469 bytes)
+2022-05-29T23:34:58.908-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [4]
+2022-05-29T23:34:58.910-0400 DEBUG protocol ControlChannel.writeOutboundPackets():169 - Control: Skip writing packet with packetId 3 (sent on 2022-05-30 03:34:58 +0000, 0.007444024085998535 seconds ago)
+2022-05-29T23:34:58.910-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 19f0e03eff5a08a4, pid: 4, [469 bytes]}
+2022-05-29T23:34:58.914-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (555 bytes): 2019f0e03eff5a08a458999650d2efaba37db1f63d3806f585e1ebf69a111efd264d8ca95cc94bf9aaa523c5f93c4a0500dbd47644e332a224a5d372989ee17efcdde374d74ef280370000000d62943b60000000000417030301d09c81b158c5e9f2af96765aa702fd0f442c090ba5bbd416f8bba82efff15ed0ab8df991b1ffeb3f1ed184c9f52574ba19a4d19db1dbb07af1265b3a43f2b2af00e913aff94dbd9d9dd1df8f55e4e05af4b88977fe60c20ee49539b7d2ecc3822bdac6698fe6480da7159d22955f4d8e420b8950c7d163584a1a13c29defbcecb0760649ae89395c607c0908cc1b092a061df7ad8b50c48481f69bd260ac10382d6def2d2dc4623ad79c473917d3ebe65571dfb6adc6085ffd7bb21b12ce228cd94130b17faac06d264669c30726fa97860397557948e6117dd5ea62f63c308a876378fedfbdb668939cfbe92d39c440219250a7cc5efe180362e1c34f418afc8d508f8df1cd2543f4a4f17e123a86a510bbac1142a8a92e5ed57a929d85df0d4695e0621112d0338c763b0c2fa760029a04f92be6526fcfd3ddcc329c69f5af34310354f1f3e897b99cf67aee103d7b6274d1eb5f83875337e61699a30be18960ab3121605c87b31993de4ac409a6304673c5d67d6506b9679a8f82b9507001d14858e465f52bd64567a3871ee7ff85c04db9df7d95ae669a83c38fab5734de124b0486b85c21edce251552f01b2f02730e920324802a83f174dfab2b9e2f50503f2713be31f380e9206e419b1d5e66dc
+2022-05-29T23:34:58.916-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 7
+2022-05-29T23:34:59.546-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:59.547-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, acks: {[3], 19f0e03eff5a08a4}, pid: 8, [158 bytes]}
+2022-05-29T23:34:59.547-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 8
+2022-05-29T23:34:59.548-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[8], bce478409d33ce5e}}
+2022-05-29T23:34:59.548-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (158 bytes)
+2022-05-29T23:34:59.549-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:34:59.550-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, acks: {[4], 19f0e03eff5a08a4}, pid: 9, [255 bytes]}
+2022-05-29T23:34:59.550-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 9
+2022-05-29T23:34:59.551-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[9], bce478409d33ce5e}}
+2022-05-29T23:34:59.551-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (255 bytes)
+2022-05-29T23:34:59.551-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (233 bytes)
+2022-05-29T23:34:59.552-0400 DEBUG protocol Authenticator.parseAuthReply():213 - TLS.auth: Parsed server random
+2022-05-29T23:34:59.552-0400 DEBUG protocol Authenticator.parseAuthReply():217 - TLS.auth: Parsed server options: "V4,dev-type tun,link-mtu 1636,tun-mtu 1532,proto TCPv4_SERVER,comp-lzo,keydir 0,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-server"
+2022-05-29T23:34:59.552-0400 DEBUG protocol OpenVPNSession.pushRequest():707 - TLS.ifconfig: Put plaintext (PUSH_REQUEST)
+2022-05-29T23:34:59.552-0400 DEBUG protocol OpenVPNSession.pushRequest():723 - TLS.ifconfig: Send pulled ciphertext (35 bytes)
+2022-05-29T23:34:59.553-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [5]
+2022-05-29T23:34:59.553-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 0, sid: 19f0e03eff5a08a4, pid: 5, [35 bytes]}
+2022-05-29T23:34:59.555-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (121 bytes): 2019f0e03eff5a08a4383db3a5d86f69d6b17d444c7a51b12f0e1ff3f536a7474cdfa5cdc1b57ff22f7bb2233ae170a3083b4e2c012ab85022469cf117a139ffa5b7852e32a946d3fb0000001062943b600000000005170303001ef29b69f09abc513e8e62fe6b744c0b030da556d75f26e35b36c24f3f1551
+2022-05-29T23:34:59.556-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.556-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.556-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.556-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.556-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.557-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-29T23:34:59.557-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 8
+2022-05-29T23:34:59.557-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 9
+2022-05-29T23:35:00.185-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code ACK_V1 and key 0
+2022-05-29T23:35:00.186-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {ACK_V1 | 0, sid: bce478409d33ce5e, acks: {[5], 19f0e03eff5a08a4}}
+2022-05-29T23:35:00.187-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 0
+2022-05-29T23:35:00.187-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 0, sid: bce478409d33ce5e, pid: 10, [263 bytes]}
+2022-05-29T23:35:00.188-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 10
+2022-05-29T23:35:00.188-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 0, sid: 19f0e03eff5a08a4, acks: {[10], bce478409d33ce5e}}
+2022-05-29T23:35:00.189-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (263 bytes)
+2022-05-29T23:35:00.189-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (241 bytes)
+2022-05-29T23:35:00.189-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (240 bytes)
+2022-05-29T23:35:00.197-0400 DEBUG protocol OpenVPNSession.handleControlMessage():957 - Received PUSH_REPLY: "<masked>"
+2022-05-29T23:35:00.198-0400 DEBUG protocol OpenVPNSession.setupEncryption():1091 - Set up encryption
+2022-05-29T23:35:00.198-0400 INFO protocol OpenVPNSession.setupEncryption():1096 - 	Negotiated cipher: AES-256-GCM
+2022-05-29T23:35:00.198-0400 INFO protocol OpenVPNSession.setupEncryption():1100 - 	Negotiated compression framing: comp-lzo
+2022-05-29T23:35:00.198-0400 INFO protocol OpenVPNSession.setupEncryption():1107 - 	Negotiated keep-alive interval: 10s
+2022-05-29T23:35:00.198-0400 INFO protocol OpenVPNSession.setupEncryption():1110 - 	Negotiated keep-alive timeout: 1m
+2022-05-29T23:35:00.199-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():538 - Session did start
+2022-05-29T23:35:00.199-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():540 - Returned ifconfig parameters:
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():541 - 	Remote: <masked>
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():542 - 	IPv4: addr <masked> netmask 255.255.0.0 gw <masked> routes []
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():543 - 	IPv6: not configured
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():545 - 	Gateway: ["IPv4"]
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():550 - 	DNS: ["<masked>"]
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():557 - 	Search domains: not configured
+2022-05-29T23:35:00.200-0400 INFO protocol OpenVPNTunnelProvider.bringNetworkUp():636 - Routing.IPv4: Setting default gateway to <masked>
+2022-05-29T23:35:00.201-0400 INFO protocol OpenVPNTunnelProvider.bringNetworkUp():737 - DNS: Using servers <masked>
+2022-05-29T23:35:00.202-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 10
+2022-05-29T23:35:00.534-0400 DEBUG protocol OpenVPNTunnelProvider.reasserting():143 - Reasserting flag cleared
+2022-05-29T23:35:00.534-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStart():589 - Tunnel interface is now UP
+2022-05-29T23:35:11.199-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:35:20.656-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:35:22.198-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:35:33.182-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:35:44.171-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:35:55.168-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:06.168-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:17.169-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:19.647-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:36:28.161-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:32.991-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:36:39.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:50.161-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:36:55.926-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:37:01.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:37:06.424-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:37:12.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:37:19.711-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:37:23.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:37:29.944-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:37:34.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:37:45.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:37:49.944-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:37:56.161-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:00.184-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:38:07.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:18.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:19.383-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:38:29.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:34.588-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:38:40.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:51.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:38:52.520-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:39:02.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:39:02.356-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:39:13.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:39:24.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:39:24.383-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:39:35.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:39:39.990-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:39:46.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:39:54.563-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:39:57.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:05.109-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:40:08.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:15.674-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:40:19.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:26.549-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:40:30.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:36.003-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:40:41.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:52.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:40:56.896-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:41:03.158-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:41:10.076-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:41:14.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:41:25.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:41:27.138-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:41:36.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:41:42.204-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:41:47.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:41:58.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:42:00.695-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:42:09.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:42:10.624-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:42:20.157-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:42:20.385-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:42:30.455-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:42:31.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:42:42.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:42:43.725-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:00.312-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:01.821-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:43:07.540-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:17.501-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:22.123-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:43:33.121-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:43:35.691-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:44.087-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:43:52.508-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:43:55.054-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:44:02.742-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:06.026-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:44:12.820-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:16.972-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:44:22.261-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:27.898-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:44:32.507-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:43.802-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:53.987-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:44:54.286-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:45:03.347-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:45:13.169-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:45:13.774-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:45:24.744-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:45:35.745-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:45:43.869-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:45:46.744-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:45:53.149-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:45:57.739-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:46:08.740-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:46:19.736-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:46:27.069-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:46:30.730-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:46:41.725-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:46:52.713-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:01.200-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:47:03.714-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:13.630-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:47:14.713-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:25.712-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:36.701-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:47.700-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:47:58.701-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:48:09.697-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:48:20.697-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:48:31.697-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:48:42.697-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:48:53.692-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:01.949-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:49:04.559-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:14.269-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:49:15.360-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:24.379-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:49:26.260-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:39.315-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:50.309-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:49:54.989-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:50:01.308-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:50:12.309-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:50:12.739-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:50:23.245-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:50:24.699-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:50:34.245-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:50:45.193-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:50:56.176-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:51:03.587-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-29T23:51:07.039-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-29T23:51:11.415-0400 INFO protocol OpenVPNTunnelProvider.stopTunnel():267 - Stopping tunnel...
+2022-05-29T23:51:11.418-0400 INFO protocol OpenVPNSession.doShutdown():1291 - Trigger shutdown on request
+2022-05-29T23:51:11.418-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStop():606 - Session did stop
+2022-05-29T23:51:11.423-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-29T23:51:11.423-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-29T23:51:11.423-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-29T23:51:11.424-0400 INFO protocol OpenVPNTunnelProvider.finishTunnelDisconnection():378 - Tunnel did stop on request
+2022-05-29T23:51:11.424-0400 DEBUG protocol OpenVPNTunnelProvider.flushLog():882 - Flushing log...

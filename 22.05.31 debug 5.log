@@ -1,0 +1,165 @@
+2022-05-31T14:33:31.171-0400 INFO protocol OpenVPNTunnelProvider.startTunnel():231 - Starting tunnel...
+2022-05-31T14:33:31.177-0400 INFO protocol Configuration.print():559 - 	Protocols: [TCP:8443, TCP:443, TCP:5995]
+2022-05-31T14:33:31.177-0400 INFO protocol Configuration.print():560 - 	Cipher: AES-256-CBC
+2022-05-31T14:33:31.177-0400 INFO protocol Configuration.print():561 - 	Digest: HMAC-SHA512
+2022-05-31T14:33:31.177-0400 INFO protocol Configuration.print():562 - 	Compression framing: compress
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():566 - 	Compression algorithm: disabled
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():571 - 	Client verification: disabled
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():574 - 	TLS wrapping: auth
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():581 - 	TLS security level: default
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():586 - 	Keep-alive interval: never
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():591 - 	Keep-alive timeout: never
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():596 - 	Renegotiation: never
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():599 - 	Server EKU verification: enabled
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():604 - 	Host SAN verification: enabled (is-be-01c.protonvpn.net)
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():614 - 	Gateway: not configured
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():635 - 	DNS: not configured
+2022-05-31T14:33:31.178-0400 INFO protocol Configuration.print():654 - 	MTU: 1250
+2022-05-31T14:33:31.178-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():306 - 	Debug: true
+2022-05-31T14:33:31.178-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():307 - 	Masks private data: true
+2022-05-31T14:33:31.178-0400 DEBUG protocol ConnectionStrategy.init():98 - Will use DNS resolution
+2022-05-31T14:33:31.182-0400 DEBUG protocol OpenVPNTunnelProvider.logCurrentSSID():893 - Current SSID: none (disconnected from WiFi)
+2022-05-31T14:33:31.182-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-31T14:33:31.182-0400 DEBUG protocol ConnectionStrategy.createSocket():167 - No endpoints available, will resort to DNS resolution
+2022-05-31T14:33:31.182-0400 DEBUG protocol ConnectionStrategy.createSocket():174 - DNS resolve hostname: <masked>
+2022-05-31T14:33:31.183-0400 DEBUG protocol ConnectionStrategy.createSocket():178 - DNS resolved addresses: <masked>
+2022-05-31T14:33:31.183-0400 DEBUG protocol ConnectionStrategy.unrolledEndpoints():125 - Unrolled endpoints: <masked>
+2022-05-31T14:33:31.183-0400 DEBUG protocol ConnectionStrategy.createSocket():193 - Pick current endpoint: <masked>
+2022-05-31T14:33:31.184-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:8443
+2022-05-31T14:33:31.184-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-31T14:33:31.185-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-31T14:33:31.458-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-31T14:33:31.458-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-31T14:33:31.459-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-31T14:33:31.459-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-31T14:33:31.460-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-31T14:33:31.460-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: d618d38e78a24e58, pid: 0, [0 bytes]}
+2022-05-31T14:33:31.461-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 38d618d38e78a24e5870c47fb390ff8ad32a8de509af08a362c9c33e04272a7a9dcc6dd118d048bdc342d25f2ca96998fd1c6c75393dbfe199b08e23b50925b4f6276df76488f75b780000000162965f7b0000000000
+2022-05-31T14:33:41.639-0400 ERROR protocol OpenVPNSession.doReconnect():1299 - Trigger reconnection (error: negotiationTimeout)
+2022-05-31T14:33:41.639-0400 ERROR protocol OpenVPNTunnelProvider.sessionDidStop():604 - Session did stop with error: negotiationTimeout
+2022-05-31T14:33:41.643-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-31T14:33:41.643-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-31T14:33:41.644-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-31T14:33:41.644-0400 ERROR protocol OpenVPNTunnelProvider.finishTunnelDisconnection():375 - Tunnel did stop (error: negotiationTimeout)
+2022-05-31T14:33:41.647-0400 DEBUG protocol ConnectionStrategy.tryNextEndpoint():150 - Try next endpoint: <masked>
+2022-05-31T14:33:41.647-0400 DEBUG protocol OpenVPNTunnelProvider.socket():504 - Disconnection is recoverable, tunnel will reconnect in 1000 milliseconds...
+2022-05-31T14:33:42.738-0400 DEBUG protocol OpenVPNTunnelProvider.socket():513 - Tunnel is about to reconnect...
+2022-05-31T14:33:42.738-0400 DEBUG protocol OpenVPNTunnelProvider.reasserting():143 - Reasserting flag set
+2022-05-31T14:33:42.738-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-31T14:33:42.739-0400 DEBUG protocol ConnectionStrategy.createSocket():162 - Pick current endpoint: <masked>
+2022-05-31T14:33:42.739-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:443
+2022-05-31T14:33:42.742-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-31T14:33:42.743-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-31T14:33:43.200-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-31T14:33:43.200-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-31T14:33:43.200-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-31T14:33:43.201-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-31T14:33:43.201-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-31T14:33:43.201-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: c83e96044f60941d, pid: 0, [0 bytes]}
+2022-05-31T14:33:43.203-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 38c83e96044f60941db38791238aff70a58236817c85d807cc3ef2386fd30f18f6c531676b156c6b535f11bf53a39e55ca27aaeeaa65b29eae966754e9f5f7c607a1e65b4660c955210000000162965f7b0000000000
+2022-05-31T14:33:53.372-0400 ERROR protocol OpenVPNSession.doReconnect():1299 - Trigger reconnection (error: negotiationTimeout)
+2022-05-31T14:33:53.372-0400 ERROR protocol OpenVPNTunnelProvider.sessionDidStop():604 - Session did stop with error: negotiationTimeout
+2022-05-31T14:33:53.373-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-31T14:33:53.374-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-31T14:33:53.374-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-31T14:33:53.375-0400 ERROR protocol OpenVPNTunnelProvider.finishTunnelDisconnection():375 - Tunnel did stop (error: negotiationTimeout)
+2022-05-31T14:33:53.378-0400 DEBUG protocol ConnectionStrategy.tryNextEndpoint():150 - Try next endpoint: <masked>
+2022-05-31T14:33:53.378-0400 DEBUG protocol OpenVPNTunnelProvider.socket():504 - Disconnection is recoverable, tunnel will reconnect in 1000 milliseconds...
+2022-05-31T14:33:54.472-0400 DEBUG protocol OpenVPNTunnelProvider.socket():513 - Tunnel is about to reconnect...
+2022-05-31T14:33:54.472-0400 DEBUG protocol OpenVPNTunnelProvider.reasserting():143 - Reasserting flag set
+2022-05-31T14:33:54.473-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-31T14:33:54.473-0400 DEBUG protocol ConnectionStrategy.createSocket():162 - Pick current endpoint: <masked>
+2022-05-31T14:33:54.474-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:5995
+2022-05-31T14:33:54.476-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-31T14:33:54.476-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-31T14:33:54.879-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-31T14:33:54.880-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-31T14:33:54.880-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-31T14:33:54.881-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-31T14:33:54.881-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-31T14:33:54.881-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: c04be91d2fc90cd7, pid: 0, [0 bytes]}
+2022-05-31T14:33:54.882-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 38c04be91d2fc90cd7302b560f29035c8b416c646c98ad759ee042ebf120c20b6dd2c43c702de0c32c5649c24f7d3d0ce82bdd435b64a62a5c30b0732d8e5ed6f6ff74e157e0a896940000000162965f7b0000000000
+2022-05-31T14:34:01.776-0400 INFO protocol OpenVPNTunnelProvider.stopTunnel():267 - Stopping tunnel...
+2022-05-31T14:34:01.777-0400 INFO protocol OpenVPNSession.doShutdown():1291 - Trigger shutdown on request
+2022-05-31T14:34:01.777-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStop():606 - Session did stop
+2022-05-31T14:34:01.777-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-31T14:34:01.777-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-31T14:34:01.777-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-31T14:34:01.778-0400 INFO protocol OpenVPNTunnelProvider.finishTunnelDisconnection():378 - Tunnel did stop on request
+2022-05-31T14:34:01.778-0400 DEBUG protocol OpenVPNTunnelProvider.flushLog():882 - Flushing log...
+
+--- EOF ---
+
+2022-05-31T14:36:13.307-0400 INFO protocol OpenVPNTunnelProvider.startTunnel():231 - Starting tunnel...
+2022-05-31T14:36:13.316-0400 INFO protocol Configuration.print():559 - 	Protocols: [TCP:8443, TCP:443, TCP:5995]
+2022-05-31T14:36:13.316-0400 INFO protocol Configuration.print():560 - 	Cipher: AES-256-CBC
+2022-05-31T14:36:13.316-0400 INFO protocol Configuration.print():561 - 	Digest: HMAC-SHA512
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():562 - 	Compression framing: compress
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():566 - 	Compression algorithm: disabled
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():571 - 	Client verification: disabled
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():574 - 	TLS wrapping: auth
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():581 - 	TLS security level: default
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():586 - 	Keep-alive interval: never
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():591 - 	Keep-alive timeout: never
+2022-05-31T14:36:13.317-0400 INFO protocol Configuration.print():596 - 	Renegotiation: never
+2022-05-31T14:36:13.318-0400 INFO protocol Configuration.print():599 - 	Server EKU verification: enabled
+2022-05-31T14:36:13.318-0400 INFO protocol Configuration.print():604 - 	Host SAN verification: enabled (is-be-01c.protonvpn.net)
+2022-05-31T14:36:13.318-0400 INFO protocol Configuration.print():614 - 	Gateway: not configured
+2022-05-31T14:36:13.318-0400 INFO protocol Configuration.print():635 - 	DNS: not configured
+2022-05-31T14:36:13.318-0400 INFO protocol Configuration.print():654 - 	MTU: 1250
+2022-05-31T14:36:13.318-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():306 - 	Debug: true
+2022-05-31T14:36:13.318-0400 INFO protocol OpenVPNTunnelProvider+Configuration.print():307 - 	Masks private data: true
+2022-05-31T14:36:13.318-0400 DEBUG protocol ConnectionStrategy.init():98 - Will use DNS resolution
+2022-05-31T14:36:13.322-0400 DEBUG protocol OpenVPNTunnelProvider.logCurrentSSID():893 - Current SSID: none (disconnected from WiFi)
+2022-05-31T14:36:13.322-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-31T14:36:13.322-0400 DEBUG protocol ConnectionStrategy.createSocket():167 - No endpoints available, will resort to DNS resolution
+2022-05-31T14:36:13.322-0400 DEBUG protocol ConnectionStrategy.createSocket():174 - DNS resolve hostname: <masked>
+2022-05-31T14:36:13.325-0400 DEBUG protocol ConnectionStrategy.createSocket():178 - DNS resolved addresses: <masked>
+2022-05-31T14:36:13.325-0400 DEBUG protocol ConnectionStrategy.unrolledEndpoints():125 - Unrolled endpoints: <masked>
+2022-05-31T14:36:13.326-0400 DEBUG protocol ConnectionStrategy.createSocket():193 - Pick current endpoint: <masked>
+2022-05-31T14:36:13.326-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:8443
+2022-05-31T14:36:13.326-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-31T14:36:13.327-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-31T14:36:13.566-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-31T14:36:13.567-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-31T14:36:13.568-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-31T14:36:13.568-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-31T14:36:13.569-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-31T14:36:13.569-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: 6d5ae06af1d4b6d5, pid: 0, [0 bytes]}
+2022-05-31T14:36:13.571-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 386d5ae06af1d4b6d5507506e14e55bf11e349cd6ec3e4beced168969bd3c133821aa1f007e62ff4fac4ccc7f4834cb3ce73ca6d2b20fe38a145eb2762cda2c76c5280857ccf6fe3fb000000016296601d0000000000
+2022-05-31T14:36:23.645-0400 ERROR protocol OpenVPNSession.doReconnect():1299 - Trigger reconnection (error: negotiationTimeout)
+2022-05-31T14:36:23.645-0400 ERROR protocol OpenVPNTunnelProvider.sessionDidStop():604 - Session did stop with error: negotiationTimeout
+2022-05-31T14:36:23.651-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-31T14:36:23.651-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-31T14:36:23.651-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-31T14:36:23.652-0400 ERROR protocol OpenVPNTunnelProvider.finishTunnelDisconnection():375 - Tunnel did stop (error: negotiationTimeout)
+2022-05-31T14:36:23.654-0400 DEBUG protocol ConnectionStrategy.tryNextEndpoint():150 - Try next endpoint: <masked>
+2022-05-31T14:36:23.654-0400 DEBUG protocol OpenVPNTunnelProvider.socket():504 - Disconnection is recoverable, tunnel will reconnect in 1000 milliseconds...
+2022-05-31T14:36:24.698-0400 DEBUG protocol OpenVPNTunnelProvider.socket():513 - Tunnel is about to reconnect...
+2022-05-31T14:36:24.699-0400 DEBUG protocol OpenVPNTunnelProvider.reasserting():143 - Reasserting flag set
+2022-05-31T14:36:24.699-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():337 - Creating link session
+2022-05-31T14:36:24.699-0400 DEBUG protocol ConnectionStrategy.createSocket():162 - Pick current endpoint: <masked>
+2022-05-31T14:36:24.700-0400 INFO protocol OpenVPNTunnelProvider.connectTunnel():356 - Will connect to <masked>:443
+2022-05-31T14:36:24.702-0400 DEBUG protocol OpenVPNTunnelProvider.connectTunnel():359 - Socket type is NETCPSocket
+2022-05-31T14:36:24.703-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is connecting (endpoint: <masked> -> in progress)
+2022-05-31T14:36:25.043-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():147 - Socket state is connected (endpoint: <masked> -> <masked>)
+2022-05-31T14:36:25.044-0400 DEBUG protocol OpenVPNSession.setLink():261 - Starting VPN session
+2022-05-31T14:36:25.044-0400 DEBUG protocol OpenVPNSession.hardReset():602 - Send hard reset
+2022-05-31T14:36:25.045-0400 DEBUG protocol OpenVPNSession.hardReset():610 - Negotiation key index is 0
+2022-05-31T14:36:25.045-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-31T14:36:25.045-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {HARD_RESET_CLIENT_V2 | 0, sid: 087f5ef35f527d40, pid: 0, [0 bytes]}
+2022-05-31T14:36:25.046-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (86 bytes): 38087f5ef35f527d40fbc121859dc920795f740dd4d998c7d93b5d176aea2231eec80c4f40f89373f43cbeeee0c0698cd8bb0343749bac5f3c9c6158909efda86ba9cceea22b00ddac000000016296601d0000000000
+2022-05-31T14:36:35.170-0400 ERROR protocol OpenVPNSession.doReconnect():1299 - Trigger reconnection (error: negotiationTimeout)
+2022-05-31T14:36:35.170-0400 ERROR protocol OpenVPNTunnelProvider.sessionDidStop():604 - Session did stop with error: negotiationTimeout
+2022-05-31T14:36:35.171-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-31T14:36:35.171-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-31T14:36:35.171-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-31T14:36:35.171-0400 ERROR protocol OpenVPNTunnelProvider.finishTunnelDisconnection():375 - Tunnel did stop (error: negotiationTimeout)
+2022-05-31T14:36:35.173-0400 DEBUG protocol ConnectionStrategy.tryNextEndpoint():150 - Try next endpoint: <masked>
+2022-05-31T14:36:35.173-0400 DEBUG protocol OpenVPNTunnelProvider.socket():504 - Disconnection is recoverable, tunnel will reconnect in 1000 milliseconds...
+2022-05-31T14:36:35.197-0400 INFO protocol OpenVPNTunnelProvider.stopTunnel():267 - Stopping tunnel...
+2022-05-31T14:36:35.198-0400 INFO protocol OpenVPNSession.doShutdown():1291 - Trigger shutdown on request
+2022-05-31T14:36:35.198-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStop():606 - Session did stop
+2022-05-31T14:36:36.271-0400 WARNING protocol OpenVPNTunnelProvider.socket():509 - Reconnection flag was cleared in the meantime
+2022-05-31T14:36:37.324-0400 WARNING protocol OpenVPNTunnelProvider.stopTunnel():285 - Tunnel not responding after 2000 milliseconds, forcing stop
+2022-05-31T14:36:37.325-0400 DEBUG protocol OpenVPNTunnelProvider.flushLog():882 - Flushing log...

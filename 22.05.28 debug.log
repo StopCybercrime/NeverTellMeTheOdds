@@ -1,0 +1,1000 @@
+2022-05-27T23:40:04.693-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:40:12.619-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:40:22.781-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:40:32.307-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:40:35.384-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:40:42.318-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:40:52.496-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:02.701-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:12.622-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:12.743-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:41:23.182-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:33.262-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:43.475-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:41:44.310-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:41:53.675-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:03.856-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:13.464-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:14.916-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:42:23.436-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:33.473-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:43.875-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:42:46.037-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:42:54.075-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:04.288-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:14.747-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:17.600-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:43:24.508-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:34.916-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:44.349-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:54.507-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:43:54.669-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:44:05.001-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:14.112-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:24.360-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:25.228-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:44:34.751-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:44.992-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:55.072-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:44:56.666-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:45:05.153-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:45:15.394-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:45:22.344-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code SOFT_RESET_V1 and key 5
+2022-05-27T23:45:22.345-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {SOFT_RESET_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 0}
+2022-05-27T23:45:22.345-0400 DEBUG protocol OpenVPNSession.softReset():647 - Handle soft reset
+2022-05-27T23:45:22.346-0400 DEBUG protocol OpenVPNSession.softReset():656 - Negotiation key index is 5
+2022-05-27T23:45:22.346-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 0
+2022-05-27T23:45:22.347-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[0], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:22.347-0400 DEBUG protocol OpenVPNSession.handleControlPacket():786 - Start TLS handshake
+2022-05-27T23:45:22.352-0400 DEBUG protocol OpenVPNSession.handleControlPacket():820 - TLS.connect: Pulled ciphertext (293 bytes)
+2022-05-27T23:45:22.358-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-27T23:45:22.361-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 5, sid: ad383311fd803efc, pid: 0, [293 bytes]}
+2022-05-27T23:45:22.367-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (379 bytes): 25ad383311fd803efc89c69d06b47d0b4905108ad5da411b933e75d088734cb2e810f8ae5c57153916f77175d35538c4255a6c999b3d1e0730f3cc7bdf1f7953df31a43841bb951dc40000005362915499000000000016030101200100011c0303216b7fefff821d4c2bfd1ad7f37abd51d4fda5b2a6f7e77b5f2cb9a046ef782c204d7f11edf06c1f59fad3b8bdefb65417eadcdf254712b537282d243f6f5e713d003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000095000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d00020101003300260024001d0020d9ccfeea16e33c5784b6e3f80dfc1e4f878fb91506b37118d2fe3a65383e2f13
+2022-05-27T23:45:22.367-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 0
+2022-05-27T23:45:22.967-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:22.968-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, acks: {[0], ad383311fd803efc}, pid: 1, [99 bytes]}
+2022-05-27T23:45:22.968-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 1
+2022-05-27T23:45:22.969-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[1], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:22.969-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (99 bytes)
+2022-05-27T23:45:22.981-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (400 bytes)
+2022-05-27T23:45:22.981-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [1]
+2022-05-27T23:45:22.981-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 5, sid: ad383311fd803efc, pid: 1, [400 bytes]}
+2022-05-27T23:45:22.986-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (486 bytes): 25ad383311fd803efcf19eacd44bcbbe62ad41dd7440e83264a733462d84acdf28f900aaf82c6b8fd825866d6342950c4817881243a07a07675e8081034c533087a2a9a0d9f129e68f000000556291549900000000011403030001011603030185010001810303216b7fefff821d4c2bfd1ad7f37abd51d4fda5b2a6f7e77b5f2cb9a046ef782c204d7f11edf06c1f59fad3b8bdefb65417eadcdf254712b537282d243f6f5e713d003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff010000fa000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d000201010033008b008900190085040113f92b0fadc4401fb24b8563aa0e489690d11df40465a00d2411d8d33f29ee3d49ff4daf84eee64797d8cf0fed5780bc41b18a31ef3e8420571601ebc2bd912d02014c4ac4782fdb114d7c3d66b64b1da230a8ef79b894353ab166f2958ac3fef19a3298ce5a20072daf317e3c965d1470faaa99aab545bc3c52633232a0b0adc12d69
+2022-05-27T23:45:22.986-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 1
+2022-05-27T23:45:23.607-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:23.608-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, acks: {[1], ad383311fd803efc}, pid: 2, [1026 bytes]}
+2022-05-27T23:45:23.608-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 2
+2022-05-27T23:45:23.609-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[2], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:23.609-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-27T23:45:23.621-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:23.621-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 3, [1026 bytes]}
+2022-05-27T23:45:23.621-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 3
+2022-05-27T23:45:23.621-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[3], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:23.622-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-27T23:45:23.622-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:23.622-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 4, [1026 bytes]}
+2022-05-27T23:45:23.622-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 4
+2022-05-27T23:45:23.623-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[4], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:23.623-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-27T23:45:23.623-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:23.623-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 5, [1026 bytes]}
+2022-05-27T23:45:23.623-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 5
+2022-05-27T23:45:23.624-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[5], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:23.624-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-27T23:45:23.624-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 2
+2022-05-27T23:45:23.624-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 3
+2022-05-27T23:45:23.624-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 4
+2022-05-27T23:45:23.624-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 5
+2022-05-27T23:45:23.667-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:45:23.927-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:23.927-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 6, [1026 bytes]}
+2022-05-27T23:45:23.927-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 6
+2022-05-27T23:45:23.928-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[6], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:23.929-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-27T23:45:23.931-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 6
+2022-05-27T23:45:24.247-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:24.247-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 7, [418 bytes]}
+2022-05-27T23:45:24.248-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 7
+2022-05-27T23:45:24.248-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[7], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:24.249-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (418 bytes)
+2022-05-27T23:45:24.250-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (104 bytes)
+2022-05-27T23:45:24.251-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [2]
+2022-05-27T23:45:24.251-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 5, sid: ad383311fd803efc, pid: 2, [104 bytes]}
+2022-05-27T23:45:24.255-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (190 bytes): 25ad383311fd803efc73d1c21711f90610003efbaede8177320f034905de317a330f2e13b7cd701d8e2a2ce33d40ed97659fe3fcb65475f6d7d4d288fea561bcda6bdcc4808a2181fa0000005c6291549900000000021703030019cb8d771af13a0617261a471ebec96ef454574b26e46746a3551703030045508a159c8b50105a866ed3000a1fcd20036922b7a3d1757934cdf96a7fce401f631fa1a1b3a1821762028c5b4facb1b3879359e5d7ebce62c58ac8da451d2f59e2bdb6379f
+2022-05-27T23:45:24.255-0400 DEBUG protocol OpenVPNSession.onTLSConnect():668 - TLS.connect: Handshake is complete
+2022-05-27T23:45:24.256-0400 DEBUG protocol Authenticator.putAuth():146 - TLS.auth: Local options: V4,dev-type tun,compress,keydir 1,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-client
+2022-05-27T23:45:24.256-0400 DEBUG protocol Authenticator.putAuth():168 - TLS.auth: Put plaintext (447 bytes)
+2022-05-27T23:45:24.256-0400 DEBUG protocol OpenVPNSession.onTLSConnect():694 - TLS.auth: Pulled ciphertext (469 bytes)
+2022-05-27T23:45:24.256-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [3]
+2022-05-27T23:45:24.257-0400 DEBUG protocol ControlChannel.writeOutboundPackets():169 - Control: Skip writing packet with packetId 2 (sent on 2022-05-28 03:45:24 +0000, 0.005199074745178223 seconds ago)
+2022-05-27T23:45:24.257-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 5, sid: ad383311fd803efc, pid: 3, [469 bytes]}
+2022-05-27T23:45:24.264-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (555 bytes): 25ad383311fd803efc2279d5f9c940220aea9651cd20c51a0d5ff38ce81a1c1f1acee70048aed6890e6745e66ea125bef1439241f5131caa047c09706d5103f74ba4b74ca17ab400fa0000005d62915499000000000317030301d09a4bb2290bfe7014a575c13b2845323180a573491abc87ddb444b855b101a140a9771e8c12c45cfece563773cc734dee46c0cc58032a5fa5691c256c3994a28c87369c7eb2f2a318d2a5e01343af2d9ba8278836fb0f8d73044504802afb8336326420485d044cdb9f3be02c602d616fb7b1cf5c8b0cdf238a7b7ed871b53e97d429f62be0ae50358ba21d58368d7774a6d595e8d76450f0e9b326a74ceee047370c36f643e5bf6d058683c61455b6b0a2181125f0b68cfea034f39a33ab05496d40290093ac39a0ece24e9bc84a180baad2bad4e7279c37ac4f83fec33dc76e3bd36735203a10c3824f6b82110f169b5e154e78ebb791e56aab606e64ef0ffab951ae3857eb6611e01a5b541942dd5ab9168da301d036dd070f73045d77aedfe49082b1488b26cd7d1a4084790373bfee0e77dfdd45e0726b49edef22cfb9118a7f25a3337ecae7bf9b4f54688ba3d73239ab40fa6c6cf92d082cf345b114444f86e65dafc17017b3751be5dfe55ce30e68abba8dcb261626bbba9559c129e59eb3a67df5a19a2500255b4a460ffe02c1f31f8add39b1d6bb2448eb79391bbcd5548743827b5872eadce817ff9a7211a8839773669d609ae302c4b6cb3a56c93935578a098f10f90a4db11bf12f0c56
+2022-05-27T23:45:24.264-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 7
+2022-05-27T23:45:25.046-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:25.047-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, acks: {[2], ad383311fd803efc}, pid: 8, [158 bytes]}
+2022-05-27T23:45:25.048-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 8
+2022-05-27T23:45:25.048-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[8], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:25.049-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (158 bytes)
+2022-05-27T23:45:25.049-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:25.050-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, acks: {[3], ad383311fd803efc}, pid: 9, [255 bytes]}
+2022-05-27T23:45:25.050-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 9
+2022-05-27T23:45:25.051-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[9], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:25.051-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (255 bytes)
+2022-05-27T23:45:25.052-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (233 bytes)
+2022-05-27T23:45:25.052-0400 DEBUG protocol Authenticator.parseAuthReply():213 - TLS.auth: Parsed server random
+2022-05-27T23:45:25.052-0400 DEBUG protocol Authenticator.parseAuthReply():217 - TLS.auth: Parsed server options: "V4,dev-type tun,link-mtu 1636,tun-mtu 1532,proto TCPv4_SERVER,comp-lzo,keydir 0,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-server"
+2022-05-27T23:45:25.052-0400 DEBUG protocol OpenVPNSession.pushRequest():707 - TLS.ifconfig: Put plaintext (PUSH_REQUEST)
+2022-05-27T23:45:25.053-0400 DEBUG protocol OpenVPNSession.pushRequest():723 - TLS.ifconfig: Send pulled ciphertext (35 bytes)
+2022-05-27T23:45:25.053-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [4]
+2022-05-27T23:45:25.053-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 5, sid: ad383311fd803efc, pid: 4, [35 bytes]}
+2022-05-27T23:45:25.056-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (121 bytes): 25ad383311fd803efca200d0cee505017aadd326b714590348ae4473875f16487246773596ce8a42cd0b8ff24ff826aff3603fd0aaa489abf5e27babdacab7828b9910100ad962a53e00000060629154990000000004170303001e29b9c148e666a107e94e9febc35b90b8e9e8b88761e1867b2629a00bc684
+2022-05-27T23:45:25.056-0400 DEBUG protocol OpenVPNSession.setupEncryption():1091 - Set up encryption
+2022-05-27T23:45:25.056-0400 INFO protocol OpenVPNSession.setupEncryption():1096 - 	Negotiated cipher: AES-256-GCM
+2022-05-27T23:45:25.056-0400 INFO protocol OpenVPNSession.setupEncryption():1100 - 	Negotiated compression framing: comp-lzo
+2022-05-27T23:45:25.056-0400 INFO protocol OpenVPNSession.setupEncryption():1107 - 	Negotiated keep-alive interval: 10s
+2022-05-27T23:45:25.057-0400 INFO protocol OpenVPNSession.setupEncryption():1110 - 	Negotiated keep-alive timeout: 1m
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.059-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-27T23:45:25.060-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 8
+2022-05-27T23:45:25.060-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 9
+2022-05-27T23:45:27.394-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:27.395-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 9, [255 bytes]}
+2022-05-27T23:45:27.395-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 9
+2022-05-27T23:45:27.397-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[9], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:27.397-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 9
+2022-05-27T23:45:27.767-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code ACK_V1 and key 5
+2022-05-27T23:45:27.768-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {ACK_V1 | 5, sid: 2cdfffb01d9fcfcb, acks: {[4], ad383311fd803efc}}
+2022-05-27T23:45:27.769-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 5
+2022-05-27T23:45:27.769-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 5, sid: 2cdfffb01d9fcfcb, pid: 10, [263 bytes]}
+2022-05-27T23:45:27.769-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 10
+2022-05-27T23:45:27.770-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 5, sid: ad383311fd803efc, acks: {[10], 2cdfffb01d9fcfcb}}
+2022-05-27T23:45:27.770-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (263 bytes)
+2022-05-27T23:45:27.771-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (241 bytes)
+2022-05-27T23:45:27.771-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (240 bytes)
+2022-05-27T23:45:27.772-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 10
+2022-05-27T23:45:37.794-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:45:48.204-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:45:50.218-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:45:58.435-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:08.825-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:18.756-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:21.517-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:46:28.997-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:39.093-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:49.317-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:59.328-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:46:59.387-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:47:09.528-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:47:19.558-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:47:29.643-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:47:30.397-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:47:39.880-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:47:49.969-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:00.510-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:01.989-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:48:10.290-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:20.522-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:30.778-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:32.973-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:48:40.941-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:50.045-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:48:57.073-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:49:03.856-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:49:14.061-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:49:23.166-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:49:23.296-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:49:33.329-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:49:43.113-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:49:46.971-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:49:54.016-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:04.177-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:50:04.307-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:14.373-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:26.770-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:29.222-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:50:38.203-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:48.272-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:50:58.353-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:08.700-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:51:08.912-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:18.832-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:28.279-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:31.286-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:51:39.475-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:49.714-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:51:59.792-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:52:00.040-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:52:09.601-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:52:19.842-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:52:30.034-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:52:30.915-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:52:40.128-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:52:50.674-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:00.665-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:02.249-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:53:12.009-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:23.070-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:33.228-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:35.526-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:53:43.230-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:53:53.714-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:03.955-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:06.979-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:54:13.951-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:26.166-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:37.474-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:47.875-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:54:48.161-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:54:57.901-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:08.196-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:21.217-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:22.223-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:55:32.312-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:42.636-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:52.528-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:55:54.118-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:56:02.882-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:13.116-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:23.597-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:25.816-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:56:33.912-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:44.077-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:54.253-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:56:57.087-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:57:04.543-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:57:14.554-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:57:24.855-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:57:36.876-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:57:36.882-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:57:49.689-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:57:59.033-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:09.440-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:09.953-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:58:19.404-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:29.596-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:30.816-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:58:39.356-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:49.502-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:58:59.719-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:59:01.527-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:59:09.065-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:59:20.487-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:59:30.759-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:59:33.195-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-27T23:59:40.839-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-27T23:59:50.280-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:00.434-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:03.506-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:00:10.486-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:20.680-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:30.839-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:41.477-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:00:41.609-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:00:51.723-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:01.797-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:11.090-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:11.879-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:01:21.318-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:31.558-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:41.797-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:01:43.261-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:01:51.236-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:01.337-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:11.717-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:13.898-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:02:20.998-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:30.918-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:40.971-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:02:43.861-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:02:51.085-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:01.166-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:11.147-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:11.332-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:03:21.481-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:31.567-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:41.801-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:03:42.633-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:03:51.880-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:01.963-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:12.287-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:13.845-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:04:22.767-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:32.841-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:42.288-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:04:44.578-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:04:52.362-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:02.442-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:12.420-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:15.426-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:05:22.447-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:32.927-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:44.565-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:05:44.871-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:05:55.962-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:06.016-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:16.411-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:17.399-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:06:26.656-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:36.899-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:46.896-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:06:48.612-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:06:57.372-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:07.619-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:17.538-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:19.978-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:07:27.131-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:37.219-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:47.298-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:07:50.379-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:07:57.852-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:07.859-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:18.172-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:28.095-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:28.481-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:08:38.335-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:48.573-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:08:58.973-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:09:00.001-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:09:08.894-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:09:19.134-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:09:29.550-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:09:31.170-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:09:40.810-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:09:50.751-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:00.978-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:03.210-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:10:12.009-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:22.248-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:32.544-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:35.407-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:10:44.262-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:54.471-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:10:57.625-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:11:04.269-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:11:08.463-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:11:18.045-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:11:28.614-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:11:29.433-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:11:38.846-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:11:48.438-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:11:58.528-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:00.076-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:12:08.606-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:18.906-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:29.414-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:31.669-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:12:39.646-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:48.935-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:12:59.487-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:13:02.461-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:13:09.406-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:13:19.486-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:13:29.887-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:13:30.141-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:13:39.825-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:13:50.866-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:03.688-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:04.677-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:14:11.962-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:22.197-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:32.491-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:34.197-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:14:42.743-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:14:52.918-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:03.826-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:06.242-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:15:15.773-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:25.851-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:35.932-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:45.796-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:15:46.011-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:15:56.093-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:06.359-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:16.434-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:16.883-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:16:26.674-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:36.760-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:46.840-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:16:47.994-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:16:56.946-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:09.408-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:19.884-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:21.735-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:17:30.006-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:40.043-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:50.482-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:17:52.997-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:18:00.721-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:18:10.728-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:18:19.860-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:18:23.035-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:18:30.971-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:18:41.012-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:18:51.030-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:01.132-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:01.524-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:19:11.373-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:21.940-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:34.008-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:35.138-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:19:45.013-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:19:55.253-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:05.482-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:07.341-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:20:15.809-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:25.962-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:36.414-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:39.001-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:20:46.553-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:20:56.755-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:06.009-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:16.062-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:21:16.248-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:26.170-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:37.487-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:46.252-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:21:47.655-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:21:57.736-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:08.806-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:18.651-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:19.672-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:22:28.731-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:38.017-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:48.726-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:22:50.452-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:22:58.652-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:08.111-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:18.491-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:20.825-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:23:28.410-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:38.818-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:49.371-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:23:52.431-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:23:59.361-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:09.051-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:19.138-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:29.211-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:29.508-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:24:39.772-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:48.892-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:58.905-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:24:59.692-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:25:09.244-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:25:19.385-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:25:29.531-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:25:30.893-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:25:39.927-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:25:49.852-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:25:59.945-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:26:01.879-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:26:10.834-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:26:21.281-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:26:33.625-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:26:34.165-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:26:43.870-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:26:53.307-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:03.241-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:04.345-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:27:13.864-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:23.386-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:33.645-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:35.484-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:27:43.235-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:27:53.627-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:03.723-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:06.293-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:28:13.963-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:24.515-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:34.430-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:44.675-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:28:44.828-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:28:54.108-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:04.195-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:08.172-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:29:14.225-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:24.626-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:34.929-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:36.560-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:29:45.125-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:29:55.193-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:05.266-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:07.428-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:30:15.569-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:25.748-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:35.669-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:38.361-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:30:45.929-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:30:56.149-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:06.236-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:16.308-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:31:16.471-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:27.042-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:37.042-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:47.351-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:31:47.786-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:31:57.750-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:07.828-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:17.757-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:18.776-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:32:26.839-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:29.664-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:32:37.269-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:47.511-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:57.917-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:32:59.510-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:33:07.904-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:33:18.070-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:33:28.409-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:33:30.530-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:33:38.635-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:33:48.945-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:33:58.085-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:00.913-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:34:08.312-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:18.399-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:28.639-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:38.772-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:38.897-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:34:48.489-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:34:58.854-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:35:08.879-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:35:09.734-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:35:18.000-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:35:28.247-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:35:33.814-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:35:44.330-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:35:54.488-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:04.568-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:06.882-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:36:14.966-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:25.041-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:35.121-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:38.156-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:36:45.361-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:36:55.282-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:05.361-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:15.762-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:16.083-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:37:25.684-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:37.430-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:47.962-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:37:48.989-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:38:01.332-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:09.999-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:20.198-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:21.942-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:38:31.940-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:40.956-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:51.197-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:38:53.152-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:39:02.001-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:39:12.317-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:39:22.400-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:39:25.074-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:39:32.957-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:39:43.267-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:39:51.358-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code SOFT_RESET_V1 and key 6
+2022-05-28T00:39:51.359-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {SOFT_RESET_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 0}
+2022-05-28T00:39:51.359-0400 DEBUG protocol OpenVPNSession.softReset():647 - Handle soft reset
+2022-05-28T00:39:51.360-0400 DEBUG protocol OpenVPNSession.softReset():656 - Negotiation key index is 6
+2022-05-28T00:39:51.360-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 0
+2022-05-28T00:39:51.362-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[0], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:51.362-0400 DEBUG protocol OpenVPNSession.handleControlPacket():786 - Start TLS handshake
+2022-05-28T00:39:51.377-0400 DEBUG protocol OpenVPNSession.handleControlPacket():820 - TLS.connect: Pulled ciphertext (293 bytes)
+2022-05-28T00:39:51.377-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [0]
+2022-05-28T00:39:51.377-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 6, sid: ad383311fd803efc, pid: 0, [293 bytes]}
+2022-05-28T00:39:51.381-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (379 bytes): 26ad383311fd803efc969eaad3e8249e519c14056df2137c240040ae51a3e634cfddf61c6e06f0419242b8da6171348bd55364a9921ad4fecaeb1c952282b82c3b5289f01f7f5e0e290000006462915499000000000016030101200100011c0303f563e4131cb2edb5ef0d2d6cfbeacae4f51660dfc8d2f5dce8468c13c4791e1e20798b5553dde2adfe53a0795e6e1b69c7795eff352094ecb410ad3981ddf3cf14003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000095000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d00020101003300260024001d002067bc6f6ce50fee78e5c08889f77da568e28680f2d80f888cd650f4e5da15444d
+2022-05-28T00:39:51.381-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 0
+2022-05-28T00:39:51.891-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:51.892-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, acks: {[0], ad383311fd803efc}, pid: 1, [99 bytes]}
+2022-05-28T00:39:51.892-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 1
+2022-05-28T00:39:51.893-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[1], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:51.893-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (99 bytes)
+2022-05-28T00:39:51.904-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (400 bytes)
+2022-05-28T00:39:51.905-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [1]
+2022-05-28T00:39:51.905-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 6, sid: ad383311fd803efc, pid: 1, [400 bytes]}
+2022-05-28T00:39:51.910-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (486 bytes): 26ad383311fd803efc9005db8d9ab35fbf6f7aac439e6599e20b1425da4ea45ca2a405d9a572d8e3530d72a437c16bf17e90c71c04c7c712716dab1df7643c8dae261a8e11c5870095000000666291549900000000011403030001011603030185010001810303f563e4131cb2edb5ef0d2d6cfbeacae4f51660dfc8d2f5dce8468c13c4791e1e20798b5553dde2adfe53a0795e6e1b69c7795eff352094ecb410ad3981ddf3cf14003e130213031301c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff010000fa000b000403000102000a000c000a001d0017001e00190018002300000016000000170000000d0030002e040305030603080708080809080a080b080408050806040105010601030302030301020103020202040205020602002b0009080304030303020301002d000201010033008b00890019008504005b900c1885c9ecce2e261648cb80d4e493726c2808015b0bfa23d1d51fd03588706515d0de4b2bc172ceb24b60e90075c8bde9028b277fbb1aad23f1f8affdab6501f72eff2f07aa82d535a9be5e5cfbee735cc511bac661ff1ebb74b00d6be400e7adfbfe6c957e2e7c0c583ef222d2c053e06cd3201a5622e7d8bdcf1f65ac2466e0
+2022-05-28T00:39:51.910-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 1
+2022-05-28T00:39:52.531-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:52.532-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, acks: {[1], ad383311fd803efc}, pid: 2, [1026 bytes]}
+2022-05-28T00:39:52.532-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 2
+2022-05-28T00:39:52.533-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[2], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:52.533-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-28T00:39:52.545-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:52.545-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 3, [1026 bytes]}
+2022-05-28T00:39:52.545-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 3
+2022-05-28T00:39:52.546-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[3], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:52.546-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-28T00:39:52.546-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:52.546-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 4, [1026 bytes]}
+2022-05-28T00:39:52.546-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 4
+2022-05-28T00:39:52.547-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[4], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:52.547-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-28T00:39:52.547-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:52.547-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 5, [1026 bytes]}
+2022-05-28T00:39:52.547-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 5
+2022-05-28T00:39:52.548-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[5], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:52.548-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-28T00:39:52.548-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 2
+2022-05-28T00:39:52.548-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 3
+2022-05-28T00:39:52.548-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 4
+2022-05-28T00:39:52.548-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 5
+2022-05-28T00:39:52.849-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:52.849-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 6, [1026 bytes]}
+2022-05-28T00:39:52.850-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 6
+2022-05-28T00:39:52.850-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[6], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:52.851-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (1026 bytes)
+2022-05-28T00:39:52.853-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 6
+2022-05-28T00:39:53.170-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:53.170-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 7, [418 bytes]}
+2022-05-28T00:39:53.171-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 7
+2022-05-28T00:39:53.172-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[7], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:53.172-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (418 bytes)
+2022-05-28T00:39:53.173-0400 DEBUG protocol OpenVPNSession.handleControlPacket():847 - TLS.connect: Send pulled ciphertext (104 bytes)
+2022-05-28T00:39:53.174-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [2]
+2022-05-28T00:39:53.174-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 6, sid: ad383311fd803efc, pid: 2, [104 bytes]}
+2022-05-28T00:39:53.178-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (190 bytes): 26ad383311fd803efc29794f412350151120b22dfc1a8e09cfaa5a4b3c7c25d0bca05ea2a75daa98b00889dcc802245dc54aa9645bea56840c0c7bb7fe74d1c20eaba9a9a830f537bd0000006d6291549900000000021703030019406ddfedf9f0231e343fbefaece2c08891c06a400395e7f97a1703030045d884792ee724a07fce77a8abf7ef6a142d794403f4fe25464268caa00b654ecba888f27f67828cb7165012e632ed336b56ac0984d7f32d69b8817d4f616c1d46b3f1d57859
+2022-05-28T00:39:53.179-0400 DEBUG protocol OpenVPNSession.onTLSConnect():668 - TLS.connect: Handshake is complete
+2022-05-28T00:39:53.179-0400 DEBUG protocol Authenticator.putAuth():146 - TLS.auth: Local options: V4,dev-type tun,compress,keydir 1,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-client
+2022-05-28T00:39:53.179-0400 DEBUG protocol Authenticator.putAuth():168 - TLS.auth: Put plaintext (447 bytes)
+2022-05-28T00:39:53.179-0400 DEBUG protocol OpenVPNSession.onTLSConnect():694 - TLS.auth: Pulled ciphertext (469 bytes)
+2022-05-28T00:39:53.180-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [3]
+2022-05-28T00:39:53.180-0400 DEBUG protocol ControlChannel.writeOutboundPackets():169 - Control: Skip writing packet with packetId 2 (sent on 2022-05-28 04:39:53 +0000, 0.005318999290466309 seconds ago)
+2022-05-28T00:39:53.180-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 6, sid: ad383311fd803efc, pid: 3, [469 bytes]}
+2022-05-28T00:39:53.187-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (555 bytes): 26ad383311fd803efc811423287d1991a9ea642c37686083644e50213f4f9e86a2c32052789c7a6605571daeafc8ee30ae6b70e5e861d6ad3b1d10ae0943ea6683f07464d0bc2d77a00000006e62915499000000000317030301d01ed2d44db5cdf961ed1d5e2396f49b9d478f4c30f0b16bacc6058277fdf0557eb6a0c514fd59bf2b97e1290a8056474b777a6093aba77b5f00e10437644d85a4f170f687a31c0574e5877e4e791b5cf98e14dd53e9271e5497313eb7f8d02b40b7cf5b6642aaf7c2ff8171708697d4a15937acf7845c595d48099f85100c0175f326264262d040f314e0cf838407bef884c39e86e2ca777b252fc4831d1594440892f354a3139b68fcc47fd6b30b590a22d60663b9b8d7a0be13f616bb4a03f4fd4e49a4e1acda5ad576e5b64ba2182ff07ad8f7cd8f906141e54036a42e26ab2ab150c077e353656ef56fabca0758ef3b13a9a7ab6cffbea3ba4d6cd9ba4e446f8123a8d37bbe45421252411eed926b64aadcd301fb360aeb1150bc55613acb9c285bccc790eddc06bea1007eb7a6326ff83ff0a76e060502b1c777347fe58351981acaeb0c1984d512534e5b8ab36537a9e94ea184892c5e19fc1faa6e5c8eddd06e10a619ce44b995c5b5affa6d48ecec1cccbc41df3249b2af6998d974880c02a4a586ea77bbbf82659e701ba38acce250e2391b7e70ee875d5dd2e834a204e3d48b77e98fe182b45facb526611499b5f544eb125acad1076d1cb9a37a12333bbcad80f32eae2c40daf67a60b16a
+2022-05-28T00:39:53.187-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 7
+2022-05-28T00:39:53.811-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:53.812-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, acks: {[2], ad383311fd803efc}, pid: 8, [158 bytes]}
+2022-05-28T00:39:53.812-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 8
+2022-05-28T00:39:53.813-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[8], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:53.813-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (158 bytes)
+2022-05-28T00:39:53.814-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:53.815-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, acks: {[3], ad383311fd803efc}, pid: 9, [255 bytes]}
+2022-05-28T00:39:53.815-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 9
+2022-05-28T00:39:53.816-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[9], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:53.816-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (255 bytes)
+2022-05-28T00:39:53.816-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (233 bytes)
+2022-05-28T00:39:53.817-0400 DEBUG protocol Authenticator.parseAuthReply():213 - TLS.auth: Parsed server random
+2022-05-28T00:39:53.817-0400 DEBUG protocol Authenticator.parseAuthReply():217 - TLS.auth: Parsed server options: "V4,dev-type tun,link-mtu 1636,tun-mtu 1532,proto TCPv4_SERVER,comp-lzo,keydir 0,cipher AES-256-CBC,auth SHA512,keysize 256,tls-auth,key-method 2,tls-server"
+2022-05-28T00:39:53.817-0400 DEBUG protocol OpenVPNSession.pushRequest():707 - TLS.ifconfig: Put plaintext (PUSH_REQUEST)
+2022-05-28T00:39:53.817-0400 DEBUG protocol OpenVPNSession.pushRequest():723 - TLS.ifconfig: Send pulled ciphertext (35 bytes)
+2022-05-28T00:39:53.818-0400 DEBUG protocol ControlChannel.enqueueOutboundPackets():159 - Control: Enqueued 1 packet [4]
+2022-05-28T00:39:53.818-0400 DEBUG protocol ControlChannel.writeOutboundPackets():174 - Control: Write control packet {CONTROL_V1 | 6, sid: ad383311fd803efc, pid: 4, [35 bytes]}
+2022-05-28T00:39:53.820-0400 DEBUG protocol OpenVPNSession.flushControlQueue():1039 - Send control packet (121 bytes): 26ad383311fd803efc66b21f8289dae5d7fed6c46886fee29527274dbcd1040e9d1e7753deb37b0f9f1d4501ef3ba23e7b1cfa2eb3500abbdae63c8d9ac57edd346f79e0b9bfa23de600000071629154990000000004170303001e5dd1f94901ccfd5d833583e5e396f8af0d23d2a3fda363ad1e51a2b5dcac
+2022-05-28T00:39:53.821-0400 DEBUG protocol OpenVPNSession.setupEncryption():1091 - Set up encryption
+2022-05-28T00:39:53.821-0400 INFO protocol OpenVPNSession.setupEncryption():1096 - 	Negotiated cipher: AES-256-GCM
+2022-05-28T00:39:53.821-0400 INFO protocol OpenVPNSession.setupEncryption():1100 - 	Negotiated compression framing: comp-lzo
+2022-05-28T00:39:53.821-0400 INFO protocol OpenVPNSession.setupEncryption():1107 - 	Negotiated keep-alive interval: 10s
+2022-05-28T00:39:53.821-0400 INFO protocol OpenVPNSession.setupEncryption():1110 - 	Negotiated keep-alive timeout: 1m
+2022-05-28T00:39:53.823-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (0 bytes)
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 8
+2022-05-28T00:39:53.824-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 9
+2022-05-28T00:39:53.919-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:39:54.451-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code ACK_V1 and key 6
+2022-05-28T00:39:54.452-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {ACK_V1 | 6, sid: 2cdfffb01d9fcfcb, acks: {[4], ad383311fd803efc}}
+2022-05-28T00:39:54.453-0400 DEBUG protocol ControlChannelSerializer.deserialize():64 - Control: Try read packet with code CONTROL_V1 and key 6
+2022-05-28T00:39:54.453-0400 DEBUG protocol ControlChannel.readInboundPacket():103 - Control: Read packet {CONTROL_V1 | 6, sid: 2cdfffb01d9fcfcb, pid: 10, [263 bytes]}
+2022-05-28T00:39:54.453-0400 DEBUG protocol OpenVPNSession.sendAck():1213 - Send ack for received packetId 10
+2022-05-28T00:39:54.454-0400 DEBUG protocol ControlChannel.writeAcks():217 - Control: Write ack packet {ACK_V1 | 6, sid: ad383311fd803efc, acks: {[10], 2cdfffb01d9fcfcb}}
+2022-05-28T00:39:54.454-0400 DEBUG protocol OpenVPNSession.handleControlPacket():841 - TLS.connect: Put received ciphertext (263 bytes)
+2022-05-28T00:39:54.455-0400 DEBUG protocol OpenVPNSession.handleControlData():881 - Pulled plain control data (241 bytes)
+2022-05-28T00:39:54.456-0400 DEBUG protocol OpenVPNSession.handleControlData():906 - Parsed control message (240 bytes)
+2022-05-28T00:39:54.456-0400 DEBUG protocol OpenVPNSession.sendAck():1240 - Ack successfully written to LINK for packetId 10
+2022-05-28T00:40:04.158-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:14.558-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:24.557-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:40:24.692-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:34.247-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:44.638-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:54.879-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:40:55.452-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:41:04.166-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:41:14.487-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:41:24.800-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:41:26.002-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:41:34.634-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:41:44.974-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:41:54.855-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:41:54.924-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:42:05.839-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:42:06.056-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:42:16.767-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:42:27.767-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:42:27.973-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:42:38.764-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:42:49.765-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:00.759-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:05.719-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:43:11.747-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:16.440-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:43:22.744-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:33.718-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:40.450-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:43:44.656-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:43:55.650-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:44:06.647-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:44:17.639-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:44:28.639-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:44:39.632-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:44:50.632-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:45:01.633-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:45:03.161-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:45:12.633-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:45:12.921-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:45:23.634-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:45:23.847-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:45:34.632-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:45:34.651-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:45:45.292-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:45:55.317-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:05.775-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:06.928-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:46:15.631-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:25.870-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:35.056-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:36.830-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:46:45.237-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:46:55.478-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:05.615-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:08.025-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:47:15.790-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:25.870-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:35.233-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:38.243-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:47:45.474-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:47:55.632-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:05.975-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:48:06.096-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:14.928-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:25.231-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:35.359-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:35.914-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:48:45.715-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:48:55.839-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:06.200-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:07.403-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:49:16.433-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:26.358-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:36.594-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:38.477-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:49:46.993-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:49:57.072-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:07.313-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:09.881-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:50:17.566-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:27.792-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:37.873-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:47.872-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:50:48.014-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:50:58.195-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:08.433-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:18.384-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:18.962-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:51:28.595-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:38.834-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:48.114-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:51:49.412-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:51:58.193-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:08.434-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:18.674-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:20.700-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:52:28.921-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:39.313-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:49.633-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:52:52.385-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:52:59.794-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:53:08.855-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:53:09.949-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:53:19.216-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:53:20.949-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:53:29.726-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:53:39.884-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:53:50.035-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:00.067-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:54:00.115-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:11.434-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:22.241-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:32.485-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:33.175-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:54:42.714-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:54:52.957-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:03.355-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:04.766-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:55:13.435-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:23.389-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:33.830-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:35.907-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:55:43.995-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:55:54.304-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:04.475-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:07.086-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:56:14.464-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:24.956-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:35.231-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:45.329-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:56:45.436-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:56:55.366-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:05.757-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:15.836-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:16.425-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:57:25.116-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:35.357-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:45.366-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:57:46.485-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:57:55.357-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:05.598-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:15.677-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:17.480-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:58:25.757-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:34.963-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:45.117-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:58:47.464-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:58:55.036-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:05.120-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:15.206-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:18.218-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:59:25.444-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:36.558-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:47.167-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T00:59:47.413-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T00:59:57.041-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:07.441-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:17.597-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:18.479-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:00:28.081-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:38.162-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:48.402-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:00:49.993-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:00:58.481-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:08.890-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:18.962-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:21.129-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:01:29.202-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:39.609-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:49.842-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:01:52.760-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:01:59.922-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:10.010-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:20.250-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:20.437-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:02:30.491-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:40.495-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:50.651-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:02:51.562-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:00.474-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:03:04.660-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:09.904-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:03:15.661-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:19.977-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:03:26.594-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:37.594-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:43.598-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:03:48.589-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:03:59.585-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:00.984-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:04:10.584-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:10.903-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:04:21.144-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:04:21.397-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:32.335-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:40.023-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:04:43.332-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:54.330-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:04:56.663-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:05:05.331-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:05:06.619-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:05:16.331-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:05:26.264-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:05:27.320-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:05:35.881-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:05:38.169-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:05:46.125-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:05:49.165-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:05:56.518-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:00.166-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:06:06.584-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:11.160-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:06:17.571-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:22.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:06:30.075-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:33.159-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:06:39.747-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:43.813-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:06:49.989-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:06:54.725-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:07:05.657-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:07:16.656-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:07:27.652-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:07:38.643-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:07:48.207-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:07:49.605-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:00.600-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:04.110-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:08:11.586-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:17.427-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:08:22.524-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:26.642-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:08:33.509-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:37.016-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:08:44.428-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:55.410-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:08:55.585-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:09:06.361-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:09:21.421-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:09:24.118-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:09:31.498-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:09:41.738-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:09:51.815-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:10:01.843-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:10:02.055-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:10:13.919-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:10:24.768-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:10:26.098-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:10:37.088-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:10:48.076-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:10:59.042-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:11:10.009-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:11:12.615-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:11:20.981-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:11:31.961-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:11:42.904-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:11:53.904-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:04.896-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:15.826-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:26.751-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:26.992-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:12:37.747-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:42.351-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:12:48.745-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:12:59.745-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:13:10.739-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:13:13.619-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:13:21.726-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:13:32.676-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:13:42.863-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:13:43.651-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:13:54.569-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:05.570-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:16.503-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:16.836-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:14:27.496-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:38.466-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:49.462-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:14:55.869-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:15:00.457-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:15:11.453-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:15:15.723-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:15:22.451-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:15:33.400-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:15:40.358-0400 DEBUG protocol SessionKey.decrypt():123 - Data: Received ping, do nothing
+2022-05-28T01:15:44.399-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:15:55.391-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:16:06.390-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:16:17.345-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:16:28.345-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:16:39.307-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:16:50.230-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:01.230-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:12.228-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:23.220-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:34.220-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:45.187-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:17:56.185-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:18:07.175-0400 DEBUG protocol OpenVPNSession.ping():564 - Send ping
+2022-05-28T01:18:11.477-0400 INFO protocol OpenVPNTunnelProvider.stopTunnel():267 - Stopping tunnel...
+2022-05-28T01:18:11.480-0400 INFO protocol OpenVPNSession.doShutdown():1291 - Trigger shutdown on request
+2022-05-28T01:18:11.481-0400 INFO protocol OpenVPNTunnelProvider.sessionDidStop():606 - Session did stop
+2022-05-28T01:18:11.482-0400 ERROR protocol OpenVPNSession.loopLink():410 - Failed LINK read: Error Domain=kNWErrorDomainPOSIX Code=89 "Operation canceled" UserInfo={NSDescription=Operation canceled}
+2022-05-28T01:18:11.482-0400 DEBUG protocol NETCPSocket.observeValueInTunnelQueue():149 - Socket state is cancelled (endpoint: <masked> -> in progress)
+2022-05-28T01:18:11.483-0400 INFO protocol OpenVPNSession.cleanup():334 - Cleaning up...
+2022-05-28T01:18:11.484-0400 INFO protocol OpenVPNTunnelProvider.finishTunnelDisconnection():378 - Tunnel did stop on request
+2022-05-28T01:18:11.484-0400 DEBUG protocol OpenVPNTunnelProvider.flushLog():882 - Flushing log...

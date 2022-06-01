@@ -1,0 +1,75 @@
+2022-05-27T20:00:36.772Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Disconnecting from: 185.159.157.147 | 
+2022-05-27T20:00:36.773Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-27T20:00:37.603Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Disconnected | 
+2022-05-27T20:00:37.604Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/location","method":"GET"}
+2022-05-27T20:00:37.606Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-27T20:00:37.608Z | DEBUG | LOCAL_AGENT | Disconnecting Local agent | 
+2022-05-27T20:00:37.617Z | DEBUG | REVIEW | Resetting active connection timestamp because of disconnection | 
+2022-05-27T20:00:38.371Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/v2\/clientconfig","method":"GET"}
+2022-05-27T20:00:38.373Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/location","method":"GET"}
+2022-05-27T20:00:38.373Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-27T20:00:38.373Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-27T20:00:38.559Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/streamingservices","method":"GET"}
+2022-05-27T20:00:39.314Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn\/logicals?WithTranslations=true","method":"GET"}
+2022-05-27T20:00:39.367Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"172.58.205.63","key":"UserIp"}
+2022-05-27T20:00:41.176Z | DEBUG | APP | Server list saved (count: 1738) | 
+2022-05-27T20:00:42.052Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-27T20:00:42.053Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"1653681642.052349","key":"LastTimeForeground"}
+2022-05-27T20:00:44.263Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-27T20:00:44.264Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"null","key":"LastTimeForeground"}
+2022-05-27T20:00:44.273Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-27T20:00:44.274Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Invalid | 
+2022-05-27T20:00:44.274Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"null"}
+2022-05-27T20:00:44.276Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-27T20:00:44.278Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-28 19:02:53 +0000) | 
+2022-05-27T20:00:47.187Z | INFO  | APP | No active connection | 
+2022-05-27T20:00:49.419Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"smartProtocol","value":"false"}
+2022-05-27T20:00:56.970Z | DEBUG | CONN.CONNECT:TRIGGER | Connect requested by clicking on Server item | 
+2022-05-27T20:00:56.971Z | DEBUG | CONN.CONNECT:TRIGGER | Will connect to CH-AT#1 (ch-at-01.protonvpn.net, load: 49) | 
+2022-05-27T20:00:56.999Z | DEBUG | CONN.CONNECT | Server selected: CH-AT#1 (ch-at-01.protonvpn.net, load: 49) | 
+2022-05-27T20:00:57.039Z | INFO  | CONN.CONNECT | Selected 185.159.157.191 as server ip for ch-at-01.protonvpn.net | 
+2022-05-27T20:00:57.039Z | INFO  | CONN.CONNECT | Connecting with openVpn(vpncore.VpnProtocol.OpenVpnTransport.udp) to CH-AT#1 via 185.159.157.191:[80, 1194, 5060, 4569, 443] | 
+2022-05-27T20:00:57.041Z | INFO  | CONN.CONNECT | VPN connect started | {"authenticationType":"credentials","protocol":"openVpn(vpncore.VpnProtocol.OpenVpnTransport.udp)"}
+2022-05-27T20:00:57.045Z | INFO  | CONN.DISCONNECT | Closing VPN tunnel | 
+2022-05-27T20:00:57.057Z | INFO  | CONN.CONNECT | On Demand set: Off for vpncore.IkeProtocolFactory | 
+2022-05-27T20:00:57.072Z | ERROR | CONN | VPN error: Error Domain=NEVPNErrorDomain Code=1 "Missing protocol or protocol has invalid type" UserInfo={NSLocalizedDescription=Missing protocol or protocol has invalid type} | 
+2022-05-27T20:00:57.072Z | INFO  | CONN.CONNECT | About to start connection process | 
+2022-05-27T20:00:57.286Z | INFO  | CONN.CONNECT | Creating connection configuration | 
+2022-05-27T20:00:57.288Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Disconnected | 
+2022-05-27T20:00:57.297Z | INFO  | CONN.CONNECT | Configuring connection | 
+2022-05-27T20:00:57.345Z | INFO  | CONN.CONNECT | Loading connection configuration | 
+2022-05-27T20:00:57.347Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Invalid | 
+2022-05-27T20:00:57.359Z | INFO  | CONN.CONNECT | Starting VPN tunnel | 
+2022-05-27T20:00:57.364Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connecting to: 185.159.157.191 | 
+2022-05-27T20:01:00.768Z | INFO  | CONN:CHANGE | VPN update state to VPN state - Connected to: 185.159.157.191 | 
+2022-05-27T20:01:00.770Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"IntentionallyDisconnected","value":"false"}
+2022-05-27T20:01:00.771Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:01:00.778Z | DEBUG | REVIEW | Saving new active connection timestamp and incrementing successful connections count | 
+2022-05-27T20:01:00.782Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.782Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.782Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.782Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.782Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:00.783Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastConnectedTimeStamp","value":"1653681659.91222"}
+2022-05-27T20:01:01.712Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:01:04.842Z | INFO  | OS | applicationDidEnterBackground | 
+2022-05-27T20:01:04.843Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"key":"LastTimeForeground","value":"1653681664.8419142"}
+2022-05-27T20:01:23.365Z | INFO  | OS | applicationDidBecomeActive | 
+2022-05-27T20:01:23.367Z | INFO  | SETTINGS:CHANGE | Setting was changed | {"value":"null","key":"LastTimeForeground"}
+2022-05-27T20:01:23.376Z | DEBUG | USER_CERT | Checking if vpn authentication certificate refresh is needed | 
+2022-05-27T20:01:23.379Z | INFO  | USER_CERT | Using existing vpn authentication keys | 
+2022-05-27T20:01:23.381Z | DEBUG | USER_CERT | Stored vpn authentication certificate does not need refreshing (valid until 2022-05-28 19:02:53 +0000) | 
+2022-05-27T20:01:30.771Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:01:31.387Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:01:45.744Z | DEBUG | NET | Request started | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-27T20:01:47.056Z | DEBUG | NET | Request finished OK | {"url":"https:\/\/api.protonvpn.ch\/vpn","method":"GET"}
+2022-05-27T20:02:00.771Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:02:01.744Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:02:30.770Z | DEBUG | NET | Request started | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
+2022-05-27T20:02:31.504Z | DEBUG | NET | Request finished OK | {"url":"http:\/\/protonstatus.com\/vpn_status","method":"GET"}
